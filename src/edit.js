@@ -20,12 +20,37 @@ import "swiper/components/scrollbar/scrollbar.scss";
 import "./editor.scss";
 import Inspector from "./inspector";
 
-export default function Edit({ isSelected, attributes, setAttributes }) {
-	const { images } = attributes;
+export default function Edit({
+	isSelected,
+	clientId,
+	attributes,
+	setAttributes,
+}) {
+	const {
+		images,
+		hasNavigation,
+		hasPagination,
+		hasScrollbar,
+		slidesPerView,
+		spaceBetween,
+	} = attributes;
 
 	// Use swiper features
-	const features = [Navigation, Pagination, Scrollbar, A11y];
+	let features = [Navigation, Pagination, Scrollbar, A11y];
+
+	// if (hasNavigation) {
+	// 	features = [...features, Navigation];
+	// }
+	// if (hasPagination) {
+	// 	features = [...features, Pagination];
+	// }
+
+	// if (hasScrollbar) {
+	// 	features = [...features, Scrollbar];
+	// }
+
 	SwiperCore.use(features);
+	// SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];
@@ -39,6 +64,9 @@ export default function Edit({ isSelected, attributes, setAttributes }) {
 
 		setAttributes({ images: updatedImages });
 	};
+
+	const onSwiperClick = () =>
+		wp.data.dispatch("core/block-editor").selectBlock(clientId);
 
 	if (images.length === 0) {
 		return (
@@ -59,14 +87,17 @@ export default function Edit({ isSelected, attributes, setAttributes }) {
 	}
 
 	return [
-		isSelected && <Inspector />,
+		isSelected && (
+			<Inspector attributes={attributes} setAttributes={setAttributes} />
+		),
 		<div>
 			<Swiper
-				spaceBetween={50}
-				slidesPerView={1}
+				spaceBetween={spaceBetween}
+				slidesPerView={slidesPerView}
 				navigation
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
+				onClick={() => onSwiperClick()}
 				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={() => console.log("slide change")}
 			>
