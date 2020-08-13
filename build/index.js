@@ -2240,6 +2240,39 @@ function getWindow() {
 
 /***/ }),
 
+/***/ "./node_modules/swiper/components/navigation/navigation.scss":
+/*!*******************************************************************!*\
+  !*** ./node_modules/swiper/components/navigation/navigation.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/swiper/components/pagination/pagination.scss":
+/*!*******************************************************************!*\
+  !*** ./node_modules/swiper/components/pagination/pagination.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./node_modules/swiper/components/scrollbar/scrollbar.scss":
+/*!*****************************************************************!*\
+  !*** ./node_modules/swiper/components/scrollbar/scrollbar.scss ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./node_modules/swiper/esm/components/a11y/a11y.js":
 /*!*********************************************************!*\
   !*** ./node_modules/swiper/esm/components/a11y/a11y.js ***!
@@ -12770,12 +12803,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./inspector */ "./src/inspector.js");
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/components/navigation/navigation.scss */ "./node_modules/swiper/components/navigation/navigation.scss");
+/* harmony import */ var swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(swiper_components_navigation_navigation_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
+/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var swiper_components_scrollbar_scrollbar_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/components/scrollbar/scrollbar.scss */ "./node_modules/swiper/components/scrollbar/scrollbar.scss");
+/* harmony import */ var swiper_components_scrollbar_scrollbar_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(swiper_components_scrollbar_scrollbar_scss__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./inspector */ "./src/inspector.js");
 
 
 
@@ -12790,6 +12830,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
 /*
  * Internal dependencies
  */
@@ -12800,7 +12844,10 @@ function Edit(_ref) {
   var isSelected = _ref.isSelected,
       attributes = _ref.attributes,
       setAttributes = _ref.setAttributes;
-  var images = attributes.images;
+  var images = attributes.images; // Use swiper features
+
+  var features = [swiper__WEBPACK_IMPORTED_MODULE_4__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_4__["Pagination"], swiper__WEBPACK_IMPORTED_MODULE_4__["Scrollbar"], swiper__WEBPACK_IMPORTED_MODULE_4__["A11y"]];
+  swiper__WEBPACK_IMPORTED_MODULE_4__["default"].use(features);
 
   var onImageSelect = function onImageSelect(images) {
     var updatedImages = [];
@@ -12832,17 +12879,24 @@ function Edit(_ref) {
     });
   }
 
-  return [isSelected && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_inspector__WEBPACK_IMPORTED_MODULE_7__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_4__["Swiper"], {
+  return [isSelected && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_inspector__WEBPACK_IMPORTED_MODULE_11__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_5__["Swiper"], {
     spaceBetween: 50,
     slidesPerView: 1,
-    onSlideChange: function onSlideChange() {
-      return console.log("slide change");
+    navigation: true,
+    pagination: {
+      clickable: true
+    },
+    scrollbar: {
+      draggable: true
     },
     onSwiper: function onSwiper(swiper) {
       return console.log(swiper);
+    },
+    onSlideChange: function onSlideChange() {
+      return console.log("slide change");
     }
   }, images.map(function (image) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_4__["SwiperSlide"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("img", {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_5__["SwiperSlide"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("img", {
       src: image.url,
       alt: image.alt
     }));

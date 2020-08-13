@@ -7,8 +7,12 @@ import { MediaPlaceholder } from "@wordpress/block-editor";
 /*
  * External dependencies
  */
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
 
 /*
  * Internal dependencies
@@ -18,6 +22,10 @@ import Inspector from "./inspector";
 
 export default function Edit({ isSelected, attributes, setAttributes }) {
 	const { images } = attributes;
+
+	// Use swiper features
+	const features = [Navigation, Pagination, Scrollbar, A11y];
+	SwiperCore.use(features);
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];
@@ -56,8 +64,11 @@ export default function Edit({ isSelected, attributes, setAttributes }) {
 			<Swiper
 				spaceBetween={50}
 				slidesPerView={1}
-				onSlideChange={() => console.log("slide change")}
+				navigation
+				pagination={{ clickable: true }}
+				scrollbar={{ draggable: true }}
 				onSwiper={(swiper) => console.log(swiper)}
+				onSlideChange={() => console.log("slide change")}
 			>
 				{images.map((image) => (
 					<SwiperSlide>
