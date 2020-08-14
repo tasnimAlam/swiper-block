@@ -12754,6 +12754,10 @@ var attributes = {
   spaceBetween: {
     type: "number",
     default: 0
+  },
+  speed: {
+    type: "number",
+    default: 300
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -12817,7 +12821,8 @@ function Edit(_ref) {
       setAttributes = _ref.setAttributes;
   var images = attributes.images,
       slidesPerView = attributes.slidesPerView,
-      spaceBetween = attributes.spaceBetween;
+      spaceBetween = attributes.spaceBetween,
+      speed = attributes.speed;
 
   var onImageSelect = function onImageSelect(images) {
     var updatedImages = [];
@@ -12878,6 +12883,7 @@ function Edit(_ref) {
     }
   }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_6__["Swiper"], {
     spaceBetween: spaceBetween,
+    speed: speed,
     slidesPerView: slidesPerView,
     onClick: function onClick() {
       return onSwiperClick();
@@ -12968,7 +12974,8 @@ function Inspector(_ref) {
   var attributes = _ref.attributes,
       setAttributes = _ref.setAttributes;
   var slidesPerView = attributes.slidesPerView,
-      spaceBetween = attributes.spaceBetween;
+      spaceBetween = attributes.spaceBetween,
+      speed = attributes.speed;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
@@ -12989,6 +12996,16 @@ function Inspector(_ref) {
     onChange: function onChange(spaceBetween) {
       return setAttributes({
         spaceBetween: spaceBetween
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Speed"),
+    value: speed,
+    min: 1,
+    max: 1000,
+    onChange: function onChange(speed) {
+      return setAttributes({
+        speed: speed
       });
     }
   })));

@@ -11,6 +11,10 @@ const attributes = {
 		type: "number",
 		default: 0,
 	},
+	speed: {
+		type: "number",
+		default: 300,
+	},
 };
 
 export default attributes;

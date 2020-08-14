@@ -3,7 +3,7 @@ import { InspectorControls } from "@wordpress/block-editor";
 import { PanelBody, RangeControl } from "@wordpress/components";
 
 export default function Inspector({ attributes, setAttributes }) {
-	const { slidesPerView, spaceBetween } = attributes;
+	const { slidesPerView, spaceBetween, speed } = attributes;
 	return (
 		<InspectorControls key="controls">
 			<PanelBody>
@@ -21,6 +21,14 @@ export default function Inspector({ attributes, setAttributes }) {
 					min={1}
 					max={100}
 					onChange={(spaceBetween) => setAttributes({ spaceBetween })}
+				/>
+
+				<RangeControl
+					label={__("Speed")}
+					value={speed}
+					min={1}
+					max={1000}
+					onChange={(speed) => setAttributes({ speed })}
 				/>
 			</PanelBody>
 		</InspectorControls>

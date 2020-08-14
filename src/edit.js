@@ -30,7 +30,7 @@ export default function Edit({
 	attributes,
 	setAttributes,
 }) {
-	const { images, slidesPerView, spaceBetween } = attributes;
+	const { images, slidesPerView, spaceBetween, speed } = attributes;
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];
@@ -95,6 +95,7 @@ export default function Edit({
 		<div>
 			<Swiper
 				spaceBetween={spaceBetween}
+				speed={speed}
 				slidesPerView={slidesPerView}
 				onClick={() => onSwiperClick()}
 				onSlideChange={() => console.log("slide change")}
