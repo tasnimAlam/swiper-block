@@ -7,18 +7,17 @@ import { MediaPlaceholder } from "@wordpress/block-editor";
 /*
  * External dependencies
  */
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import SwiperCore, { A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
+
+SwiperCore.use([A11y]);
 
 /*
  * Internal dependencies
  */
-import "./editor.scss";
 import Inspector from "./inspector";
+import "./editor.scss";
 
 export default function Edit({
 	isSelected,
@@ -26,31 +25,7 @@ export default function Edit({
 	attributes,
 	setAttributes,
 }) {
-	const {
-		images,
-		hasNavigation,
-		hasPagination,
-		hasScrollbar,
-		slidesPerView,
-		spaceBetween,
-	} = attributes;
-
-	// Use swiper features
-	let features = [Navigation, Pagination, Scrollbar, A11y];
-
-	// if (hasNavigation) {
-	// 	features = [...features, Navigation];
-	// }
-	// if (hasPagination) {
-	// 	features = [...features, Pagination];
-	// }
-
-	// if (hasScrollbar) {
-	// 	features = [...features, Scrollbar];
-	// }
-
-	SwiperCore.use(features);
-	// SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+	const { images, slidesPerView, spaceBetween } = attributes;
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];
@@ -65,8 +40,10 @@ export default function Edit({
 		setAttributes({ images: updatedImages });
 	};
 
-	const onSwiperClick = () =>
+	const onSwiperClick = () => {
+		// Select block when swiper is clicked
 		wp.data.dispatch("core/block-editor").selectBlock(clientId);
+	};
 
 	if (images.length === 0) {
 		return (
@@ -94,11 +71,7 @@ export default function Edit({
 			<Swiper
 				spaceBetween={spaceBetween}
 				slidesPerView={slidesPerView}
-				navigation
-				pagination={{ clickable: true }}
-				scrollbar={{ draggable: true }}
 				onClick={() => onSwiperClick()}
-				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={() => console.log("slide change")}
 			>
 				{images.map((image) => (

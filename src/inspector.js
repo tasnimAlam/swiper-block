@@ -1,36 +1,12 @@
 import { __ } from "@wordpress/i18n";
 import { InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, ToggleControl, RangeControl } from "@wordpress/components";
+import { PanelBody, RangeControl } from "@wordpress/components";
 
 export default function Inspector({ attributes, setAttributes }) {
-	const {
-		hasNavigation,
-		hasPagination,
-		hasScrollbar,
-		slidesPerView,
-		spaceBetween,
-	} = attributes;
+	const { slidesPerView, spaceBetween } = attributes;
 	return (
 		<InspectorControls key="controls">
 			<PanelBody>
-				<ToggleControl
-					label={__("Navigation")}
-					checked={hasNavigation}
-					onChange={() => setAttributes({ hasNavigation: !hasNavigation })}
-				/>
-
-				<ToggleControl
-					label={__("Pagination")}
-					checked={hasPagination}
-					onChange={() => setAttributes({ hasPagination: !hasPagination })}
-				/>
-
-				<ToggleControl
-					label={__("Scrollbar")}
-					checked={hasScrollbar}
-					onChange={() => setAttributes({ hasScrollbar: !hasScrollbar })}
-				/>
-
 				<RangeControl
 					label={__("Slider Per View")}
 					value={slidesPerView}
