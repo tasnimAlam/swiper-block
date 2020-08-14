@@ -2,7 +2,12 @@
  * WordPress dependencies
  */
 import { __ } from "@wordpress/i18n";
-import { MediaPlaceholder } from "@wordpress/block-editor";
+import {
+	BlockControls,
+	MediaPlaceholder,
+	MediaUpload,
+} from "@wordpress/block-editor";
+import { Toolbar, Button } from "@wordpress/components";
 
 /*
  * External dependencies
@@ -67,6 +72,26 @@ export default function Edit({
 		isSelected && (
 			<Inspector attributes={attributes} setAttributes={setAttributes} />
 		),
+		<BlockControls>
+			<Toolbar>
+				<MediaUpload
+					onSelect={(images) => onImageSelect(images)}
+					allowedTypes={["image"]}
+					multiple
+					gallery
+					value={images.map((img) => img.id)}
+					render={({ open }) => (
+						<Button
+							className="components-toolbar__control"
+							label={__("Edit gallery")}
+							icon="edit"
+							onClick={open}
+						/>
+					)}
+				/>
+			</Toolbar>
+		</BlockControls>,
+
 		<div>
 			<Swiper
 				spaceBetween={spaceBetween}
