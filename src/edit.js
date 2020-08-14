@@ -8,15 +8,18 @@ import {
 	MediaUpload,
 } from "@wordpress/block-editor";
 import { Toolbar, Button } from "@wordpress/components";
+import { useState } from "@wordpress/element";
 
 /*
  * External dependencies
  */
-import SwiperCore, { A11y } from "swiper";
+import SwiperCore, { A11y, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
 
-SwiperCore.use([A11y]);
+SwiperCore.use([A11y, Navigation, Pagination]);
 
 /*
  * Internal dependencies
@@ -30,7 +33,9 @@ export default function Edit({
 	attributes,
 	setAttributes,
 }) {
-	const { images, slidesPerView, spaceBetween, speed } = attributes;
+	const { images, autoHeight, slidesPerView, spaceBetween, speed } = attributes;
+
+	const [swiper, setSwiper] = useState(null);
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];
@@ -94,9 +99,13 @@ export default function Edit({
 
 		<div>
 			<Swiper
+				autoHeight={autoHeight}
+				navigation
+				pagination={{ clickable: true }}
 				spaceBetween={spaceBetween}
 				speed={speed}
 				slidesPerView={slidesPerView}
+				onSwiper={setSwiper}
 				onClick={() => onSwiperClick()}
 				onSlideChange={() => console.log("slide change")}
 			>

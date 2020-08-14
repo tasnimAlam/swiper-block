@@ -1,12 +1,18 @@
 import { __ } from "@wordpress/i18n";
 import { InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, RangeControl } from "@wordpress/components";
+import { PanelBody, ToggleControl, RangeControl } from "@wordpress/components";
 
 export default function Inspector({ attributes, setAttributes }) {
-	const { slidesPerView, spaceBetween, speed } = attributes;
+	const { autoHeight, slidesPerView, spaceBetween, speed } = attributes;
 	return (
 		<InspectorControls key="controls">
 			<PanelBody>
+				<ToggleControl
+					label={__("Auto Height")}
+					checked={autoHeight}
+					onChange={() => setAttributes({ autoHeight: !autoHeight })}
+				/>
+
 				<RangeControl
 					label={__("Slider Per View")}
 					value={slidesPerView}

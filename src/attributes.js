@@ -1,4 +1,8 @@
 const attributes = {
+	autoHeight: {
+		type: "boolean",
+		default: false,
+	},
 	images: {
 		type: "array",
 		default: [],
