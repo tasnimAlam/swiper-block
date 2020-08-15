@@ -12908,6 +12908,10 @@ var attributes = {
   speed: {
     type: "number",
     default: 300
+  },
+  effect: {
+    type: "string",
+    default: "slide"
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -12987,7 +12991,8 @@ function Edit(_ref) {
       slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
       speed = attributes.speed,
-      vertical = attributes.vertical;
+      vertical = attributes.vertical,
+      effect = attributes.effect;
 
   var _useState = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(null),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
@@ -13004,14 +13009,7 @@ function Edit(_ref) {
     options.autoHeight = autoHeight;
     options.slidesPerView = slidesPerView;
     options.speed = speed;
-    options.spaceBetween = spaceBetween; // Set vertical slider
-
-    if (vertical) {
-      options.direction = "vertical";
-    } else {
-      options.direction = "horizontal";
-    }
-
+    options.spaceBetween = spaceBetween;
     console.log(options);
     setOptions(options);
   }, [autoHeight, slidesPerView, spaceBetween, speed, vertical]);
@@ -13167,12 +13165,13 @@ function Inspector(_ref) {
       slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
       speed = attributes.speed,
-      vertical = attributes.vertical;
+      vertical = attributes.vertical,
+      effect = attributes.effect;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Auto Height"),
-    help: !autoHeight && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Frontend only"),
+    help: !autoHeight && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Visible only on frontend"),
     checked: autoHeight,
     onChange: function onChange() {
       return setAttributes({
@@ -13181,10 +13180,36 @@ function Inspector(_ref) {
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Vertical Slide"),
+    help: !vertical && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Visible only on frontend"),
     checked: vertical,
     onChange: function onChange() {
       return setAttributes({
         vertical: !vertical
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["SelectControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Effect"),
+    help: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Visible only on frontend"),
+    value: effect,
+    options: [{
+      label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Slide"),
+      value: "slide"
+    }, {
+      label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Fade"),
+      value: "fade"
+    }, {
+      label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Cube"),
+      value: "cube"
+    }, {
+      label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Coverflow"),
+      value: "coverflow"
+    }, {
+      label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Flip"),
+      value: "flip"
+    }],
+    onChange: function onChange(effect) {
+      return setAttributes({
+        effect: effect
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {

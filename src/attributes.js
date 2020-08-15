@@ -23,6 +23,10 @@ const attributes = {
 		type: "number",
 		default: 300,
 	},
+	effect: {
+		type: "string",
+		default: "slide",
+	},
 };
 
 export default attributes;

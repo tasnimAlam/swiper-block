@@ -1,6 +1,11 @@
 import { __ } from "@wordpress/i18n";
 import { InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, ToggleControl, RangeControl } from "@wordpress/components";
+import {
+	PanelBody,
+	ToggleControl,
+	RangeControl,
+	SelectControl,
+} from "@wordpress/components";
 
 export default function Inspector({ attributes, setAttributes }) {
 	const {
@@ -9,21 +14,37 @@ export default function Inspector({ attributes, setAttributes }) {
 		spaceBetween,
 		speed,
 		vertical,
+		effect,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
 			<PanelBody>
 				<ToggleControl
 					label={__("Auto Height")}
-					help={!autoHeight && __("Frontend only")}
+					help={!autoHeight && __("Visible only on frontend")}
 					checked={autoHeight}
 					onChange={() => setAttributes({ autoHeight: !autoHeight })}
 				/>
 
 				<ToggleControl
 					label={__("Vertical Slide")}
+					help={!vertical && __("Visible only on frontend")}
 					checked={vertical}
 					onChange={() => setAttributes({ vertical: !vertical })}
+				/>
+
+				<SelectControl
+					label={__("Effect")}
+					help={__("Visible only on frontend")}
+					value={effect}
+					options={[
+						{ label: __("Slide"), value: "slide" },
+						{ label: __("Fade"), value: "fade" },
+						{ label: __("Cube"), value: "cube" },
+						{ label: __("Coverflow"), value: "coverflow" },
+						{ label: __("Flip"), value: "flip" },
+					]}
+					onChange={(effect) => setAttributes({ effect })}
 				/>
 
 				<RangeControl

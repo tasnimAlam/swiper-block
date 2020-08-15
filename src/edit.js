@@ -40,6 +40,7 @@ export default function Edit({
 		spaceBetween,
 		speed,
 		vertical,
+		effect,
 	} = attributes;
 
 	const [swiper, setSwiper] = useState(null);
@@ -52,13 +53,6 @@ export default function Edit({
 		options.slidesPerView = slidesPerView;
 		options.speed = speed;
 		options.spaceBetween = spaceBetween;
-
-		// Set vertical slider
-		if (vertical) {
-			options.direction = "vertical";
-		} else {
-			options.direction = "horizontal";
-		}
 
 		console.log(options);
 
