@@ -17,6 +17,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		effect,
 		grabCursor,
 		freeMode,
+		loop,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -47,6 +48,12 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!freeMode && __("There will be no fix position for slides")}
 					checked={freeMode}
 					onChange={() => setAttributes({ freeMode: !freeMode })}
+				/>
+
+				<ToggleControl
+					label={__("Loop")}
+					checked={loop}
+					onChange={() => setAttributes({ loop: !loop })}
 				/>
 
 				<SelectControl

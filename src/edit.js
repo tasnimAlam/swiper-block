@@ -40,6 +40,7 @@ export default function Edit({
 		spaceBetween,
 		speed,
 		vertical,
+		loop,
 	} = attributes;
 
 	const [swiper, setSwiper] = useState(null);
@@ -52,11 +53,12 @@ export default function Edit({
 		options.slidesPerView = slidesPerView;
 		options.speed = speed;
 		options.spaceBetween = spaceBetween;
+		options.loop = loop;
 
 		console.log(options);
 
 		setOptions(options);
-	}, [autoHeight, slidesPerView, spaceBetween, speed, vertical]);
+	}, [autoHeight, slidesPerView, spaceBetween, speed, vertical, loop]);
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];

@@ -12920,6 +12920,10 @@ var attributes = {
   freeMode: {
     type: "boolean",
     default: false
+  },
+  loop: {
+    type: "boolean",
+    default: false
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -12999,7 +13003,8 @@ function Edit(_ref) {
       slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
       speed = attributes.speed,
-      vertical = attributes.vertical;
+      vertical = attributes.vertical,
+      loop = attributes.loop;
 
   var _useState = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(null),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
@@ -13017,9 +13022,10 @@ function Edit(_ref) {
     options.slidesPerView = slidesPerView;
     options.speed = speed;
     options.spaceBetween = spaceBetween;
+    options.loop = loop;
     console.log(options);
     setOptions(options);
-  }, [autoHeight, slidesPerView, spaceBetween, speed, vertical]);
+  }, [autoHeight, slidesPerView, spaceBetween, speed, vertical, loop]);
 
   var onImageSelect = function onImageSelect(images) {
     var updatedImages = [];
@@ -13175,7 +13181,8 @@ function Inspector(_ref) {
       vertical = attributes.vertical,
       effect = attributes.effect,
       grabCursor = attributes.grabCursor,
-      freeMode = attributes.freeMode;
+      freeMode = attributes.freeMode,
+      loop = attributes.loop;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13212,6 +13219,14 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         freeMode: !freeMode
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Loop"),
+    checked: loop,
+    onChange: function onChange() {
+      return setAttributes({
+        loop: !loop
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["SelectControl"], {
