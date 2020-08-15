@@ -21,6 +21,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		navigation,
 		pagination,
 		scrollbar,
+		autoplay,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -78,6 +79,13 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!scrollbar && __("Visible only on frontend")}
 					checked={scrollbar}
 					onChange={() => setAttributes({ scrollbar: !scrollbar })}
+				/>
+
+				<ToggleControl
+					label={__("Autoplay")}
+					help={!autoplay && __("Visible only on frontend")}
+					checked={autoplay}
+					onChange={() => setAttributes({ autoplay: !autoplay })}
 				/>
 
 				<SelectControl

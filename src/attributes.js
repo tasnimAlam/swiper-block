@@ -51,6 +51,10 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	autoplay: {
+		type: "boolean",
+		default: false,
+	},
 };
 
 export default attributes;
