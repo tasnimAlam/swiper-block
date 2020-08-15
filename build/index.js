@@ -12916,6 +12916,10 @@ var attributes = {
   grabCursor: {
     type: "boolean",
     default: false
+  },
+  freeMode: {
+    type: "boolean",
+    default: false
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -12995,8 +12999,7 @@ function Edit(_ref) {
       slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
       speed = attributes.speed,
-      vertical = attributes.vertical,
-      effect = attributes.effect;
+      vertical = attributes.vertical;
 
   var _useState = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(null),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
@@ -13171,7 +13174,8 @@ function Inspector(_ref) {
       speed = attributes.speed,
       vertical = attributes.vertical,
       effect = attributes.effect,
-      grabCursor = attributes.grabCursor;
+      grabCursor = attributes.grabCursor,
+      freeMode = attributes.freeMode;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13199,6 +13203,15 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         grabCursor: !grabCursor
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Free Mode"),
+    help: !freeMode && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("There will be no fix position for slides"),
+    checked: freeMode,
+    onChange: function onChange() {
+      return setAttributes({
+        freeMode: !freeMode
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["SelectControl"], {

@@ -40,7 +40,6 @@ export default function Edit({
 		spaceBetween,
 		speed,
 		vertical,
-		effect,
 	} = attributes;
 
 	const [swiper, setSwiper] = useState(null);

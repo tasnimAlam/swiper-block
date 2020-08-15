@@ -16,6 +16,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		vertical,
 		effect,
 		grabCursor,
+		freeMode,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -39,6 +40,13 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!grabCursor && __("Show grab icon on slider hover")}
 					checked={grabCursor}
 					onChange={() => setAttributes({ grabCursor: !grabCursor })}
+				/>
+
+				<ToggleControl
+					label={__("Free Mode")}
+					help={!freeMode && __("There will be no fix position for slides")}
+					checked={freeMode}
+					onChange={() => setAttributes({ freeMode: !freeMode })}
 				/>
 
 				<SelectControl
