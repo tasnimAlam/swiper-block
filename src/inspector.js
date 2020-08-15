@@ -18,6 +18,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		grabCursor,
 		freeMode,
 		loop,
+		navigation,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -54,6 +55,13 @@ export default function Inspector({ attributes, setAttributes }) {
 					label={__("Loop")}
 					checked={loop}
 					onChange={() => setAttributes({ loop: !loop })}
+				/>
+
+				<ToggleControl
+					label={__("Navigation")}
+					help={!navigation && __("Visible only on frontend")}
+					checked={navigation}
+					onChange={() => setAttributes({ navigation: !navigation })}
 				/>
 
 				<SelectControl
