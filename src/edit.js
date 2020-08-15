@@ -8,7 +8,7 @@ import {
 	MediaUpload,
 } from "@wordpress/block-editor";
 import { Toolbar, Button } from "@wordpress/components";
-import { useState } from "@wordpress/element";
+import { useState, useEffect } from "@wordpress/element";
 
 /*
  * External dependencies
@@ -36,6 +36,18 @@ export default function Edit({
 	const { images, autoHeight, slidesPerView, spaceBetween, speed } = attributes;
 
 	const [swiper, setSwiper] = useState(null);
+	const [options, setOptions] = useState({});
+
+	useEffect(() => {
+		let updatedOptions = {};
+
+		updatedOptions.autoHeight = autoHeight;
+		updatedOptions.slidesPerView = slidesPerView;
+		updatedOptions.speed = speed;
+		updatedOptions.spaceBetween = spaceBetween;
+
+		setOptions(updatedOptions);
+	}, [autoHeight, slidesPerView, spaceBetween, speed]);
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];
@@ -99,12 +111,7 @@ export default function Edit({
 
 		<div>
 			<Swiper
-				autoHeight={autoHeight}
-				navigation
-				pagination={{ clickable: true }}
-				spaceBetween={spaceBetween}
-				speed={speed}
-				slidesPerView={slidesPerView}
+				{...options}
 				onSwiper={setSwiper}
 				onClick={() => onSwiperClick()}
 				onSlideChange={() => console.log("slide change")}

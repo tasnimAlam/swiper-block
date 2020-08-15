@@ -9,6 +9,7 @@ export default function Inspector({ attributes, setAttributes }) {
 			<PanelBody>
 				<ToggleControl
 					label={__("Auto Height")}
+					help={!autoHeight && __("Frontend only")}
 					checked={autoHeight}
 					onChange={() => setAttributes({ autoHeight: !autoHeight })}
 				/>
