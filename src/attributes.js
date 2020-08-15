@@ -43,6 +43,14 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	pagination: {
+		type: "boolean",
+		default: false,
+	},
+	scrollbar: {
+		type: "boolean",
+		default: false,
+	},
 };
 
 export default attributes;

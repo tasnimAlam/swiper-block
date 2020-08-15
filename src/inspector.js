@@ -19,6 +19,8 @@ export default function Inspector({ attributes, setAttributes }) {
 		freeMode,
 		loop,
 		navigation,
+		pagination,
+		scrollbar,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -62,6 +64,20 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!navigation && __("Visible only on frontend")}
 					checked={navigation}
 					onChange={() => setAttributes({ navigation: !navigation })}
+				/>
+
+				<ToggleControl
+					label={__("Pagination")}
+					help={!pagination && __("Visible only on frontend")}
+					checked={pagination}
+					onChange={() => setAttributes({ pagination: !pagination })}
+				/>
+
+				<ToggleControl
+					label={__("Scrollbar")}
+					help={!scrollbar && __("Visible only on frontend")}
+					checked={scrollbar}
+					onChange={() => setAttributes({ scrollbar: !scrollbar })}
 				/>
 
 				<SelectControl

@@ -2360,17 +2360,6 @@ function getWindow() {
 
 /***/ }),
 
-/***/ "./node_modules/swiper/components/pagination/pagination.scss":
-/*!*******************************************************************!*\
-  !*** ./node_modules/swiper/components/pagination/pagination.scss ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "./node_modules/swiper/esm/components/a11y/a11y.js":
 /*!*********************************************************!*\
   !*** ./node_modules/swiper/esm/components/a11y/a11y.js ***!
@@ -12917,6 +12906,14 @@ var attributes = {
   navigation: {
     type: "boolean",
     default: false
+  },
+  pagination: {
+    type: "boolean",
+    default: false
+  },
+  scrollbar: {
+    type: "boolean",
+    default: false
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -12951,11 +12948,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
 /* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
 /* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! swiper/components/pagination/pagination.scss */ "./node_modules/swiper/components/pagination/pagination.scss");
-/* harmony import */ var swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(swiper_components_pagination_pagination_scss__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./inspector */ "./src/inspector.js");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./inspector */ "./src/inspector.js");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -12975,8 +12970,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-swiper__WEBPACK_IMPORTED_MODULE_7__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_7__["A11y"], swiper__WEBPACK_IMPORTED_MODULE_7__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_7__["Pagination"]]);
+swiper__WEBPACK_IMPORTED_MODULE_7__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_7__["A11y"], swiper__WEBPACK_IMPORTED_MODULE_7__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_7__["Pagination"], swiper__WEBPACK_IMPORTED_MODULE_7__["Scrollbar"]]);
 /*
  * Internal dependencies
  */
@@ -13052,7 +13046,7 @@ function Edit(_ref) {
     });
   }
 
-  return [isSelected && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_inspector__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  return [isSelected && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_inspector__WEBPACK_IMPORTED_MODULE_10__["default"], {
     attributes: attributes,
     setAttributes: setAttributes
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["BlockControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__["Toolbar"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["MediaUpload"], {
@@ -13173,7 +13167,9 @@ function Inspector(_ref) {
       grabCursor = attributes.grabCursor,
       freeMode = attributes.freeMode,
       loop = attributes.loop,
-      navigation = attributes.navigation;
+      navigation = attributes.navigation,
+      pagination = attributes.pagination,
+      scrollbar = attributes.scrollbar;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13227,6 +13223,24 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         navigation: !navigation
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Pagination"),
+    help: !pagination && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Visible only on frontend"),
+    checked: pagination,
+    onChange: function onChange() {
+      return setAttributes({
+        pagination: !pagination
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Scrollbar"),
+    help: !scrollbar && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Visible only on frontend"),
+    checked: scrollbar,
+    onChange: function onChange() {
+      return setAttributes({
+        scrollbar: !scrollbar
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["SelectControl"], {

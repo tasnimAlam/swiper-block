@@ -13,12 +13,11 @@ import { useState, useEffect } from "@wordpress/element";
 /*
  * External dependencies
  */
-import SwiperCore, { A11y, Navigation, Pagination } from "swiper";
+import SwiperCore, { A11y, Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import "swiper/components/pagination/pagination.scss";
 
-SwiperCore.use([A11y, Navigation, Pagination]);
+SwiperCore.use([A11y, Navigation, Pagination, Scrollbar]);
 
 /*
  * Internal dependencies
