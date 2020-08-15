@@ -27,6 +27,10 @@ const attributes = {
 		type: "string",
 		default: "slide",
 	},
+	grabCursor: {
+		type: "boolean",
+		default: false,
+	},
 };
 
 export default attributes;

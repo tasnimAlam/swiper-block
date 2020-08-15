@@ -12912,6 +12912,10 @@ var attributes = {
   effect: {
     type: "string",
     default: "slide"
+  },
+  grabCursor: {
+    type: "boolean",
+    default: false
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -13166,7 +13170,8 @@ function Inspector(_ref) {
       spaceBetween = attributes.spaceBetween,
       speed = attributes.speed,
       vertical = attributes.vertical,
-      effect = attributes.effect;
+      effect = attributes.effect,
+      grabCursor = attributes.grabCursor;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13185,6 +13190,15 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         vertical: !vertical
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Grab Cursor"),
+    help: !grabCursor && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Show grab icon on slider hover"),
+    checked: grabCursor,
+    onChange: function onChange() {
+      return setAttributes({
+        grabCursor: !grabCursor
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["SelectControl"], {

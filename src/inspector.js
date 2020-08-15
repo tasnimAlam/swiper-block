@@ -15,6 +15,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		speed,
 		vertical,
 		effect,
+		grabCursor,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -31,6 +32,13 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!vertical && __("Visible only on frontend")}
 					checked={vertical}
 					onChange={() => setAttributes({ vertical: !vertical })}
+				/>
+
+				<ToggleControl
+					label={__("Grab Cursor")}
+					help={!grabCursor && __("Show grab icon on slider hover")}
+					checked={grabCursor}
+					onChange={() => setAttributes({ grabCursor: !grabCursor })}
 				/>
 
 				<SelectControl
