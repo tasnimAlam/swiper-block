@@ -22,6 +22,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		pagination,
 		scrollbar,
 		autoplay,
+		parallax,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -86,6 +87,13 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!autoplay && __("Visible only on frontend")}
 					checked={autoplay}
 					onChange={() => setAttributes({ autoplay: !autoplay })}
+				/>
+
+				<ToggleControl
+					label={__("Parallax")}
+					help={!parallax && __("Visible only on frontend")}
+					checked={parallax}
+					onChange={() => setAttributes({ parallax: !parallax })}
 				/>
 
 				<SelectControl
