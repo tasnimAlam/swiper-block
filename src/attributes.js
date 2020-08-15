@@ -3,6 +3,10 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	vertical: {
+		type: "boolean",
+		default: false,
+	},
 	images: {
 		type: "array",
 		default: [],

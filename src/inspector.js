@@ -3,7 +3,13 @@ import { InspectorControls } from "@wordpress/block-editor";
 import { PanelBody, ToggleControl, RangeControl } from "@wordpress/components";
 
 export default function Inspector({ attributes, setAttributes }) {
-	const { autoHeight, slidesPerView, spaceBetween, speed } = attributes;
+	const {
+		autoHeight,
+		slidesPerView,
+		spaceBetween,
+		speed,
+		vertical,
+	} = attributes;
 	return (
 		<InspectorControls key="controls">
 			<PanelBody>
@@ -12,6 +18,12 @@ export default function Inspector({ attributes, setAttributes }) {
 					help={!autoHeight && __("Frontend only")}
 					checked={autoHeight}
 					onChange={() => setAttributes({ autoHeight: !autoHeight })}
+				/>
+
+				<ToggleControl
+					label={__("Vertical Slide")}
+					checked={vertical}
+					onChange={() => setAttributes({ vertical: !vertical })}
 				/>
 
 				<RangeControl

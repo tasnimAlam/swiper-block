@@ -33,21 +33,37 @@ export default function Edit({
 	attributes,
 	setAttributes,
 }) {
-	const { images, autoHeight, slidesPerView, spaceBetween, speed } = attributes;
+	const {
+		images,
+		autoHeight,
+		slidesPerView,
+		spaceBetween,
+		speed,
+		vertical,
+	} = attributes;
 
 	const [swiper, setSwiper] = useState(null);
 	const [options, setOptions] = useState({});
 
 	useEffect(() => {
-		let updatedOptions = {};
+		let options = {};
 
-		updatedOptions.autoHeight = autoHeight;
-		updatedOptions.slidesPerView = slidesPerView;
-		updatedOptions.speed = speed;
-		updatedOptions.spaceBetween = spaceBetween;
+		options.autoHeight = autoHeight;
+		options.slidesPerView = slidesPerView;
+		options.speed = speed;
+		options.spaceBetween = spaceBetween;
 
-		setOptions(updatedOptions);
-	}, [autoHeight, slidesPerView, spaceBetween, speed]);
+		// Set vertical slider
+		if (vertical) {
+			options.direction = "vertical";
+		} else {
+			options.direction = "horizontal";
+		}
+
+		console.log(options);
+
+		setOptions(options);
+	}, [autoHeight, slidesPerView, spaceBetween, speed, vertical]);
 
 	const onImageSelect = (images) => {
 		let updatedImages = [];

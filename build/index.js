@@ -12889,6 +12889,10 @@ var attributes = {
     type: "boolean",
     default: false
   },
+  vertical: {
+    type: "boolean",
+    default: false
+  },
   images: {
     type: "array",
     default: []
@@ -12982,7 +12986,8 @@ function Edit(_ref) {
       autoHeight = attributes.autoHeight,
       slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
-      speed = attributes.speed;
+      speed = attributes.speed,
+      vertical = attributes.vertical;
 
   var _useState = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(null),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
@@ -12995,13 +13000,21 @@ function Edit(_ref) {
       setOptions = _useState4[1];
 
   Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    var updatedOptions = {};
-    updatedOptions.autoHeight = autoHeight;
-    updatedOptions.slidesPerView = slidesPerView;
-    updatedOptions.speed = speed;
-    updatedOptions.spaceBetween = spaceBetween;
-    setOptions(updatedOptions);
-  }, [autoHeight, slidesPerView, spaceBetween, speed]);
+    var options = {};
+    options.autoHeight = autoHeight;
+    options.slidesPerView = slidesPerView;
+    options.speed = speed;
+    options.spaceBetween = spaceBetween; // Set vertical slider
+
+    if (vertical) {
+      options.direction = "vertical";
+    } else {
+      options.direction = "horizontal";
+    }
+
+    console.log(options);
+    setOptions(options);
+  }, [autoHeight, slidesPerView, spaceBetween, speed, vertical]);
 
   var onImageSelect = function onImageSelect(images) {
     var updatedImages = [];
@@ -13153,7 +13166,8 @@ function Inspector(_ref) {
   var autoHeight = attributes.autoHeight,
       slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
-      speed = attributes.speed;
+      speed = attributes.speed,
+      vertical = attributes.vertical;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13163,6 +13177,14 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         autoHeight: !autoHeight
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Vertical Slide"),
+    checked: vertical,
+    onChange: function onChange() {
+      return setAttributes({
+        vertical: !vertical
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
