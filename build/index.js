@@ -13462,7 +13462,22 @@ function save(_ref) {
   }
 
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-    class: "swiper-container"
+    class: "swiper-container",
+    "data-auto-height": autoHeight,
+    "data-slides-per-view": slidesPerView,
+    "data-space-between": spaceBetween,
+    "data-speed": speed,
+    "data-vertical": vertical,
+    "data-effect": effect,
+    "data-grab-cursor": grabCursor,
+    "data-free-mode": freeMode,
+    "data-loop": loop,
+    "data-autoplay": autoplay,
+    "data-autoplay-delay": autoplayDelay,
+    "data-parallax": parallax,
+    "data-thumbs": thumbs,
+    "data-thumbs-per-view": thumbsPerView,
+    "data-thumb-space": thumbSpaceBetween
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-wrapper"
   }, images.map(function (image) {

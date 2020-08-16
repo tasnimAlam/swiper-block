@@ -26,7 +26,24 @@ export default function save({ attributes }) {
 	}
 
 	return (
-		<div class="swiper-container">
+		<div
+			class="swiper-container"
+			data-auto-height={autoHeight}
+			data-slides-per-view={slidesPerView}
+			data-space-between={spaceBetween}
+			data-speed={speed}
+			data-vertical={vertical}
+			data-effect={effect}
+			data-grab-cursor={grabCursor}
+			data-free-mode={freeMode}
+			data-loop={loop}
+			data-autoplay={autoplay}
+			data-autoplay-delay={autoplayDelay}
+			data-parallax={parallax}
+			data-thumbs={thumbs}
+			data-thumbs-per-view={thumbsPerView}
+			data-thumb-space={thumbSpaceBetween}
+		>
 			<div class="swiper-wrapper">
 				{images.map((image) => (
 					<div class="swiper-slide">
