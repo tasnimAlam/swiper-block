@@ -55,6 +55,10 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	autoplayDelay: {
+		type: "number",
+		default: 3000,
+	},
 	parallax: {
 		type: "boolean",
 		default: false,

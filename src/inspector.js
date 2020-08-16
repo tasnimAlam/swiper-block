@@ -22,6 +22,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		pagination,
 		scrollbar,
 		autoplay,
+		autoplayDelay,
 		parallax,
 		thumbs,
 		thumbsPerView,
@@ -45,6 +46,16 @@ export default function Inspector({ attributes, setAttributes }) {
 					checked={autoplay}
 					onChange={() => setAttributes({ autoplay: !autoplay })}
 				/>
+
+				{autoplay && (
+					<RangeControl
+						label={__("Autoplay Delay")}
+						value={autoplayDelay}
+						min={1}
+						max={5000}
+						onChange={(autoplayDelay) => setAttributes({ autoplayDelay })}
+					/>
+				)}
 
 				<ToggleControl
 					label={__("Loop")}

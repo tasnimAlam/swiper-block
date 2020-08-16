@@ -12930,6 +12930,10 @@ var attributes = {
     type: "boolean",
     default: false
   },
+  autoplayDelay: {
+    type: "number",
+    default: 3000
+  },
   parallax: {
     type: "boolean",
     default: false
@@ -13229,6 +13233,7 @@ function Inspector(_ref) {
       pagination = attributes.pagination,
       scrollbar = attributes.scrollbar,
       autoplay = attributes.autoplay,
+      autoplayDelay = attributes.autoplayDelay,
       parallax = attributes.parallax,
       thumbs = attributes.thumbs,
       thumbsPerView = attributes.thumbsPerView,
@@ -13253,6 +13258,16 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         autoplay: !autoplay
+      });
+    }
+  }), autoplay && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Autoplay Delay"),
+    value: autoplayDelay,
+    min: 1,
+    max: 5000,
+    onChange: function onChange(autoplayDelay) {
+      return setAttributes({
+        autoplayDelay: autoplayDelay
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
