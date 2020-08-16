@@ -23,6 +23,9 @@ export default function Inspector({ attributes, setAttributes }) {
 		scrollbar,
 		autoplay,
 		parallax,
+		thumbs,
+		thumbsPerView,
+		thumbSpaceBetween,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -95,6 +98,35 @@ export default function Inspector({ attributes, setAttributes }) {
 					checked={parallax}
 					onChange={() => setAttributes({ parallax: !parallax })}
 				/>
+
+				<ToggleControl
+					label={__("Thumbs")}
+					help={!thumbs && __("Visible only on frontend")}
+					checked={thumbs}
+					onChange={() => setAttributes({ thumbs: !thumbs })}
+				/>
+
+				{thumbs && (
+					<RangeControl
+						label={__("Thumbs Per View")}
+						value={thumbsPerView}
+						min={1}
+						max={10}
+						onChange={(thumbsPerView) => setAttributes({ thumbsPerView })}
+					/>
+				)}
+
+				{thumbs && (
+					<RangeControl
+						label={__("Thumbs Space Between")}
+						value={thumbSpaceBetween}
+						min={1}
+						max={100}
+						onChange={(thumbSpaceBetween) =>
+							setAttributes({ thumbSpaceBetween })
+						}
+					/>
+				)}
 
 				<SelectControl
 					label={__("Effect")}

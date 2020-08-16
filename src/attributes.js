@@ -59,6 +59,17 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	thumbs: {
+		type: "boolean",
+		default: false,
+	},
+	thumbsPerView: {
+		type: "number",
+		default: 3,
+	},
+	thumbSpaceBetween: {
+		type: "number",
+	},
 };
 
 export default attributes;
