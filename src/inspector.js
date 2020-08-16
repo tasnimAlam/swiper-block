@@ -33,6 +33,7 @@ export default function Inspector({ attributes, setAttributes }) {
 				<p style={{ textAlign: "right" }}>
 					<em>*</em> Visible only on frontend
 				</p>
+
 				<ToggleControl
 					label={__(`Auto Height ${!autoHeight ? "*" : ""}`)}
 					checked={autoHeight}
@@ -40,15 +41,15 @@ export default function Inspector({ attributes, setAttributes }) {
 				/>
 
 				<ToggleControl
-					label={__(`Vertical Slide ${!vertical ? "*" : ""}`)}
-					checked={vertical}
-					onChange={() => setAttributes({ vertical: !vertical })}
+					label={__(`Autoplay ${!autoplay ? "*" : ""}`)}
+					checked={autoplay}
+					onChange={() => setAttributes({ autoplay: !autoplay })}
 				/>
 
 				<ToggleControl
-					label={__(`Grab Cursor ${!grabCursor ? "*" : ""}`)}
-					checked={grabCursor}
-					onChange={() => setAttributes({ grabCursor: !grabCursor })}
+					label={__("Loop")}
+					checked={loop}
+					onChange={() => setAttributes({ loop: !loop })}
 				/>
 
 				<ToggleControl
@@ -58,9 +59,9 @@ export default function Inspector({ attributes, setAttributes }) {
 				/>
 
 				<ToggleControl
-					label={__("Loop")}
-					checked={loop}
-					onChange={() => setAttributes({ loop: !loop })}
+					label={__(`Vertical Slide ${!vertical ? "*" : ""}`)}
+					checked={vertical}
+					onChange={() => setAttributes({ vertical: !vertical })}
 				/>
 
 				<ToggleControl
@@ -82,15 +83,15 @@ export default function Inspector({ attributes, setAttributes }) {
 				/>
 
 				<ToggleControl
-					label={__(`Autoplay ${!autoplay ? "*" : ""}`)}
-					checked={autoplay}
-					onChange={() => setAttributes({ autoplay: !autoplay })}
-				/>
-
-				<ToggleControl
 					label={__(`Parallax ${!parallax ? "*" : ""}`)}
 					checked={parallax}
 					onChange={() => setAttributes({ parallax: !parallax })}
+				/>
+
+				<ToggleControl
+					label={__(`Grab Cursor ${!grabCursor ? "*" : ""}`)}
+					checked={grabCursor}
+					onChange={() => setAttributes({ grabCursor: !grabCursor })}
 				/>
 
 				<ToggleControl

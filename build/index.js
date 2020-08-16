@@ -13285,19 +13285,19 @@ function Inspector(_ref) {
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Vertical Slide ".concat(!vertical ? "*" : "")),
-    checked: vertical,
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Autoplay ".concat(!autoplay ? "*" : "")),
+    checked: autoplay,
     onChange: function onChange() {
       return setAttributes({
-        vertical: !vertical
+        autoplay: !autoplay
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Grab Cursor ".concat(!grabCursor ? "*" : "")),
-    checked: grabCursor,
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Loop"),
+    checked: loop,
     onChange: function onChange() {
       return setAttributes({
-        grabCursor: !grabCursor
+        loop: !loop
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
@@ -13309,11 +13309,11 @@ function Inspector(_ref) {
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Loop"),
-    checked: loop,
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Vertical Slide ".concat(!vertical ? "*" : "")),
+    checked: vertical,
     onChange: function onChange() {
       return setAttributes({
-        loop: !loop
+        vertical: !vertical
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
@@ -13341,19 +13341,19 @@ function Inspector(_ref) {
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Autoplay ".concat(!autoplay ? "*" : "")),
-    checked: autoplay,
-    onChange: function onChange() {
-      return setAttributes({
-        autoplay: !autoplay
-      });
-    }
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Parallax ".concat(!parallax ? "*" : "")),
     checked: parallax,
     onChange: function onChange() {
       return setAttributes({
         parallax: !parallax
+      });
+    }
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Grab Cursor ".concat(!grabCursor ? "*" : "")),
+    checked: grabCursor,
+    onChange: function onChange() {
+      return setAttributes({
+        grabCursor: !grabCursor
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["ToggleControl"], {
