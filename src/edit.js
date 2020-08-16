@@ -146,17 +146,19 @@ export default function Edit({
 				))}
 			</Swiper>
 
-			<Swiper
-				onSwiper={setThumbSwiper}
-				slidesPerView={thumbsPerView}
-				spaceBetween={thumbSpaceBetween}
-			>
-				{images.map((image) => (
-					<SwiperSlide>
-						<img src={image.url} alt={image.alt} />
-					</SwiperSlide>
-				))}
-			</Swiper>
+			<div style={{ display: thumbs ? "block" : "none" }}>
+				<Swiper
+					onSwiper={setThumbSwiper}
+					slidesPerView={thumbsPerView}
+					spaceBetween={thumbSpaceBetween}
+				>
+					{images.map((image) => (
+						<SwiperSlide>
+							<img src={image.url} alt={image.alt} />
+						</SwiperSlide>
+					))}
+				</Swiper>
+			</div>
 		</div>,
 	];
 }

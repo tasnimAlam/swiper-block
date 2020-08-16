@@ -101,7 +101,6 @@ export default function Inspector({ attributes, setAttributes }) {
 
 				<ToggleControl
 					label={__("Thumbs")}
-					help={!thumbs && __("Visible only on frontend")}
 					checked={thumbs}
 					onChange={() => setAttributes({ thumbs: !thumbs })}
 				/>

@@ -12943,7 +12943,8 @@ var attributes = {
     default: 3
   },
   thumbSpaceBetween: {
-    type: "number"
+    type: "number",
+    default: 10
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (attributes);
@@ -13125,7 +13126,11 @@ function Edit(_ref) {
       src: image.url,
       alt: image.alt
     }));
-  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_8__["Swiper"], {
+  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])("div", {
+    style: {
+      display: thumbs ? "block" : "none"
+    }
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_8__["Swiper"], {
     onSwiper: setThumbSwiper,
     slidesPerView: thumbsPerView,
     spaceBetween: thumbSpaceBetween
@@ -13134,7 +13139,7 @@ function Edit(_ref) {
       src: image.url,
       alt: image.alt
     }));
-  })))];
+  }))))];
 }
 
 /***/ }),
@@ -13321,7 +13326,6 @@ function Inspector(_ref) {
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Thumbs"),
-    help: !thumbs && Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Visible only on frontend"),
     checked: thumbs,
     onChange: function onChange() {
       return setAttributes({

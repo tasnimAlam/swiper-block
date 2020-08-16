@@ -69,6 +69,7 @@ const attributes = {
 	},
 	thumbSpaceBetween: {
 		type: "number",
+		default: 10,
 	},
 };
 
