@@ -13435,8 +13435,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 
-function save() {
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", null, "Swiper Slider \u2013 hello from the saved content!");
+function save(_ref) {
+  var attributes = _ref.attributes;
+  var images = attributes.images,
+      autoHeight = attributes.autoHeight,
+      slidesPerView = attributes.slidesPerView,
+      spaceBetween = attributes.spaceBetween,
+      speed = attributes.speed,
+      vertical = attributes.vertical,
+      effect = attributes.effect,
+      grabCursor = attributes.grabCursor,
+      freeMode = attributes.freeMode,
+      loop = attributes.loop,
+      navigation = attributes.navigation,
+      pagination = attributes.pagination,
+      scrollbar = attributes.scrollbar,
+      autoplay = attributes.autoplay,
+      autoplayDelay = attributes.autoplayDelay,
+      parallax = attributes.parallax,
+      thumbs = attributes.thumbs,
+      thumbsPerView = attributes.thumbsPerView,
+      thumbSpaceBetween = attributes.thumbSpaceBetween;
+
+  if (!images.length) {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null);
+  }
+
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-container"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-wrapper"
+  }, images.map(function (image) {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+      class: "swiper-slide"
+    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("img", {
+      src: image.url,
+      alt: image.alt
+    }));
+  })), pagination && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-pagination"
+  }), navigation && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-button-prev"
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-button-next"
+  })), scrollbar && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-scrollbar"
+  }));
 }
 
 /***/ }),
