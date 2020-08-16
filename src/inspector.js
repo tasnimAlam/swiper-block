@@ -35,13 +35,13 @@ export default function Inspector({ attributes, setAttributes }) {
 				</p>
 
 				<ToggleControl
-					label={__(`Auto Height ${!autoHeight ? "*" : ""}`)}
+					label={__("Auto Height *")}
 					checked={autoHeight}
 					onChange={() => setAttributes({ autoHeight: !autoHeight })}
 				/>
 
 				<ToggleControl
-					label={__(`Autoplay ${!autoplay ? "*" : ""}`)}
+					label={__("Autoplay *")}
 					checked={autoplay}
 					onChange={() => setAttributes({ autoplay: !autoplay })}
 				/>
@@ -53,43 +53,43 @@ export default function Inspector({ attributes, setAttributes }) {
 				/>
 
 				<ToggleControl
-					label={__(`Free Mode ${!freeMode ? "*" : ""}`)}
+					label={__("Free Mode *")}
 					checked={freeMode}
 					onChange={() => setAttributes({ freeMode: !freeMode })}
 				/>
 
 				<ToggleControl
-					label={__(`Vertical Slide ${!vertical ? "*" : ""}`)}
+					label={__("Vertical Slide *")}
 					checked={vertical}
 					onChange={() => setAttributes({ vertical: !vertical })}
 				/>
 
 				<ToggleControl
-					label={__`Navigation ${!navigation ? "*" : ""}`}
+					label={__("Navigation *")}
 					checked={navigation}
 					onChange={() => setAttributes({ navigation: !navigation })}
 				/>
 
 				<ToggleControl
-					label={__(`Pagination ${!pagination ? "*" : ""}`)}
+					label={__("Pagination *")}
 					checked={pagination}
 					onChange={() => setAttributes({ pagination: !pagination })}
 				/>
 
 				<ToggleControl
-					label={__(`Scrollbar ${!scrollbar ? " *" : ""}`)}
+					label={__("Scrollbar *")}
 					checked={scrollbar}
 					onChange={() => setAttributes({ scrollbar: !scrollbar })}
 				/>
 
 				<ToggleControl
-					label={__(`Parallax ${!parallax ? "*" : ""}`)}
+					label={__("Parallax *")}
 					checked={parallax}
 					onChange={() => setAttributes({ parallax: !parallax })}
 				/>
 
 				<ToggleControl
-					label={__(`Grab Cursor ${!grabCursor ? "*" : ""}`)}
+					label={__("Grab Cursor *")}
 					checked={grabCursor}
 					onChange={() => setAttributes({ grabCursor: !grabCursor })}
 				/>
