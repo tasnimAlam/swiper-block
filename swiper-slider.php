@@ -67,6 +67,16 @@ function create_block_swiper_slider_block_init() {
       true
   );
 
+  $frontend_js = 'src/frontend.js';
+  wp_enqueue_script(
+      'swiper-block-frotnend',
+      plugins_url($frontend_js, __FILE__),
+      array("wp-editor"),
+      true,
+      true
+  );
+
+
 	register_block_type( 'create-block/swiper-slider', array(
 		'editor_script' => 'create-block-swiper-slider-block-editor',
 		'editor_style'  => 'create-block-swiper-slider-block-editor',
