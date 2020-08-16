@@ -51,6 +51,22 @@ function create_block_swiper_slider_block_init() {
 		filemtime( "$dir/$style_css" )
 	);
 
+  $swiper_css = 'assets/css/swiper-bundle.min.css';
+    wp_enqueue_style(
+      'swiper-style',
+      plugins_url($swiper_css, __FILE__),
+      array()
+    );
+
+  $swiper_js = 'assets/js/swiper-bundle.min.js';
+  wp_enqueue_script(
+      'swiper-js',
+      plugins_url($swiper_js, __FILE__),
+      array("wp-editor"),
+      true,
+      true
+  );
+
 	register_block_type( 'create-block/swiper-slider', array(
 		'editor_script' => 'create-block-swiper-slider-block-editor',
 		'editor_style'  => 'create-block-swiper-slider-block-editor',
