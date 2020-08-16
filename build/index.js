@@ -13008,7 +13008,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-swiper__WEBPACK_IMPORTED_MODULE_7__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_7__["A11y"], swiper__WEBPACK_IMPORTED_MODULE_7__["Navigation"], swiper__WEBPACK_IMPORTED_MODULE_7__["Pagination"], swiper__WEBPACK_IMPORTED_MODULE_7__["Scrollbar"], swiper__WEBPACK_IMPORTED_MODULE_7__["Thumbs"]]);
+swiper__WEBPACK_IMPORTED_MODULE_7__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_7__["A11y"], swiper__WEBPACK_IMPORTED_MODULE_7__["Thumbs"]]);
 /*
  * Internal dependencies
  */
