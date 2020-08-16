@@ -30,30 +30,29 @@ export default function Inspector({ attributes, setAttributes }) {
 	return (
 		<InspectorControls key="controls">
 			<PanelBody>
+				<p style={{ textAlign: "right" }}>
+					<em>*</em> Visible only on frontend
+				</p>
 				<ToggleControl
-					label={__("Auto Height")}
-					help={!autoHeight && __("Visible only on frontend")}
+					label={__(`Auto Height ${!autoHeight ? "*" : ""}`)}
 					checked={autoHeight}
 					onChange={() => setAttributes({ autoHeight: !autoHeight })}
 				/>
 
 				<ToggleControl
-					label={__("Vertical Slide")}
-					help={!vertical && __("Visible only on frontend")}
+					label={__(`Vertical Slide ${!vertical ? "*" : ""}`)}
 					checked={vertical}
 					onChange={() => setAttributes({ vertical: !vertical })}
 				/>
 
 				<ToggleControl
-					label={__("Grab Cursor")}
-					help={!grabCursor && __("Show grab icon on slider hover")}
+					label={__(`Grab Cursor ${!grabCursor ? "*" : ""}`)}
 					checked={grabCursor}
 					onChange={() => setAttributes({ grabCursor: !grabCursor })}
 				/>
 
 				<ToggleControl
-					label={__("Free Mode")}
-					help={!freeMode && __("There will be no fix position for slides")}
+					label={__(`Free Mode ${!freeMode ? "*" : ""}`)}
 					checked={freeMode}
 					onChange={() => setAttributes({ freeMode: !freeMode })}
 				/>
@@ -65,36 +64,31 @@ export default function Inspector({ attributes, setAttributes }) {
 				/>
 
 				<ToggleControl
-					label={__("Navigation")}
-					help={!navigation && __("Visible only on frontend")}
+					label={__`Navigation ${!navigation ? "*" : ""}`}
 					checked={navigation}
 					onChange={() => setAttributes({ navigation: !navigation })}
 				/>
 
 				<ToggleControl
-					label={__("Pagination")}
-					help={!pagination && __("Visible only on frontend")}
+					label={__(`Pagination ${!pagination ? "*" : ""}`)}
 					checked={pagination}
 					onChange={() => setAttributes({ pagination: !pagination })}
 				/>
 
 				<ToggleControl
-					label={__("Scrollbar")}
-					help={!scrollbar && __("Visible only on frontend")}
+					label={__(`Scrollbar ${!scrollbar ? " *" : ""}`)}
 					checked={scrollbar}
 					onChange={() => setAttributes({ scrollbar: !scrollbar })}
 				/>
 
 				<ToggleControl
-					label={__("Autoplay")}
-					help={!autoplay && __("Visible only on frontend")}
+					label={__(`Autoplay ${!autoplay ? "*" : ""}`)}
 					checked={autoplay}
 					onChange={() => setAttributes({ autoplay: !autoplay })}
 				/>
 
 				<ToggleControl
-					label={__("Parallax")}
-					help={!parallax && __("Visible only on frontend")}
+					label={__(`Parallax ${!parallax ? "*" : ""}`)}
 					checked={parallax}
 					onChange={() => setAttributes({ parallax: !parallax })}
 				/>

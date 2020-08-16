@@ -9,7 +9,7 @@ import attributes from "./attributes";
 registerBlockType("create-block/swiper-slider", {
 	title: __("Swiper Slider", "create-block"),
 	description: __(
-		"Example block written with ESNext standard and JSX support – build step required.",
+		"Most Modern Mobile Touch Slider now in gutenberg.",
 		"create-block"
 	),
 	category: "widgets",
