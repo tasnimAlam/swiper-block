@@ -12922,6 +12922,10 @@ var attributes = {
     type: "boolean",
     default: false
   },
+  bulletClickable: {
+    type: "boolean",
+    default: false
+  },
   scrollbar: {
     type: "boolean",
     default: false
@@ -13231,6 +13235,7 @@ function Inspector(_ref) {
       loop = attributes.loop,
       navigation = attributes.navigation,
       pagination = attributes.pagination,
+      bulletClickable = attributes.bulletClickable,
       scrollbar = attributes.scrollbar,
       autoplay = attributes.autoplay,
       autoplayDelay = attributes.autoplayDelay,
@@ -13308,6 +13313,14 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         pagination: !pagination
+      });
+    }
+  }), pagination && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Bullet Clickable"),
+    checked: bulletClickable,
+    onChange: function onChange() {
+      return setAttributes({
+        bulletClickable: !bulletClickable
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13449,6 +13462,7 @@ function save(_ref) {
       loop = attributes.loop,
       navigation = attributes.navigation,
       pagination = attributes.pagination,
+      bulletClickable = attributes.bulletClickable,
       scrollbar = attributes.scrollbar,
       autoplay = attributes.autoplay,
       autoplayDelay = attributes.autoplayDelay,
@@ -13478,7 +13492,9 @@ function save(_ref) {
     "data-thumbs": thumbs,
     "data-thumbs-per-view": thumbsPerView,
     "data-thumb-space": thumbSpaceBetween,
-    "data-navigation": navigation
+    "data-navigation": navigation,
+    "data-pagination": pagination,
+    "data-bullet-clickable": bulletClickable
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-wrapper"
   }, images.map(function (image) {

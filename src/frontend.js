@@ -18,6 +18,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const thumbsPerView = swiper.getAttribute("data-thumbs-per-view");
 		const thumbSpaceBetween = swiper.getAttribute("data-thumb-space");
 		const navigation = swiper.getAttribute("data-navigation") === "true";
+		const pagination = swiper.getAttribute("data-pagination") === "true";
+		const bulletClickable =
+			swiper.getAttribute("data-bullet-clickable") === "true";
 
 		console.log("vertical", vertical);
 		const mySwiper = new Swiper(".swiper-container", {
@@ -35,7 +38,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 						prevEl: ".swiper-button-prev",
 				  }
 				: false,
-			// // Optional parameters
+			pagination: pagination
+				? {
+						el: ".swiper-pagination",
+						clickable: bulletClickable,
+				  }
+				: false,
+			// Optional parameters
 			// autoHeight: autoHeight,
 			// autoHeight: true,
 			// slidesPerView: slidesPerView,
@@ -48,9 +57,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// thumbs: thumbs,
 			// direction: vertical ? "vertical" : "horizontal",
 			// If we need pagination
-			// pagination: {
-			// 	el: ".swiper-pagination",
-			// },
 			// Navigation arrows
 			// And if we need scrollbar
 			// scrollbar: {

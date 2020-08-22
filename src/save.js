@@ -12,6 +12,7 @@ export default function save({ attributes }) {
 		loop,
 		navigation,
 		pagination,
+		bulletClickable,
 		scrollbar,
 		autoplay,
 		autoplayDelay,
@@ -44,6 +45,8 @@ export default function save({ attributes }) {
 			data-thumbs-per-view={thumbsPerView}
 			data-thumb-space={thumbSpaceBetween}
 			data-navigation={navigation}
+			data-pagination={pagination}
+			data-bullet-clickable={bulletClickable}
 		>
 			<div class="swiper-wrapper">
 				{images.map((image) => (

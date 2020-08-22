@@ -47,6 +47,10 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	bulletClickable: {
+		type: "boolean",
+		default: false,
+	},
 	scrollbar: {
 		type: "boolean",
 		default: false,

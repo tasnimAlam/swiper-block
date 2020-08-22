@@ -20,6 +20,7 @@ export default function Inspector({ attributes, setAttributes }) {
 		loop,
 		navigation,
 		pagination,
+		bulletClickable,
 		scrollbar,
 		autoplay,
 		autoplayDelay,
@@ -86,6 +87,16 @@ export default function Inspector({ attributes, setAttributes }) {
 					checked={pagination}
 					onChange={() => setAttributes({ pagination: !pagination })}
 				/>
+
+				{pagination && (
+					<ToggleControl
+						label={__("Bullet Clickable")}
+						checked={bulletClickable}
+						onChange={() =>
+							setAttributes({ bulletClickable: !bulletClickable })
+						}
+					/>
+				)}
 
 				<ToggleControl
 					label={__("Scrollbar *")}
