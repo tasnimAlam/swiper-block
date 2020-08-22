@@ -22,6 +22,8 @@ export default function Inspector({ attributes, setAttributes }) {
 		pagination,
 		bulletClickable,
 		scrollbar,
+		scrollbarHide,
+		scrollbarDraggable,
 		autoplay,
 		autoplayDelay,
 		parallax,
@@ -103,6 +105,28 @@ export default function Inspector({ attributes, setAttributes }) {
 					checked={scrollbar}
 					onChange={() => setAttributes({ scrollbar: !scrollbar })}
 				/>
+
+				{scrollbar && (
+					<ToggleControl
+						label={__("Scrollbar Hide")}
+						help={__("Hide scrollbar automatically after user interaction")}
+						checked={scrollbarHide}
+						onChange={() => setAttributes({ scrollbarHide: !scrollbarHide })}
+					/>
+				)}
+
+				{scrollbar && (
+					<ToggleControl
+						label={__("Scrollbar Draggable")}
+						help={__(
+							"Make scrollbar draggable that allows you to control slider position"
+						)}
+						checked={scrollbarDraggable}
+						onChange={() =>
+							setAttributes({ scrollbarDraggable: !scrollbarDraggable })
+						}
+					/>
+				)}
 
 				<ToggleControl
 					label={__("Parallax *")}

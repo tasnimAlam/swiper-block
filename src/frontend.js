@@ -21,8 +21,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const pagination = swiper.getAttribute("data-pagination") === "true";
 		const bulletClickable =
 			swiper.getAttribute("data-bullet-clickable") === "true";
+		const scrollbar = swiper.getAttribute("data-scrollbar") === "true";
+		const scrollbarHide = swiper.getAttribute("data-scrollbar-hide") === "true";
+		const scrollbarDraggable =
+			swiper.getAttribute("data-scrollbar-draggable") === "true";
 
-		console.log("vertical", vertical);
 		const mySwiper = new Swiper(".swiper-container", {
 			autoplay: autoplay
 				? {
@@ -42,6 +45,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 				? {
 						el: ".swiper-pagination",
 						clickable: bulletClickable,
+				  }
+				: false,
+			scrollbar: scrollbar
+				? {
+						el: ".swiper-scrollbar",
+						hide: scrollbarHide,
+						draggable: scrollbarDraggable,
 				  }
 				: false,
 			// Optional parameters

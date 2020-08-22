@@ -14,6 +14,8 @@ export default function save({ attributes }) {
 		pagination,
 		bulletClickable,
 		scrollbar,
+		scrollbarHide,
+		scrollbarDraggable,
 		autoplay,
 		autoplayDelay,
 		parallax,
@@ -47,6 +49,9 @@ export default function save({ attributes }) {
 			data-navigation={navigation}
 			data-pagination={pagination}
 			data-bullet-clickable={bulletClickable}
+			data-scrollbar={scrollbar}
+			data-scrollbar-hide={scrollbarHide}
+			data-scrollbar-draggable={scrollbarDraggable}
 		>
 			<div class="swiper-wrapper">
 				{images.map((image) => (

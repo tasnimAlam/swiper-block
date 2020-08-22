@@ -12930,6 +12930,14 @@ var attributes = {
     type: "boolean",
     default: false
   },
+  scrollbarHide: {
+    type: "boolean",
+    default: true
+  },
+  scrollbarDraggable: {
+    type: "boolean",
+    default: true
+  },
   autoplay: {
     type: "boolean",
     default: false
@@ -13237,6 +13245,8 @@ function Inspector(_ref) {
       pagination = attributes.pagination,
       bulletClickable = attributes.bulletClickable,
       scrollbar = attributes.scrollbar,
+      scrollbarHide = attributes.scrollbarHide,
+      scrollbarDraggable = attributes.scrollbarDraggable,
       autoplay = attributes.autoplay,
       autoplayDelay = attributes.autoplayDelay,
       parallax = attributes.parallax,
@@ -13329,6 +13339,24 @@ function Inspector(_ref) {
     onChange: function onChange() {
       return setAttributes({
         scrollbar: !scrollbar
+      });
+    }
+  }), scrollbar && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Scrollbar Hide"),
+    help: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Hide scrollbar automatically after user interaction"),
+    checked: scrollbarHide,
+    onChange: function onChange() {
+      return setAttributes({
+        scrollbarHide: !scrollbarHide
+      });
+    }
+  }), scrollbar && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Scrollbar Draggable"),
+    help: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Make scrollbar draggable that allows you to control slider position"),
+    checked: scrollbarDraggable,
+    onChange: function onChange() {
+      return setAttributes({
+        scrollbarDraggable: !scrollbarDraggable
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
@@ -13464,6 +13492,8 @@ function save(_ref) {
       pagination = attributes.pagination,
       bulletClickable = attributes.bulletClickable,
       scrollbar = attributes.scrollbar,
+      scrollbarHide = attributes.scrollbarHide,
+      scrollbarDraggable = attributes.scrollbarDraggable,
       autoplay = attributes.autoplay,
       autoplayDelay = attributes.autoplayDelay,
       parallax = attributes.parallax,
@@ -13494,7 +13524,10 @@ function save(_ref) {
     "data-thumb-space": thumbSpaceBetween,
     "data-navigation": navigation,
     "data-pagination": pagination,
-    "data-bullet-clickable": bulletClickable
+    "data-bullet-clickable": bulletClickable,
+    "data-scrollbar": scrollbar,
+    "data-scrollbar-hide": scrollbarHide,
+    "data-scrollbar-draggable": scrollbarDraggable
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-wrapper"
   }, images.map(function (image) {

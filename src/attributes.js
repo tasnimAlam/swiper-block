@@ -55,6 +55,14 @@ const attributes = {
 		type: "boolean",
 		default: false,
 	},
+	scrollbarHide: {
+		type: "boolean",
+		default: true,
+	},
+	scrollbarDraggable: {
+		type: "boolean",
+		default: true,
+	},
 	autoplay: {
 		type: "boolean",
 		default: false,
