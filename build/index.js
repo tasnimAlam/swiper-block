@@ -13054,7 +13054,6 @@ function Edit(_ref) {
     options.speed = speed;
     options.spaceBetween = spaceBetween;
     options.loop = loop;
-    console.log(options);
     setOptions(options);
   }, [autoHeight, slidesPerView, spaceBetween, speed, vertical, loop]);
 

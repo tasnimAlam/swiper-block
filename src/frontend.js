@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const vertical = swiper.getAttribute("data-vertical");
 		const effect = swiper.getAttribute("data-effect");
 		const grabCursor = swiper.getAttribute("data-grab-cursor");
-		const freeMode = swiper.getAttribute("data-free-mode");
+		const freeMode = swiper.getAttribute("data-free-mode") === "true";
 		const loop = swiper.getAttribute("data-loop") == "true";
 		const autoplay = swiper.getAttribute("data-autoplay") == "true";
 		const autoplayDelay = swiper.getAttribute("data-autoplay-delay");
@@ -25,6 +25,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 				  }
 				: false,
 			loop: loop,
+			freeMode: freeMode,
+			direction: vertical ? "vertical" : "horizontal",
 			// // Optional parameters
 			// autoHeight: autoHeight,
 			// autoHeight: true,

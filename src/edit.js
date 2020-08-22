@@ -59,8 +59,6 @@ export default function Edit({
 		options.spaceBetween = spaceBetween;
 		options.loop = loop;
 
-		console.log(options);
-
 		setOptions(options);
 	}, [autoHeight, slidesPerView, spaceBetween, speed, vertical, loop]);
 
