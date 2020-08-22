@@ -24,6 +24,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 						delay: autoplayDelay,
 				  }
 				: false,
+			loop: loop,
 			// // Optional parameters
 			// autoHeight: autoHeight,
 			// autoHeight: true,
@@ -36,7 +37,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// parallax: parallax,
 			// thumbs: thumbs,
 			// direction: vertical ? "vertical" : "horizontal",
-			// loop: loop,
 			// If we need pagination
 			// pagination: {
 			// 	el: ".swiper-pagination",
