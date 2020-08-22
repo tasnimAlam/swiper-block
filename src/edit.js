@@ -43,6 +43,7 @@ export default function Edit({
 		thumbs,
 		thumbsPerView,
 		thumbSpaceBetween,
+		autoplay,
 	} = attributes;
 
 	const [swiper, setSwiper] = useState(null);

@@ -13029,7 +13029,8 @@ function Edit(_ref) {
       loop = attributes.loop,
       thumbs = attributes.thumbs,
       thumbsPerView = attributes.thumbsPerView,
-      thumbSpaceBetween = attributes.thumbSpaceBetween;
+      thumbSpaceBetween = attributes.thumbSpaceBetween,
+      autoplay = attributes.autoplay;
 
   var _useState = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(null),
       _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
