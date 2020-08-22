@@ -13477,7 +13477,8 @@ function save(_ref) {
     "data-parallax": parallax,
     "data-thumbs": thumbs,
     "data-thumbs-per-view": thumbsPerView,
-    "data-thumb-space": thumbSpaceBetween
+    "data-thumb-space": thumbSpaceBetween,
+    "data-navigation": navigation
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-wrapper"
   }, images.map(function (image) {

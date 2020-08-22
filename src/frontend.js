@@ -6,18 +6,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const slidesPerView = swiper.getAttribute("data-slides-per-view");
 		const spaceBetween = swiper.getAttribute("data-space-between");
 		const speed = swiper.getAttribute("data-speed");
-		const vertical = swiper.getAttribute("data-vertical");
+		const vertical = swiper.getAttribute("data-vertical") === "true";
 		const effect = swiper.getAttribute("data-effect");
 		const grabCursor = swiper.getAttribute("data-grab-cursor");
 		const freeMode = swiper.getAttribute("data-free-mode") === "true";
 		const loop = swiper.getAttribute("data-loop") == "true";
-		const autoplay = swiper.getAttribute("data-autoplay") == "true";
+		const autoplay = swiper.getAttribute("data-autoplay") === "true";
 		const autoplayDelay = swiper.getAttribute("data-autoplay-delay");
 		// const parallax = swiper.getAttribute("data-parallax");
 		const thumbs = swiper.getAttribute("data-thumbs");
 		const thumbsPerView = swiper.getAttribute("data-thumbs-per-view");
 		const thumbSpaceBetween = swiper.getAttribute("data-thumb-space");
+		const navigation = swiper.getAttribute("data-navigation") === "true";
 
+		console.log("vertical", vertical);
 		const mySwiper = new Swiper(".swiper-container", {
 			autoplay: autoplay
 				? {
@@ -27,6 +29,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			loop: loop,
 			freeMode: freeMode,
 			direction: vertical ? "vertical" : "horizontal",
+			navigation: navigation
+				? {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+				  }
+				: false,
 			// // Optional parameters
 			// autoHeight: autoHeight,
 			// autoHeight: true,
@@ -44,10 +52,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// 	el: ".swiper-pagination",
 			// },
 			// Navigation arrows
-			// navigation: {
-			// 	nextEl: ".swiper-button-next",
-			// 	prevEl: ".swiper-button-prev",
-			// },
 			// And if we need scrollbar
 			// scrollbar: {
 			// 	el: ".swiper-scrollbar",
