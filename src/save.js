@@ -18,7 +18,6 @@ export default function save({ attributes }) {
 		scrollbarDraggable,
 		autoplay,
 		autoplayDelay,
-		parallax,
 		thumbs,
 		thumbsPerView,
 		thumbSpaceBetween,
@@ -42,7 +41,6 @@ export default function save({ attributes }) {
 			data-loop={loop}
 			data-autoplay={autoplay}
 			data-autoplay-delay={autoplayDelay}
-			data-parallax={parallax}
 			data-thumbs={thumbs}
 			data-thumbs-per-view={thumbsPerView}
 			data-thumb-space={thumbSpaceBetween}

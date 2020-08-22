@@ -129,12 +129,6 @@ export default function Inspector({ attributes, setAttributes }) {
 				)}
 
 				<ToggleControl
-					label={__("Parallax *")}
-					checked={parallax}
-					onChange={() => setAttributes({ parallax: !parallax })}
-				/>
-
-				<ToggleControl
 					label={__("Grab Cursor *")}
 					checked={grabCursor}
 					onChange={() => setAttributes({ grabCursor: !grabCursor })}

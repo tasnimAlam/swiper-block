@@ -12946,10 +12946,6 @@ var attributes = {
     type: "number",
     default: 3000
   },
-  parallax: {
-    type: "boolean",
-    default: false
-  },
   thumbs: {
     type: "boolean",
     default: false
@@ -13360,14 +13356,6 @@ function Inspector(_ref) {
       });
     }
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Parallax *"),
-    checked: parallax,
-    onChange: function onChange() {
-      return setAttributes({
-        parallax: !parallax
-      });
-    }
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Grab Cursor *"),
     checked: grabCursor,
     onChange: function onChange() {
@@ -13496,7 +13484,6 @@ function save(_ref) {
       scrollbarDraggable = attributes.scrollbarDraggable,
       autoplay = attributes.autoplay,
       autoplayDelay = attributes.autoplayDelay,
-      parallax = attributes.parallax,
       thumbs = attributes.thumbs,
       thumbsPerView = attributes.thumbsPerView,
       thumbSpaceBetween = attributes.thumbSpaceBetween;
@@ -13518,7 +13505,6 @@ function save(_ref) {
     "data-loop": loop,
     "data-autoplay": autoplay,
     "data-autoplay-delay": autoplayDelay,
-    "data-parallax": parallax,
     "data-thumbs": thumbs,
     "data-thumbs-per-view": thumbsPerView,
     "data-thumb-space": thumbSpaceBetween,

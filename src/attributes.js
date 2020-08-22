@@ -71,10 +71,6 @@ const attributes = {
 		type: "number",
 		default: 3000,
 	},
-	parallax: {
-		type: "boolean",
-		default: false,
-	},
 	thumbs: {
 		type: "boolean",
 		default: false,

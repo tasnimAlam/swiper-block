@@ -13,7 +13,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const loop = swiper.getAttribute("data-loop") == "true";
 		const autoplay = swiper.getAttribute("data-autoplay") === "true";
 		const autoplayDelay = swiper.getAttribute("data-autoplay-delay");
-		// const parallax = swiper.getAttribute("data-parallax");
 		const thumbs = swiper.getAttribute("data-thumbs");
 		const thumbsPerView = swiper.getAttribute("data-thumbs-per-view");
 		const thumbSpaceBetween = swiper.getAttribute("data-thumb-space");
@@ -63,7 +62,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// effect: effect,
 			// grabCursor: grabCursor,
 			// freeMode: freeMode,
-			// parallax: parallax,
 			// thumbs: thumbs,
 			// direction: vertical ? "vertical" : "horizontal",
 			// If we need pagination
