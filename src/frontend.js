@@ -2,7 +2,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 	var swipers = document.querySelectorAll(".swiper-container");
 
 	for (swiper of swipers) {
-		const autoHeight = swiper.getAttribute("data-auto-height") == "true";
 		const slidesPerView = swiper.getAttribute("data-slides-per-view");
 		const spaceBetween = swiper.getAttribute("data-space-between");
 		const speed = swiper.getAttribute("data-speed");
@@ -25,7 +24,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const scrollbarDraggable =
 			swiper.getAttribute("data-scrollbar-draggable") === "true";
 
-		const mySwiper = new Swiper(".swiper-container", {
+		window.mySwiper = null;
+		window.mySwiper = new Swiper(".swiper-container", {
 			autoplay: autoplay
 				? {
 						delay: autoplayDelay,
@@ -53,14 +53,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 						draggable: scrollbarDraggable,
 				  }
 				: false,
+			grabCursor: grabCursor,
 			// Optional parameters
-			// autoHeight: autoHeight,
-			// autoHeight: true,
 			// slidesPerView: slidesPerView,
 			// spaceBetween: spaceBetween,
 			// speed: speed,
 			// effect: effect,
-			// grabCursor: grabCursor,
 			// freeMode: freeMode,
 			// thumbs: thumbs,
 			// direction: vertical ? "vertical" : "horizontal",

@@ -9,7 +9,6 @@ import {
 
 export default function Inspector({ attributes, setAttributes }) {
 	const {
-		autoHeight,
 		slidesPerView,
 		spaceBetween,
 		speed,
@@ -37,12 +36,6 @@ export default function Inspector({ attributes, setAttributes }) {
 				<p style={{ textAlign: "right" }}>
 					<em>*</em> Visible only on frontend
 				</p>
-
-				<ToggleControl
-					label={__("Auto Height *")}
-					checked={autoHeight}
-					onChange={() => setAttributes({ autoHeight: !autoHeight })}
-				/>
 
 				<ToggleControl
 					label={__("Autoplay *")}

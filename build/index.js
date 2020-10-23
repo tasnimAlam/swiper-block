@@ -13228,8 +13228,7 @@ __webpack_require__.r(__webpack_exports__);
 function Inspector(_ref) {
   var attributes = _ref.attributes,
       setAttributes = _ref.setAttributes;
-  var autoHeight = attributes.autoHeight,
-      slidesPerView = attributes.slidesPerView,
+  var slidesPerView = attributes.slidesPerView,
       spaceBetween = attributes.spaceBetween,
       speed = attributes.speed,
       vertical = attributes.vertical,
@@ -13256,14 +13255,6 @@ function Inspector(_ref) {
       textAlign: "right"
     }
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("em", null, "*"), " Visible only on frontend"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Auto Height *"),
-    checked: autoHeight,
-    onChange: function onChange() {
-      return setAttributes({
-        autoHeight: !autoHeight
-      });
-    }
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Autoplay *"),
     checked: autoplay,
     onChange: function onChange() {
