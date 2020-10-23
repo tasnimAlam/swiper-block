@@ -14,7 +14,6 @@ export default function Inspector({ attributes, setAttributes }) {
 		speed,
 		vertical,
 		effect,
-		grabCursor,
 		freeMode,
 		loop,
 		navigation,
@@ -26,9 +25,6 @@ export default function Inspector({ attributes, setAttributes }) {
 		autoplay,
 		autoplayDelay,
 		parallax,
-		thumbs,
-		thumbsPerView,
-		thumbSpaceBetween,
 	} = attributes;
 	return (
 		<InspectorControls key="controls">
@@ -120,54 +116,6 @@ export default function Inspector({ attributes, setAttributes }) {
 						}
 					/>
 				)}
-
-				<ToggleControl
-					label={__("Grab Cursor *")}
-					checked={grabCursor}
-					onChange={() => setAttributes({ grabCursor: !grabCursor })}
-				/>
-
-				<ToggleControl
-					label={__("Thumbs")}
-					checked={thumbs}
-					onChange={() => setAttributes({ thumbs: !thumbs })}
-				/>
-
-				{thumbs && (
-					<RangeControl
-						label={__("Thumbs Per View")}
-						value={thumbsPerView}
-						min={1}
-						max={10}
-						onChange={(thumbsPerView) => setAttributes({ thumbsPerView })}
-					/>
-				)}
-
-				{thumbs && (
-					<RangeControl
-						label={__("Thumbs Space Between")}
-						value={thumbSpaceBetween}
-						min={1}
-						max={100}
-						onChange={(thumbSpaceBetween) =>
-							setAttributes({ thumbSpaceBetween })
-						}
-					/>
-				)}
-
-				<SelectControl
-					label={__("Effect")}
-					help={__("Visible only on frontend")}
-					value={effect}
-					options={[
-						{ label: __("Slide"), value: "slide" },
-						{ label: __("Fade"), value: "fade" },
-						{ label: __("Cube"), value: "cube" },
-						{ label: __("Coverflow"), value: "coverflow" },
-						{ label: __("Flip"), value: "flip" },
-					]}
-					onChange={(effect) => setAttributes({ effect })}
-				/>
 
 				<RangeControl
 					label={__("Slider Per View")}

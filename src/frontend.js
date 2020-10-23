@@ -7,14 +7,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		const speed = swiper.getAttribute("data-speed");
 		const vertical = swiper.getAttribute("data-vertical") === "true";
 		const effect = swiper.getAttribute("data-effect");
-		const grabCursor = swiper.getAttribute("data-grab-cursor");
 		const freeMode = swiper.getAttribute("data-free-mode") === "true";
 		const loop = swiper.getAttribute("data-loop") == "true";
 		const autoplay = swiper.getAttribute("data-autoplay") === "true";
 		const autoplayDelay = swiper.getAttribute("data-autoplay-delay");
-		const thumbs = swiper.getAttribute("data-thumbs");
-		const thumbsPerView = swiper.getAttribute("data-thumbs-per-view");
-		const thumbSpaceBetween = swiper.getAttribute("data-thumb-space");
 		const navigation = swiper.getAttribute("data-navigation") === "true";
 		const pagination = swiper.getAttribute("data-pagination") === "true";
 		const bulletClickable =
@@ -53,14 +49,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 						draggable: scrollbarDraggable,
 				  }
 				: false,
-			grabCursor: grabCursor,
 			// Optional parameters
 			// slidesPerView: slidesPerView,
 			// spaceBetween: spaceBetween,
 			// speed: speed,
 			// effect: effect,
 			// freeMode: freeMode,
-			// thumbs: thumbs,
 			// direction: vertical ? "vertical" : "horizontal",
 			// If we need pagination
 			// Navigation arrows

@@ -16,7 +16,6 @@ import { useState, useEffect } from "@wordpress/element";
 import SwiperCore, { A11y, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.scss";
-import "swiper/components/thumbs/thumbs.scss";
 
 SwiperCore.use([A11y, Thumbs]);
 
@@ -40,14 +39,10 @@ export default function Edit({
 		speed,
 		vertical,
 		loop,
-		thumbs,
-		thumbsPerView,
-		thumbSpaceBetween,
 		autoplay,
 	} = attributes;
 
 	const [swiper, setSwiper] = useState(null);
-	const [thumbSwiper, setThumbSwiper] = useState(null);
 	const [options, setOptions] = useState({});
 
 	useEffect(() => {
@@ -125,9 +120,6 @@ export default function Edit({
 		<div>
 			<Swiper
 				{...options}
-				thumbs={{
-					swiper: thumbSwiper,
-				}}
 				onSwiper={setSwiper}
 				onClick={() => onSwiperClick()}
 				onSlideChange={() => console.log("slide change")}
@@ -138,20 +130,6 @@ export default function Edit({
 					</SwiperSlide>
 				))}
 			</Swiper>
-
-			<div style={{ display: thumbs ? "block" : "none" }}>
-				<Swiper
-					onSwiper={setThumbSwiper}
-					slidesPerView={thumbsPerView}
-					spaceBetween={thumbSpaceBetween}
-				>
-					{images.map((image) => (
-						<SwiperSlide>
-							<img src={image.url} alt={image.alt} />
-						</SwiperSlide>
-					))}
-				</Swiper>
-			</div>
 		</div>,
 	];
 }
