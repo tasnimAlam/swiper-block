@@ -1,13 +1,16 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["style-index"],{
+(window["webpackJsonp_swiper_slider"] = window["webpackJsonp_swiper_slider"] || []).push([["style-index"],{
 
 /***/ "./src/style.scss":
 /*!************************!*\
   !*** ./src/style.scss ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
 
 /***/ })
 
@@ -154,7 +157,7 @@
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 /******/
-/******/ 	var jsonpArray = window["webpackJsonp"] = window["webpackJsonp"] || [];
+/******/ 	var jsonpArray = window["webpackJsonp_swiper_slider"] = window["webpackJsonp_swiper_slider"] || [];
 /******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
 /******/ 	jsonpArray.push = webpackJsonpCallback;
 /******/ 	jsonpArray = jsonpArray.slice();
@@ -169,59 +172,6 @@
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayLikeToArray.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) {
-    arr2[i] = arr[i];
-  }
-
-  return arr2;
-}
-
-module.exports = _arrayLikeToArray;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-module.exports = _arrayWithHoles;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return arrayLikeToArray(arr);
-}
-
-module.exports = _arrayWithoutHoles;
-
-/***/ }),
 
 /***/ "./node_modules/@babel/runtime/helpers/extends.js":
 /*!********************************************************!*\
@@ -245,161 +195,12 @@ function _extends() {
     return target;
   };
 
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
   return _extends.apply(this, arguments);
 }
 
 module.exports = _extends;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
-}
-
-module.exports = _iterableToArray;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-module.exports = _iterableToArrayLimit;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/nonIterableRest.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/nonIterableRest.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-module.exports = _nonIterableRest;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-module.exports = _nonIterableSpread;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/slicedToArray.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles */ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js");
-
-var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit */ "./node_modules/@babel/runtime/helpers/iterableToArrayLimit.js");
-
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
-
-var nonIterableRest = __webpack_require__(/*! ./nonIterableRest */ "./node_modules/@babel/runtime/helpers/nonIterableRest.js");
-
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-}
-
-module.exports = _slicedToArray;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js");
-
-var iterableToArray = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime/helpers/iterableToArray.js");
-
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray */ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js");
-
-var nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js");
-
-function _toConsumableArray(arr) {
-  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-}
-
-module.exports = _toConsumableArray;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/unsupportedIterableToArray.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray */ "./node_modules/@babel/runtime/helpers/arrayLikeToArray.js");
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
-}
-
-module.exports = _unsupportedIterableToArray;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 
@@ -498,7 +299,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "width", function() { return width; });
 /* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
 /**
- * Dom7 3.0.0-alpha.7
+ * Dom7 3.0.0
  * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
  * https://framework7.io/docs/dom7.html
  *
@@ -506,7 +307,7 @@ __webpack_require__.r(__webpack_exports__);
  *
  * Licensed under MIT
  *
- * Released on: July 14, 2020
+ * Released on: November 9, 2020
  */
 
 
@@ -962,7 +763,7 @@ function transform(transform) {
 
 function transition(duration) {
   for (var i = 0; i < this.length; i += 1) {
-    this[i].style.transition = typeof duration !== 'string' ? duration + "ms" : duration;
+    this[i].style.transitionDuration = typeof duration !== 'string' ? duration + "ms" : duration;
   }
 
   return this;
@@ -2207,7 +2008,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ssrDocument", function() { return ssrDocument; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ssrWindow", function() { return ssrWindow; });
 /**
- * SSR Window 3.0.0-alpha.4
+ * SSR Window 3.0.0
  * Better handling for window object in SSR environment
  * https://github.com/nolimits4web/ssr-window
  *
@@ -2215,7 +2016,7 @@ __webpack_require__.r(__webpack_exports__);
  *
  * Licensed under MIT
  *
- * Released on: May 20, 2020
+ * Released on: November 9, 2020
  */
 /* eslint-disable no-param-reassign */
 function isObject(obj) {
@@ -2376,6 +2177,17 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 var A11y = {
+  getRandomNumber: function getRandomNumber(size) {
+    if (size === void 0) {
+      size = 16;
+    }
+
+    var randomChar = function randomChar() {
+      return Math.round(16 * Math.random()).toString(16);
+    };
+
+    return 'x'.repeat(size).replace(/x/g, randomChar);
+  },
   makeElFocusable: function makeElFocusable($el) {
     $el.attr('tabIndex', '0');
     return $el;
@@ -2388,8 +2200,24 @@ var A11y = {
     $el.attr('role', role);
     return $el;
   },
+  addElRoleDescription: function addElRoleDescription($el, description) {
+    $el.attr('aria-roledescription', description);
+    return $el;
+  },
+  addElControls: function addElControls($el, controls) {
+    $el.attr('aria-controls', controls);
+    return $el;
+  },
   addElLabel: function addElLabel($el, label) {
     $el.attr('aria-label', label);
+    return $el;
+  },
+  addElId: function addElId($el, id) {
+    $el.attr('id', id);
+    return $el;
+  },
+  addElLive: function addElLive($el, live) {
+    $el.attr('aria-live', live);
     return $el;
   },
   disableEl: function disableEl($el) {
@@ -2400,10 +2228,10 @@ var A11y = {
     $el.attr('aria-disabled', false);
     return $el;
   },
-  onEnterKey: function onEnterKey(e) {
+  onEnterOrSpaceKey: function onEnterOrSpaceKey(e) {
+    if (e.keyCode !== 13 && e.keyCode !== 32) return;
     var swiper = this;
     var params = swiper.params.a11y;
-    if (e.keyCode !== 13) return;
     var $targetEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(e.target);
 
     if (swiper.navigation && swiper.navigation.$nextEl && $targetEl.is(swiper.navigation.$nextEl)) {
@@ -2430,7 +2258,7 @@ var A11y = {
       }
     }
 
-    if (swiper.pagination && $targetEl.is("." + swiper.params.pagination.bulletClass)) {
+    if (swiper.pagination && $targetEl.is(Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(swiper.params.pagination.bulletClass))) {
       $targetEl[0].click();
     }
   },
@@ -2476,16 +2304,47 @@ var A11y = {
       swiper.pagination.bullets.each(function (bulletEl) {
         var $bulletEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(bulletEl);
         swiper.a11y.makeElFocusable($bulletEl);
-        swiper.a11y.addElRole($bulletEl, 'button');
-        swiper.a11y.addElLabel($bulletEl, params.paginationBulletMessage.replace(/\{\{index\}\}/, $bulletEl.index() + 1));
+
+        if (!swiper.params.pagination.renderBullet) {
+          swiper.a11y.addElRole($bulletEl, 'button');
+          swiper.a11y.addElLabel($bulletEl, params.paginationBulletMessage.replace(/\{\{index\}\}/, $bulletEl.index() + 1));
+        }
       });
     }
   },
   init: function init() {
     var swiper = this;
-    swiper.$el.append(swiper.a11y.liveRegion); // Navigation
-
     var params = swiper.params.a11y;
+    swiper.$el.append(swiper.a11y.liveRegion); // Container
+
+    var $containerEl = swiper.$el;
+
+    if (params.containerRoleDescriptionMessage) {
+      swiper.a11y.addElRoleDescription($containerEl, params.containerRoleDescriptionMessage);
+    }
+
+    if (params.containerMessage) {
+      swiper.a11y.addElLabel($containerEl, params.containerMessage);
+    } // Wrapper
+
+
+    var $wrapperEl = swiper.$wrapperEl;
+    var wrapperId = $wrapperEl.attr('id') || "swiper-wrapper-" + swiper.a11y.getRandomNumber(16);
+    var live = swiper.params.autoplay && swiper.params.autoplay.enabled ? 'off' : 'polite';
+    swiper.a11y.addElId($wrapperEl, wrapperId);
+    swiper.a11y.addElLive($wrapperEl, live); // Slide
+
+    if (params.itemRoleDescriptionMessage) {
+      swiper.a11y.addElRoleDescription(Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(swiper.slides), params.itemRoleDescriptionMessage);
+    }
+
+    swiper.a11y.addElRole(Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(swiper.slides), params.slideRole);
+    swiper.slides.each(function (slideEl) {
+      var $slideEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slideEl);
+      var ariaLabelMessage = params.slideLabelMessage.replace(/\{\{index\}\}/, $slideEl.index() + 1).replace(/\{\{slidesLength\}\}/, swiper.slides.length);
+      swiper.a11y.addElLabel($slideEl, ariaLabelMessage);
+    }); // Navigation
+
     var $nextEl;
     var $prevEl;
 
@@ -2497,23 +2356,33 @@ var A11y = {
       $prevEl = swiper.navigation.$prevEl;
     }
 
-    if ($nextEl) {
+    if ($nextEl && $nextEl.length) {
       swiper.a11y.makeElFocusable($nextEl);
-      swiper.a11y.addElRole($nextEl, 'button');
+
+      if ($nextEl[0].tagName !== 'BUTTON') {
+        swiper.a11y.addElRole($nextEl, 'button');
+        $nextEl.on('keydown', swiper.a11y.onEnterOrSpaceKey);
+      }
+
       swiper.a11y.addElLabel($nextEl, params.nextSlideMessage);
-      $nextEl.on('keydown', swiper.a11y.onEnterKey);
+      swiper.a11y.addElControls($nextEl, wrapperId);
     }
 
-    if ($prevEl) {
+    if ($prevEl && $prevEl.length) {
       swiper.a11y.makeElFocusable($prevEl);
-      swiper.a11y.addElRole($prevEl, 'button');
+
+      if ($prevEl[0].tagName !== 'BUTTON') {
+        swiper.a11y.addElRole($prevEl, 'button');
+        $prevEl.on('keydown', swiper.a11y.onEnterOrSpaceKey);
+      }
+
       swiper.a11y.addElLabel($prevEl, params.prevSlideMessage);
-      $prevEl.on('keydown', swiper.a11y.onEnterKey);
+      swiper.a11y.addElControls($prevEl, wrapperId);
     } // Pagination
 
 
     if (swiper.pagination && swiper.params.pagination.clickable && swiper.pagination.bullets && swiper.pagination.bullets.length) {
-      swiper.pagination.$el.on('keydown', "." + swiper.params.pagination.bulletClass, swiper.a11y.onEnterKey);
+      swiper.pagination.$el.on('keydown', Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(swiper.params.pagination.bulletClass), swiper.a11y.onEnterOrSpaceKey);
     }
   },
   destroy: function destroy() {
@@ -2531,16 +2400,16 @@ var A11y = {
     }
 
     if ($nextEl) {
-      $nextEl.off('keydown', swiper.a11y.onEnterKey);
+      $nextEl.off('keydown', swiper.a11y.onEnterOrSpaceKey);
     }
 
     if ($prevEl) {
-      $prevEl.off('keydown', swiper.a11y.onEnterKey);
+      $prevEl.off('keydown', swiper.a11y.onEnterOrSpaceKey);
     } // Pagination
 
 
     if (swiper.pagination && swiper.params.pagination.clickable && swiper.pagination.bullets && swiper.pagination.bullets.length) {
-      swiper.pagination.$el.off('keydown', "." + swiper.params.pagination.bulletClass, swiper.a11y.onEnterKey);
+      swiper.pagination.$el.off('keydown', Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(swiper.params.pagination.bulletClass), swiper.a11y.onEnterOrSpaceKey);
     }
   }
 };
@@ -2554,19 +2423,24 @@ var A11y = {
       nextSlideMessage: 'Next slide',
       firstSlideMessage: 'This is the first slide',
       lastSlideMessage: 'This is the last slide',
-      paginationBulletMessage: 'Go to slide {{index}}'
+      paginationBulletMessage: 'Go to slide {{index}}',
+      slideLabelMessage: '{{index}} / {{slidesLength}}',
+      containerMessage: null,
+      containerRoleDescriptionMessage: null,
+      itemRoleDescriptionMessage: null,
+      slideRole: 'group'
     }
   },
   create: function create() {
     var swiper = this;
     Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["bindModuleMethods"])(swiper, {
-      a11y: _extends(_extends({}, A11y), {}, {
+      a11y: _extends({}, A11y, {
         liveRegion: Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])("<span class=\"" + swiper.params.a11y.notificationClass + "\" aria-live=\"assertive\" aria-atomic=\"true\"></span>")
       })
     });
   },
   on: {
-    init: function init(swiper) {
+    afterInit: function afterInit(swiper) {
       if (!swiper.params.a11y.enabled) return;
       swiper.a11y.init();
       swiper.a11y.updateNavigation();
@@ -2620,35 +2494,39 @@ var Autoplay = {
 
     clearTimeout(swiper.autoplay.timeout);
     swiper.autoplay.timeout = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["nextTick"])(function () {
+      var autoplayResult;
+
       if (swiper.params.autoplay.reverseDirection) {
         if (swiper.params.loop) {
           swiper.loopFix();
-          swiper.slidePrev(swiper.params.speed, true, true);
+          autoplayResult = swiper.slidePrev(swiper.params.speed, true, true);
           swiper.emit('autoplay');
         } else if (!swiper.isBeginning) {
-          swiper.slidePrev(swiper.params.speed, true, true);
+          autoplayResult = swiper.slidePrev(swiper.params.speed, true, true);
           swiper.emit('autoplay');
         } else if (!swiper.params.autoplay.stopOnLastSlide) {
-          swiper.slideTo(swiper.slides.length - 1, swiper.params.speed, true, true);
+          autoplayResult = swiper.slideTo(swiper.slides.length - 1, swiper.params.speed, true, true);
           swiper.emit('autoplay');
         } else {
           swiper.autoplay.stop();
         }
       } else if (swiper.params.loop) {
         swiper.loopFix();
-        swiper.slideNext(swiper.params.speed, true, true);
+        autoplayResult = swiper.slideNext(swiper.params.speed, true, true);
         swiper.emit('autoplay');
       } else if (!swiper.isEnd) {
-        swiper.slideNext(swiper.params.speed, true, true);
+        autoplayResult = swiper.slideNext(swiper.params.speed, true, true);
         swiper.emit('autoplay');
       } else if (!swiper.params.autoplay.stopOnLastSlide) {
-        swiper.slideTo(0, swiper.params.speed, true, true);
+        autoplayResult = swiper.slideTo(0, swiper.params.speed, true, true);
         swiper.emit('autoplay');
       } else {
         swiper.autoplay.stop();
       }
 
-      if (swiper.params.cssMode && swiper.autoplay.running) swiper.autoplay.run();
+      if (swiper.params.cssMode && swiper.autoplay.running) swiper.autoplay.run();else if (autoplayResult === false) {
+        swiper.autoplay.run();
+      }
     }, delay);
   },
   start: function start() {
@@ -2685,8 +2563,9 @@ var Autoplay = {
       swiper.autoplay.paused = false;
       swiper.autoplay.run();
     } else {
-      swiper.$wrapperEl[0].addEventListener('transitionend', swiper.autoplay.onTransitionEnd);
-      swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.autoplay.onTransitionEnd);
+      ['transitionend', 'webkitTransitionEnd'].forEach(function (event) {
+        swiper.$wrapperEl[0].addEventListener(event, swiper.autoplay.onTransitionEnd);
+      });
     }
   },
   onVisibilityChange: function onVisibilityChange() {
@@ -2706,8 +2585,9 @@ var Autoplay = {
     var swiper = this;
     if (!swiper || swiper.destroyed || !swiper.$wrapperEl) return;
     if (e.target !== swiper.$wrapperEl[0]) return;
-    swiper.$wrapperEl[0].removeEventListener('transitionend', swiper.autoplay.onTransitionEnd);
-    swiper.$wrapperEl[0].removeEventListener('webkitTransitionEnd', swiper.autoplay.onTransitionEnd);
+    ['transitionend', 'webkitTransitionEnd'].forEach(function (event) {
+      swiper.$wrapperEl[0].removeEventListener(event, swiper.autoplay.onTransitionEnd);
+    });
     swiper.autoplay.paused = false;
 
     if (!swiper.autoplay.running) {
@@ -2715,6 +2595,42 @@ var Autoplay = {
     } else {
       swiper.autoplay.run();
     }
+  },
+  onMouseEnter: function onMouseEnter() {
+    var swiper = this;
+
+    if (swiper.params.autoplay.disableOnInteraction) {
+      swiper.autoplay.stop();
+    } else {
+      swiper.autoplay.pause();
+    }
+
+    ['transitionend', 'webkitTransitionEnd'].forEach(function (event) {
+      swiper.$wrapperEl[0].removeEventListener(event, swiper.autoplay.onTransitionEnd);
+    });
+  },
+  onMouseLeave: function onMouseLeave() {
+    var swiper = this;
+
+    if (swiper.params.autoplay.disableOnInteraction) {
+      return;
+    }
+
+    swiper.autoplay.paused = false;
+    swiper.autoplay.run();
+  },
+  attachMouseEvents: function attachMouseEvents() {
+    var swiper = this;
+
+    if (swiper.params.autoplay.pauseOnMouseEnter) {
+      swiper.$el.on('mouseenter', swiper.autoplay.onMouseEnter);
+      swiper.$el.on('mouseleave', swiper.autoplay.onMouseLeave);
+    }
+  },
+  detachMouseEvents: function detachMouseEvents() {
+    var swiper = this;
+    swiper.$el.off('mouseenter', swiper.autoplay.onMouseEnter);
+    swiper.$el.off('mouseleave', swiper.autoplay.onMouseLeave);
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2726,13 +2642,14 @@ var Autoplay = {
       waitForTransition: true,
       disableOnInteraction: true,
       stopOnLastSlide: false,
-      reverseDirection: false
+      reverseDirection: false,
+      pauseOnMouseEnter: false
     }
   },
   create: function create() {
     var swiper = this;
     Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["bindModuleMethods"])(swiper, {
-      autoplay: _extends(_extends({}, Autoplay), {}, {
+      autoplay: _extends({}, Autoplay, {
         running: false,
         paused: false
       })
@@ -2744,6 +2661,7 @@ var Autoplay = {
         swiper.autoplay.start();
         var document = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getDocument"])();
         document.addEventListener('visibilitychange', swiper.autoplay.onVisibilityChange);
+        swiper.autoplay.attachMouseEvents();
       }
     },
     beforeTransitionStart: function beforeTransitionStart(swiper, speed, internal) {
@@ -2770,6 +2688,8 @@ var Autoplay = {
       }
     },
     destroy: function destroy(swiper) {
+      swiper.autoplay.detachMouseEvents();
+
       if (swiper.autoplay.running) {
         swiper.autoplay.stop();
       }
@@ -3001,18 +2921,22 @@ var Controller = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getBreakpoints; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getBreakpoint; });
 /* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
 
-function getBreakpoints(breakpoints) {
-  var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])(); // Get breakpoint for window width
+function getBreakpoint(breakpoints, base, containerEl) {
+  if (base === void 0) {
+    base = 'window';
+  }
 
-  if (!breakpoints) return undefined;
+  if (!breakpoints || base === 'container' && !containerEl) return undefined;
   var breakpoint = false;
+  var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+  var currentHeight = base === 'window' ? window.innerHeight : containerEl.clientHeight;
   var points = Object.keys(breakpoints).map(function (point) {
     if (typeof point === 'string' && point.indexOf('@') === 0) {
       var minRatio = parseFloat(point.substr(1));
-      var value = window.innerHeight * minRatio;
+      var value = currentHeight * minRatio;
       return {
         value: value,
         point: point
@@ -3033,7 +2957,11 @@ function getBreakpoints(breakpoints) {
         point = _points$i.point,
         value = _points$i.value;
 
-    if (value <= window.innerWidth) {
+    if (base === 'window') {
+      if (window.matchMedia("(min-width: " + value + "px)").matches) {
+        breakpoint = point;
+      }
+    } else if (value <= containerEl.clientWidth) {
       breakpoint = point;
     }
   }
@@ -3086,67 +3014,75 @@ function setBreakpoint() {
   var breakpoints = params.breakpoints;
   if (!breakpoints || breakpoints && Object.keys(breakpoints).length === 0) return; // Get breakpoint for window width and update parameters
 
-  var breakpoint = swiper.getBreakpoint(breakpoints);
+  var breakpoint = swiper.getBreakpoint(breakpoints, swiper.params.breakpointsBase, swiper.el);
+  if (!breakpoint || swiper.currentBreakpoint === breakpoint) return;
+  var breakpointOnlyParams = breakpoint in breakpoints ? breakpoints[breakpoint] : undefined;
 
-  if (breakpoint && swiper.currentBreakpoint !== breakpoint) {
-    var breakpointOnlyParams = breakpoint in breakpoints ? breakpoints[breakpoint] : undefined;
+  if (breakpointOnlyParams) {
+    ['slidesPerView', 'spaceBetween', 'slidesPerGroup', 'slidesPerGroupSkip', 'slidesPerColumn'].forEach(function (param) {
+      var paramValue = breakpointOnlyParams[param];
+      if (typeof paramValue === 'undefined') return;
 
-    if (breakpointOnlyParams) {
-      ['slidesPerView', 'spaceBetween', 'slidesPerGroup', 'slidesPerGroupSkip', 'slidesPerColumn'].forEach(function (param) {
-        var paramValue = breakpointOnlyParams[param];
-        if (typeof paramValue === 'undefined') return;
-
-        if (param === 'slidesPerView' && (paramValue === 'AUTO' || paramValue === 'auto')) {
-          breakpointOnlyParams[param] = 'auto';
-        } else if (param === 'slidesPerView') {
-          breakpointOnlyParams[param] = parseFloat(paramValue);
-        } else {
-          breakpointOnlyParams[param] = parseInt(paramValue, 10);
-        }
-      });
-    }
-
-    var breakpointParams = breakpointOnlyParams || swiper.originalParams;
-    var wasMultiRow = params.slidesPerColumn > 1;
-    var isMultiRow = breakpointParams.slidesPerColumn > 1;
-
-    if (wasMultiRow && !isMultiRow) {
-      $el.removeClass(params.containerModifierClass + "multirow " + params.containerModifierClass + "multirow-column");
-      swiper.emitContainerClasses();
-    } else if (!wasMultiRow && isMultiRow) {
-      $el.addClass(params.containerModifierClass + "multirow");
-
-      if (breakpointParams.slidesPerColumnFill === 'column') {
-        $el.addClass(params.containerModifierClass + "multirow-column");
+      if (param === 'slidesPerView' && (paramValue === 'AUTO' || paramValue === 'auto')) {
+        breakpointOnlyParams[param] = 'auto';
+      } else if (param === 'slidesPerView') {
+        breakpointOnlyParams[param] = parseFloat(paramValue);
+      } else {
+        breakpointOnlyParams[param] = parseInt(paramValue, 10);
       }
-
-      swiper.emitContainerClasses();
-    }
-
-    var directionChanged = breakpointParams.direction && breakpointParams.direction !== params.direction;
-    var needsReLoop = params.loop && (breakpointParams.slidesPerView !== params.slidesPerView || directionChanged);
-
-    if (directionChanged && initialized) {
-      swiper.changeDirection();
-    }
-
-    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_0__["extend"])(swiper.params, breakpointParams);
-    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_0__["extend"])(swiper, {
-      allowTouchMove: swiper.params.allowTouchMove,
-      allowSlideNext: swiper.params.allowSlideNext,
-      allowSlidePrev: swiper.params.allowSlidePrev
     });
-    swiper.currentBreakpoint = breakpoint;
+  }
 
-    if (needsReLoop && initialized) {
-      swiper.loopDestroy();
-      swiper.loopCreate();
-      swiper.updateSlides();
-      swiper.slideTo(activeIndex - loopedSlides + swiper.loopedSlides, 0, false);
+  var breakpointParams = breakpointOnlyParams || swiper.originalParams;
+  var wasMultiRow = params.slidesPerColumn > 1;
+  var isMultiRow = breakpointParams.slidesPerColumn > 1;
+  var wasEnabled = params.enabled;
+
+  if (wasMultiRow && !isMultiRow) {
+    $el.removeClass(params.containerModifierClass + "multirow " + params.containerModifierClass + "multirow-column");
+    swiper.emitContainerClasses();
+  } else if (!wasMultiRow && isMultiRow) {
+    $el.addClass(params.containerModifierClass + "multirow");
+
+    if (breakpointParams.slidesPerColumnFill === 'column') {
+      $el.addClass(params.containerModifierClass + "multirow-column");
     }
 
-    swiper.emit('breakpoint', breakpointParams);
+    swiper.emitContainerClasses();
   }
+
+  var directionChanged = breakpointParams.direction && breakpointParams.direction !== params.direction;
+  var needsReLoop = params.loop && (breakpointParams.slidesPerView !== params.slidesPerView || directionChanged);
+
+  if (directionChanged && initialized) {
+    swiper.changeDirection();
+  }
+
+  Object(_utils_utils__WEBPACK_IMPORTED_MODULE_0__["extend"])(swiper.params, breakpointParams);
+  var isEnabled = swiper.params.enabled;
+  Object(_utils_utils__WEBPACK_IMPORTED_MODULE_0__["extend"])(swiper, {
+    allowTouchMove: swiper.params.allowTouchMove,
+    allowSlideNext: swiper.params.allowSlideNext,
+    allowSlidePrev: swiper.params.allowSlidePrev
+  });
+
+  if (wasEnabled && !isEnabled) {
+    swiper.disable();
+  } else if (!wasEnabled && isEnabled) {
+    swiper.enable();
+  }
+
+  swiper.currentBreakpoint = breakpoint;
+  swiper.emit('_beforeBreakpoint', breakpointParams);
+
+  if (needsReLoop && initialized) {
+    swiper.loopDestroy();
+    swiper.loopCreate();
+    swiper.updateSlides();
+    swiper.slideTo(activeIndex - loopedSlides + swiper.loopedSlides, 0, false);
+  }
+
+  swiper.emit('breakpoint', breakpointParams);
 }
 
 /***/ }),
@@ -3199,53 +3135,52 @@ function checkOverflow() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return addClasses; });
+function prepareClasses(entries, prefix) {
+  var resultClasses = [];
+  entries.forEach(function (item) {
+    if (typeof item === 'object') {
+      Object.keys(item).forEach(function (classNames) {
+        if (item[classNames]) {
+          resultClasses.push(prefix + classNames);
+        }
+      });
+    } else if (typeof item === 'string') {
+      resultClasses.push(prefix + item);
+    }
+  });
+  return resultClasses;
+}
+
 function addClasses() {
   var swiper = this;
   var classNames = swiper.classNames,
       params = swiper.params,
       rtl = swiper.rtl,
       $el = swiper.$el,
-      device = swiper.device;
-  var suffixes = [];
-  suffixes.push('initialized');
-  suffixes.push(params.direction);
+      device = swiper.device,
+      support = swiper.support; // prettier-ignore
 
-  if (params.freeMode) {
-    suffixes.push('free-mode');
-  }
-
-  if (params.autoHeight) {
-    suffixes.push('autoheight');
-  }
-
-  if (rtl) {
-    suffixes.push('rtl');
-  }
-
-  if (params.slidesPerColumn > 1) {
-    suffixes.push('multirow');
-
-    if (params.slidesPerColumnFill === 'column') {
-      suffixes.push('multirow-column');
-    }
-  }
-
-  if (device.android) {
-    suffixes.push('android');
-  }
-
-  if (device.ios) {
-    suffixes.push('ios');
-  }
-
-  if (params.cssMode) {
-    suffixes.push('css-mode');
-  }
-
-  suffixes.forEach(function (suffix) {
-    classNames.push(params.containerModifierClass + suffix);
-  });
-  $el.addClass(classNames.join(' '));
+  var suffixes = prepareClasses(['initialized', params.direction, {
+    'pointer-events': support.pointerEvents && !support.touch
+  }, {
+    'free-mode': params.freeMode
+  }, {
+    'autoheight': params.autoHeight
+  }, {
+    'rtl': rtl
+  }, {
+    'multirow': params.slidesPerColumn > 1
+  }, {
+    'multirow-column': params.slidesPerColumn > 1 && params.slidesPerColumnFill === 'column'
+  }, {
+    'android': device.android
+  }, {
+    'ios': device.ios
+  }, {
+    'css-mode': params.cssMode
+  }], params.containerModifierClass);
+  classNames.push.apply(classNames, suffixes);
+  $el.addClass([].concat(classNames).join(' '));
   swiper.emitContainerClasses();
 }
 
@@ -3300,28 +3235,29 @@ function removeClasses() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
-/* harmony import */ var _utils_get_support__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/get-support */ "./node_modules/swiper/esm/utils/get-support.js");
-/* harmony import */ var _utils_get_device__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/get-device */ "./node_modules/swiper/esm/utils/get-device.js");
-/* harmony import */ var _utils_get_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/get-browser */ "./node_modules/swiper/esm/utils/get-browser.js");
-/* harmony import */ var _modules_resize_resize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../modules/resize/resize */ "./node_modules/swiper/esm/modules/resize/resize.js");
-/* harmony import */ var _modules_observer_observer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../modules/observer/observer */ "./node_modules/swiper/esm/modules/observer/observer.js");
-/* harmony import */ var _modular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modular */ "./node_modules/swiper/esm/components/core/modular.js");
-/* harmony import */ var _events_emitter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./events-emitter */ "./node_modules/swiper/esm/components/core/events-emitter.js");
-/* harmony import */ var _update_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./update/index */ "./node_modules/swiper/esm/components/core/update/index.js");
-/* harmony import */ var _translate_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./translate/index */ "./node_modules/swiper/esm/components/core/translate/index.js");
-/* harmony import */ var _transition_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./transition/index */ "./node_modules/swiper/esm/components/core/transition/index.js");
-/* harmony import */ var _slide_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./slide/index */ "./node_modules/swiper/esm/components/core/slide/index.js");
-/* harmony import */ var _loop_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./loop/index */ "./node_modules/swiper/esm/components/core/loop/index.js");
-/* harmony import */ var _grab_cursor_index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./grab-cursor/index */ "./node_modules/swiper/esm/components/core/grab-cursor/index.js");
-/* harmony import */ var _manipulation_index__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./manipulation/index */ "./node_modules/swiper/esm/components/core/manipulation/index.js");
-/* harmony import */ var _events_index__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./events/index */ "./node_modules/swiper/esm/components/core/events/index.js");
-/* harmony import */ var _breakpoints_index__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./breakpoints/index */ "./node_modules/swiper/esm/components/core/breakpoints/index.js");
-/* harmony import */ var _classes_index__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./classes/index */ "./node_modules/swiper/esm/components/core/classes/index.js");
-/* harmony import */ var _images_index__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/index */ "./node_modules/swiper/esm/components/core/images/index.js");
-/* harmony import */ var _check_overflow_index__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./check-overflow/index */ "./node_modules/swiper/esm/components/core/check-overflow/index.js");
-/* harmony import */ var _defaults__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./defaults */ "./node_modules/swiper/esm/components/core/defaults.js");
+/* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
+/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
+/* harmony import */ var _utils_get_support__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/get-support */ "./node_modules/swiper/esm/utils/get-support.js");
+/* harmony import */ var _utils_get_device__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../utils/get-device */ "./node_modules/swiper/esm/utils/get-device.js");
+/* harmony import */ var _utils_get_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/get-browser */ "./node_modules/swiper/esm/utils/get-browser.js");
+/* harmony import */ var _modules_resize_resize__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../modules/resize/resize */ "./node_modules/swiper/esm/modules/resize/resize.js");
+/* harmony import */ var _modules_observer_observer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../modules/observer/observer */ "./node_modules/swiper/esm/modules/observer/observer.js");
+/* harmony import */ var _modular__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modular */ "./node_modules/swiper/esm/components/core/modular.js");
+/* harmony import */ var _events_emitter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./events-emitter */ "./node_modules/swiper/esm/components/core/events-emitter.js");
+/* harmony import */ var _update_index__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./update/index */ "./node_modules/swiper/esm/components/core/update/index.js");
+/* harmony import */ var _translate_index__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./translate/index */ "./node_modules/swiper/esm/components/core/translate/index.js");
+/* harmony import */ var _transition_index__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./transition/index */ "./node_modules/swiper/esm/components/core/transition/index.js");
+/* harmony import */ var _slide_index__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./slide/index */ "./node_modules/swiper/esm/components/core/slide/index.js");
+/* harmony import */ var _loop_index__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./loop/index */ "./node_modules/swiper/esm/components/core/loop/index.js");
+/* harmony import */ var _grab_cursor_index__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./grab-cursor/index */ "./node_modules/swiper/esm/components/core/grab-cursor/index.js");
+/* harmony import */ var _manipulation_index__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./manipulation/index */ "./node_modules/swiper/esm/components/core/manipulation/index.js");
+/* harmony import */ var _events_index__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./events/index */ "./node_modules/swiper/esm/components/core/events/index.js");
+/* harmony import */ var _breakpoints_index__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./breakpoints/index */ "./node_modules/swiper/esm/components/core/breakpoints/index.js");
+/* harmony import */ var _classes_index__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./classes/index */ "./node_modules/swiper/esm/components/core/classes/index.js");
+/* harmony import */ var _images_index__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/index */ "./node_modules/swiper/esm/components/core/images/index.js");
+/* harmony import */ var _check_overflow_index__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./check-overflow/index */ "./node_modules/swiper/esm/components/core/check-overflow/index.js");
+/* harmony import */ var _defaults__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./defaults */ "./node_modules/swiper/esm/components/core/defaults.js");
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
@@ -3349,21 +3285,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
 
+
 var prototypes = {
-  modular: _modular__WEBPACK_IMPORTED_MODULE_7__["default"],
-  eventsEmitter: _events_emitter__WEBPACK_IMPORTED_MODULE_8__["default"],
-  update: _update_index__WEBPACK_IMPORTED_MODULE_9__["default"],
-  translate: _translate_index__WEBPACK_IMPORTED_MODULE_10__["default"],
-  transition: _transition_index__WEBPACK_IMPORTED_MODULE_11__["default"],
-  slide: _slide_index__WEBPACK_IMPORTED_MODULE_12__["default"],
-  loop: _loop_index__WEBPACK_IMPORTED_MODULE_13__["default"],
-  grabCursor: _grab_cursor_index__WEBPACK_IMPORTED_MODULE_14__["default"],
-  manipulation: _manipulation_index__WEBPACK_IMPORTED_MODULE_15__["default"],
-  events: _events_index__WEBPACK_IMPORTED_MODULE_16__["default"],
-  breakpoints: _breakpoints_index__WEBPACK_IMPORTED_MODULE_17__["default"],
-  checkOverflow: _check_overflow_index__WEBPACK_IMPORTED_MODULE_20__["default"],
-  classes: _classes_index__WEBPACK_IMPORTED_MODULE_18__["default"],
-  images: _images_index__WEBPACK_IMPORTED_MODULE_19__["default"]
+  modular: _modular__WEBPACK_IMPORTED_MODULE_8__["default"],
+  eventsEmitter: _events_emitter__WEBPACK_IMPORTED_MODULE_9__["default"],
+  update: _update_index__WEBPACK_IMPORTED_MODULE_10__["default"],
+  translate: _translate_index__WEBPACK_IMPORTED_MODULE_11__["default"],
+  transition: _transition_index__WEBPACK_IMPORTED_MODULE_12__["default"],
+  slide: _slide_index__WEBPACK_IMPORTED_MODULE_13__["default"],
+  loop: _loop_index__WEBPACK_IMPORTED_MODULE_14__["default"],
+  grabCursor: _grab_cursor_index__WEBPACK_IMPORTED_MODULE_15__["default"],
+  manipulation: _manipulation_index__WEBPACK_IMPORTED_MODULE_16__["default"],
+  events: _events_index__WEBPACK_IMPORTED_MODULE_17__["default"],
+  breakpoints: _breakpoints_index__WEBPACK_IMPORTED_MODULE_18__["default"],
+  checkOverflow: _check_overflow_index__WEBPACK_IMPORTED_MODULE_21__["default"],
+  classes: _classes_index__WEBPACK_IMPORTED_MODULE_19__["default"],
+  images: _images_index__WEBPACK_IMPORTED_MODULE_20__["default"]
 };
 var extendedDefaults = {};
 
@@ -3376,7 +3313,7 @@ var Swiper = /*#__PURE__*/function () {
       args[_key] = arguments[_key];
     }
 
-    if (args.length === 1 && args[0].constructor && args[0].constructor === Object) {
+    if (args.length === 1 && args[0].constructor && Object.prototype.toString.call(args[0]).slice(8, -1) === 'Object') {
       params = args[0];
     } else {
       el = args[0];
@@ -3384,24 +3321,30 @@ var Swiper = /*#__PURE__*/function () {
     }
 
     if (!params) params = {};
-    params = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])({}, params);
-    if (el && !params.el) params.el = el; // Swiper Instance
+    params = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])({}, params);
+    if (el && !params.el) params.el = el;
+
+    if (params.el && Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(params.el).length > 1) {
+      var swipers = [];
+      Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(params.el).each(function (containerEl) {
+        var newParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])({}, params, {
+          el: containerEl
+        });
+        swipers.push(new Swiper(newParams));
+      });
+      return swipers;
+    } // Swiper Instance
+
 
     var swiper = this;
-    swiper.support = Object(_utils_get_support__WEBPACK_IMPORTED_MODULE_2__["getSupport"])();
-    swiper.device = Object(_utils_get_device__WEBPACK_IMPORTED_MODULE_3__["getDevice"])({
+    swiper.__swiper__ = true;
+    swiper.support = Object(_utils_get_support__WEBPACK_IMPORTED_MODULE_3__["getSupport"])();
+    swiper.device = Object(_utils_get_device__WEBPACK_IMPORTED_MODULE_4__["getDevice"])({
       userAgent: params.userAgent
     });
-    swiper.browser = Object(_utils_get_browser__WEBPACK_IMPORTED_MODULE_4__["getBrowser"])();
+    swiper.browser = Object(_utils_get_browser__WEBPACK_IMPORTED_MODULE_5__["getBrowser"])();
     swiper.eventsListeners = {};
     swiper.eventsAnyListeners = [];
-    Object.keys(prototypes).forEach(function (prototypeGroup) {
-      Object.keys(prototypes[prototypeGroup]).forEach(function (protoMethod) {
-        if (!Swiper.prototype[protoMethod]) {
-          Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
-        }
-      });
-    });
 
     if (typeof swiper.modules === 'undefined') {
       swiper.modules = {};
@@ -3414,6 +3357,13 @@ var Swiper = /*#__PURE__*/function () {
         var moduleParamName = Object.keys(module.params)[0];
         var moduleParams = module.params[moduleParamName];
         if (typeof moduleParams !== 'object' || moduleParams === null) return;
+
+        if (['navigation', 'pagination', 'scrollbar'].indexOf(moduleParamName) >= 0 && params[moduleParamName] === true) {
+          params[moduleParamName] = {
+            auto: true
+          };
+        }
+
         if (!(moduleParamName in params && 'enabled' in moduleParams)) return;
 
         if (params[moduleParamName] === true) {
@@ -3432,64 +3382,33 @@ var Swiper = /*#__PURE__*/function () {
       }
     }); // Extend defaults with modules params
 
-    var swiperParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])({}, _defaults__WEBPACK_IMPORTED_MODULE_21__["default"]);
+    var swiperParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])({}, _defaults__WEBPACK_IMPORTED_MODULE_22__["default"]);
     swiper.useParams(swiperParams); // Extend defaults with passed params
 
-    swiper.params = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])({}, swiperParams, extendedDefaults, params);
-    swiper.originalParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])({}, swiper.params);
-    swiper.passedParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])({}, params); // add event listeners
+    swiper.params = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])({}, swiperParams, extendedDefaults, params);
+    swiper.originalParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])({}, swiper.params);
+    swiper.passedParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])({}, params); // add event listeners
 
     if (swiper.params && swiper.params.on) {
       Object.keys(swiper.params.on).forEach(function (eventName) {
         swiper.on(eventName, swiper.params.on[eventName]);
       });
+    }
+
+    if (swiper.params && swiper.params.onAny) {
+      swiper.onAny(swiper.params.onAny);
     } // Save Dom lib
 
 
-    swiper.$ = _utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"]; // Find el
+    swiper.$ = _utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"]; // Extend Swiper
 
-    var $el = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(swiper.params.el);
-    el = $el[0];
-
-    if (!el) {
-      return undefined;
-    }
-
-    if ($el.length > 1) {
-      var swipers = [];
-      $el.each(function (containerEl) {
-        var newParams = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])({}, params, {
-          el: containerEl
-        });
-        swipers.push(new Swiper(newParams));
-      });
-      return swipers;
-    }
-
-    el.swiper = swiper; // Find Wrapper
-
-    var $wrapperEl;
-
-    if (el && el.shadowRoot && el.shadowRoot.querySelector) {
-      $wrapperEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(el.shadowRoot.querySelector("." + swiper.params.wrapperClass)); // Children needs to return slot items
-
-      $wrapperEl.children = function (options) {
-        return $el.children(options);
-      };
-    } else {
-      $wrapperEl = $el.children("." + swiper.params.wrapperClass);
-    } // Extend Swiper
-
-
-    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])(swiper, {
-      $el: $el,
+    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])(swiper, {
+      enabled: swiper.params.enabled,
       el: el,
-      $wrapperEl: $wrapperEl,
-      wrapperEl: $wrapperEl[0],
       // Classes
       classNames: [],
       // Slides
-      slides: Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(),
+      slides: Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(),
       slidesGrid: [],
       snapGrid: [],
       slidesSizesGrid: [],
@@ -3500,10 +3419,6 @@ var Swiper = /*#__PURE__*/function () {
       isVertical: function isVertical() {
         return swiper.params.direction === 'vertical';
       },
-      // RTL
-      rtl: el.dir.toLowerCase() === 'rtl' || $el.css('direction') === 'rtl',
-      rtlTranslate: swiper.params.direction === 'horizontal' && (el.dir.toLowerCase() === 'rtl' || $el.css('direction') === 'rtl'),
-      wrongRTL: $wrapperEl.css('display') === '-webkit-box',
       // Indexes
       activeIndex: 0,
       realIndex: 0,
@@ -3551,9 +3466,9 @@ var Swiper = /*#__PURE__*/function () {
         startTranslate: undefined,
         allowThresholdMove: undefined,
         // Form elements to match
-        formElements: 'input, select, option, textarea, button, video, label',
+        focusableElements: swiper.params.focusableElements,
         // Last click time
-        lastClickTime: Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["now"])(),
+        lastClickTime: Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["now"])(),
         clickTimeout: undefined,
         // Velocities
         velocities: [],
@@ -3590,6 +3505,41 @@ var Swiper = /*#__PURE__*/function () {
 
   var _proto = Swiper.prototype;
 
+  _proto.enable = function enable() {
+    var swiper = this;
+    if (swiper.enabled) return;
+    swiper.enabled = true;
+
+    if (swiper.params.grabCursor) {
+      swiper.setGrabCursor();
+    }
+
+    swiper.emit('enable');
+  };
+
+  _proto.disable = function disable() {
+    var swiper = this;
+    if (!swiper.enabled) return;
+    swiper.enabled = false;
+
+    if (swiper.params.grabCursor) {
+      swiper.unsetGrabCursor();
+    }
+
+    swiper.emit('disable');
+  };
+
+  _proto.setProgress = function setProgress(progress, speed) {
+    var swiper = this;
+    progress = Math.min(Math.max(progress, 0), 1);
+    var min = swiper.minTranslate();
+    var max = swiper.maxTranslate();
+    var current = (max - min) * progress + min;
+    swiper.translateTo(current, typeof speed === 'undefined' ? 0 : speed);
+    swiper.updateActiveIndex();
+    swiper.updateSlidesClasses();
+  };
+
   _proto.emitContainerClasses = function emitContainerClasses() {
     var swiper = this;
     if (!swiper.params._emitClasses || !swiper.el) return;
@@ -3599,15 +3549,26 @@ var Swiper = /*#__PURE__*/function () {
     swiper.emit('_containerClasses', classes.join(' '));
   };
 
+  _proto.getSlideClasses = function getSlideClasses(slideEl) {
+    var swiper = this;
+    return slideEl.className.split(' ').filter(function (className) {
+      return className.indexOf('swiper-slide') === 0 || className.indexOf(swiper.params.slideClass) === 0;
+    }).join(' ');
+  };
+
   _proto.emitSlidesClasses = function emitSlidesClasses() {
     var swiper = this;
     if (!swiper.params._emitClasses || !swiper.el) return;
+    var updates = [];
     swiper.slides.each(function (slideEl) {
-      var classes = slideEl.className.split(' ').filter(function (className) {
-        return className.indexOf('swiper-slide') === 0 || className.indexOf(swiper.params.slideClass) === 0;
+      var classNames = swiper.getSlideClasses(slideEl);
+      updates.push({
+        slideEl: slideEl,
+        classNames: classNames
       });
-      swiper.emit('_slideClass', slideEl, classes.join(' '));
+      swiper.emit('_slideClass', slideEl, classNames);
     });
+    swiper.emit('_slideClasses', updates);
   };
 
   _proto.slidesPerViewDynamic = function slidesPerViewDynamic() {
@@ -3731,9 +3692,70 @@ var Swiper = /*#__PURE__*/function () {
     return swiper;
   };
 
-  _proto.init = function init() {
+  _proto.mount = function mount(el) {
     var swiper = this;
-    if (swiper.initialized) return;
+    if (swiper.mounted) return true; // Find el
+
+    var $el = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(el || swiper.params.el);
+    el = $el[0];
+
+    if (!el) {
+      return false;
+    }
+
+    el.swiper = swiper;
+
+    var getWrapperSelector = function getWrapperSelector() {
+      return "." + (swiper.params.wrapperClass || '').trim().split(' ').join('.');
+    };
+
+    var getWrapper = function getWrapper() {
+      if (el && el.shadowRoot && el.shadowRoot.querySelector) {
+        var res = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(el.shadowRoot.querySelector(getWrapperSelector())); // Children needs to return slot items
+
+        res.children = function (options) {
+          return $el.children(options);
+        };
+
+        return res;
+      }
+
+      return $el.children(getWrapperSelector());
+    }; // Find Wrapper
+
+
+    var $wrapperEl = getWrapper();
+
+    if ($wrapperEl.length === 0 && swiper.params.createElements) {
+      var document = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getDocument"])();
+      var wrapper = document.createElement('div');
+      $wrapperEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(wrapper);
+      wrapper.className = swiper.params.wrapperClass;
+      $el.append(wrapper);
+      $el.children("." + swiper.params.slideClass).each(function (slideEl) {
+        $wrapperEl.append(slideEl);
+      });
+    }
+
+    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])(swiper, {
+      $el: $el,
+      el: el,
+      $wrapperEl: $wrapperEl,
+      wrapperEl: $wrapperEl[0],
+      mounted: true,
+      // RTL
+      rtl: el.dir.toLowerCase() === 'rtl' || $el.css('direction') === 'rtl',
+      rtlTranslate: swiper.params.direction === 'horizontal' && (el.dir.toLowerCase() === 'rtl' || $el.css('direction') === 'rtl'),
+      wrongRTL: $wrapperEl.css('display') === '-webkit-box'
+    });
+    return true;
+  };
+
+  _proto.init = function init(el) {
+    var swiper = this;
+    if (swiper.initialized) return swiper;
+    var mounted = swiper.mount(el);
+    if (mounted === false) return swiper;
     swiper.emit('beforeInit'); // Set breakpoint
 
     if (swiper.params.breakpoints) {
@@ -3757,7 +3779,7 @@ var Swiper = /*#__PURE__*/function () {
     } // Set Grab Cursor
 
 
-    if (swiper.params.grabCursor) {
+    if (swiper.params.grabCursor && swiper.enabled) {
       swiper.setGrabCursor();
     }
 
@@ -3767,9 +3789,9 @@ var Swiper = /*#__PURE__*/function () {
 
 
     if (swiper.params.loop) {
-      swiper.slideTo(swiper.params.initialSlide + swiper.loopedSlides, 0, swiper.params.runCallbacksOnInit);
+      swiper.slideTo(swiper.params.initialSlide + swiper.loopedSlides, 0, swiper.params.runCallbacksOnInit, false, true);
     } else {
-      swiper.slideTo(swiper.params.initialSlide, 0, swiper.params.runCallbacksOnInit);
+      swiper.slideTo(swiper.params.initialSlide, 0, swiper.params.runCallbacksOnInit, false, true);
     } // Attach events
 
 
@@ -3778,6 +3800,8 @@ var Swiper = /*#__PURE__*/function () {
     swiper.initialized = true; // Emit
 
     swiper.emit('init');
+    swiper.emit('afterInit');
+    return swiper;
   };
 
   _proto.destroy = function destroy(deleteInstance, cleanStyles) {
@@ -3828,7 +3852,7 @@ var Swiper = /*#__PURE__*/function () {
 
     if (deleteInstance !== false) {
       swiper.$el[0].swiper = null;
-      Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["deleteProps"])(swiper);
+      Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["deleteProps"])(swiper);
     }
 
     swiper.destroyed = true;
@@ -3836,12 +3860,12 @@ var Swiper = /*#__PURE__*/function () {
   };
 
   Swiper.extendDefaults = function extendDefaults(newDefaults) {
-    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])(extendedDefaults, newDefaults);
+    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])(extendedDefaults, newDefaults);
   };
 
   Swiper.installModule = function installModule(module) {
     if (!Swiper.prototype.modules) Swiper.prototype.modules = {};
-    var name = module.name || Object.keys(Swiper.prototype.modules).length + "_" + Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["now"])();
+    var name = module.name || Object.keys(Swiper.prototype.modules).length + "_" + Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["now"])();
     Swiper.prototype.modules[name] = module;
   };
 
@@ -3865,14 +3889,19 @@ var Swiper = /*#__PURE__*/function () {
   }, {
     key: "defaults",
     get: function get() {
-      return _defaults__WEBPACK_IMPORTED_MODULE_21__["default"];
+      return _defaults__WEBPACK_IMPORTED_MODULE_22__["default"];
     }
   }]);
 
   return Swiper;
 }();
 
-Swiper.use([_modules_resize_resize__WEBPACK_IMPORTED_MODULE_5__["default"], _modules_observer_observer__WEBPACK_IMPORTED_MODULE_6__["default"]]);
+Object.keys(prototypes).forEach(function (prototypeGroup) {
+  Object.keys(prototypes[prototypeGroup]).forEach(function (protoMethod) {
+    Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
+  });
+});
+Swiper.use([_modules_resize_resize__WEBPACK_IMPORTED_MODULE_6__["default"], _modules_observer_observer__WEBPACK_IMPORTED_MODULE_7__["default"]]);
 /* harmony default export */ __webpack_exports__["default"] = (Swiper);
 
 /***/ }),
@@ -3894,6 +3923,11 @@ __webpack_require__.r(__webpack_exports__);
   speed: 300,
   cssMode: false,
   updateOnWindowResize: true,
+  resizeObserver: false,
+  nested: false,
+  createElements: false,
+  enabled: true,
+  focusableElements: 'input, select, option, textarea, button, video, label',
   // Overrides
   width: null,
   height: null,
@@ -3925,6 +3959,7 @@ __webpack_require__.r(__webpack_exports__);
   // 'slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
   // Breakpoints
   breakpoints: undefined,
+  breakpointsBase: 'window',
   // Slides grid
   spaceBetween: 0,
   slidesPerView: 1,
@@ -4118,12 +4153,14 @@ __webpack_require__.r(__webpack_exports__);
     data.unshift(context);
     var eventsArray = Array.isArray(events) ? events : events.split(' ');
     eventsArray.forEach(function (event) {
-      if (self.eventsListeners && self.eventsListeners[event]) {
-        var handlers = [];
-        self.eventsListeners[event].forEach(function (eventHandler) {
-          handlers.push(eventHandler);
+      if (self.eventsAnyListeners && self.eventsAnyListeners.length) {
+        self.eventsAnyListeners.forEach(function (eventHandler) {
+          eventHandler.apply(context, [event].concat(data));
         });
-        handlers.forEach(function (eventHandler) {
+      }
+
+      if (self.eventsListeners && self.eventsListeners[event]) {
+        self.eventsListeners[event].forEach(function (eventHandler) {
           eventHandler.apply(context, data);
         });
       }
@@ -4301,6 +4338,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return onClick; });
 function onClick(e) {
   var swiper = this;
+  if (!swiper.enabled) return;
 
   if (!swiper.allowClick) {
     if (swiper.params.preventClicks) e.preventDefault();
@@ -4379,7 +4417,9 @@ __webpack_require__.r(__webpack_exports__);
 function onScroll() {
   var swiper = this;
   var wrapperEl = swiper.wrapperEl,
-      rtlTranslate = swiper.rtlTranslate;
+      rtlTranslate = swiper.rtlTranslate,
+      enabled = swiper.enabled;
+  if (!enabled) return;
   swiper.previousTranslate = swiper.translate;
 
   if (swiper.isHorizontal()) {
@@ -4434,7 +4474,9 @@ function onTouchEnd(event) {
       rtl = swiper.rtlTranslate,
       $wrapperEl = swiper.$wrapperEl,
       slidesGrid = swiper.slidesGrid,
-      snapGrid = swiper.snapGrid;
+      snapGrid = swiper.snapGrid,
+      enabled = swiper.enabled;
+  if (!enabled) return;
   var e = event;
   if (e.originalEvent) e = e.originalEvent;
 
@@ -4665,6 +4707,7 @@ function onTouchEnd(event) {
           });
         }
       } else {
+        swiper.emit('_freeModeNoMomentumRelease');
         swiper.updateProgress(newPosition);
       }
 
@@ -4673,6 +4716,8 @@ function onTouchEnd(event) {
     } else if (params.freeModeSticky) {
       swiper.slideToClosest();
       return;
+    } else if (params.freeMode) {
+      swiper.emit('_freeModeNoMomentumRelease');
     }
 
     if (!params.freeModeMomentum || timeDiff >= params.longSwipesMs) {
@@ -4769,7 +4814,9 @@ function onTouchMove(event) {
   var data = swiper.touchEventsData;
   var params = swiper.params,
       touches = swiper.touches,
-      rtl = swiper.rtlTranslate;
+      rtl = swiper.rtlTranslate,
+      enabled = swiper.enabled;
+  if (!enabled) return;
   var e = event;
   if (e.originalEvent) e = e.originalEvent;
 
@@ -4823,7 +4870,7 @@ function onTouchMove(event) {
   }
 
   if (data.isTouchEvent && document.activeElement) {
-    if (e.target === document.activeElement && Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(e.target).is(data.formElements)) {
+    if (e.target === document.activeElement && Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(e.target).is(data.focusableElements)) {
       data.isMoved = true;
       swiper.allowClick = false;
       return;
@@ -4939,6 +4986,10 @@ function onTouchMove(event) {
 
   if (!swiper.allowSlidePrev && swiper.swipeDirection === 'prev' && data.currentTranslate > data.startTranslate) {
     data.currentTranslate = data.startTranslate;
+  }
+
+  if (!swiper.allowSlidePrev && !swiper.allowSlideNext) {
+    data.currentTranslate = data.startTranslate;
   } // Threshold
 
 
@@ -5010,7 +5061,9 @@ function onTouchStart(event) {
   var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
   var data = swiper.touchEventsData;
   var params = swiper.params,
-      touches = swiper.touches;
+      touches = swiper.touches,
+      enabled = swiper.enabled;
+  if (!enabled) return;
 
   if (swiper.animating && params.preventInteractionOnTransition) {
     return;
@@ -5027,7 +5080,13 @@ function onTouchStart(event) {
   data.isTouchEvent = e.type === 'touchstart';
   if (!data.isTouchEvent && 'which' in e && e.which === 3) return;
   if (!data.isTouchEvent && 'button' in e && e.button > 0) return;
-  if (data.isTouched && data.isMoved) return;
+  if (data.isTouched && data.isMoved) return; // change target el for shadow root componenet
+
+  var swipingClassHasValue = !!params.noSwipingClass && params.noSwipingClass !== '';
+
+  if (swipingClassHasValue && e.target && e.target.shadowRoot && event.path && event.path[0]) {
+    $targetEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(event.path[0]);
+  }
 
   if (params.noSwiping && $targetEl.closest(params.noSwipingSelector ? params.noSwipingSelector : "." + params.noSwipingClass)[0]) {
     swiper.allowClick = true;
@@ -5046,8 +5105,12 @@ function onTouchStart(event) {
   var edgeSwipeDetection = params.edgeSwipeDetection || params.iOSEdgeSwipeDetection;
   var edgeSwipeThreshold = params.edgeSwipeThreshold || params.iOSEdgeSwipeThreshold;
 
-  if (edgeSwipeDetection && (startX <= edgeSwipeThreshold || startX >= window.screen.width - edgeSwipeThreshold)) {
-    return;
+  if (edgeSwipeDetection && (startX <= edgeSwipeThreshold || startX >= window.innerWidth - edgeSwipeThreshold)) {
+    if (edgeSwipeDetection === 'prevent') {
+      event.preventDefault();
+    } else {
+      return;
+    }
   }
 
   Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["extend"])(data, {
@@ -5067,15 +5130,15 @@ function onTouchStart(event) {
 
   if (e.type !== 'touchstart') {
     var preventDefault = true;
-    if ($targetEl.is(data.formElements)) preventDefault = false;
+    if ($targetEl.is(data.focusableElements)) preventDefault = false;
 
-    if (document.activeElement && Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(document.activeElement).is(data.formElements) && document.activeElement !== $targetEl[0]) {
+    if (document.activeElement && Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(document.activeElement).is(data.focusableElements) && document.activeElement !== $targetEl[0]) {
       document.activeElement.blur();
     }
 
     var shouldPreventDefault = preventDefault && swiper.allowTouchMove && params.touchStartPreventDefault;
 
-    if (params.touchStartForcePreventDefault || shouldPreventDefault) {
+    if ((params.touchStartForcePreventDefault || shouldPreventDefault) && !$targetEl[0].isContentEditable) {
       e.preventDefault();
     }
   }
@@ -5796,7 +5859,9 @@ function slideNext(speed, runCallbacks, internal) {
 
   var swiper = this;
   var params = swiper.params,
-      animating = swiper.animating;
+      animating = swiper.animating,
+      enabled = swiper.enabled;
+  if (!enabled) return swiper;
   var increment = swiper.activeIndex < params.slidesPerGroupSkip ? 1 : params.slidesPerGroup;
 
   if (params.loop) {
@@ -5836,7 +5901,9 @@ function slidePrev(speed, runCallbacks, internal) {
       animating = swiper.animating,
       snapGrid = swiper.snapGrid,
       slidesGrid = swiper.slidesGrid,
-      rtlTranslate = swiper.rtlTranslate;
+      rtlTranslate = swiper.rtlTranslate,
+      enabled = swiper.enabled;
+  if (!enabled) return swiper;
 
   if (params.loop) {
     if (animating && params.loopPreventsSlide) return false;
@@ -5856,7 +5923,6 @@ function slidePrev(speed, runCallbacks, internal) {
   var normalizedSnapGrid = snapGrid.map(function (val) {
     return normalize(val);
   });
-  var currentSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate)];
   var prevSnap = snapGrid[normalizedSnapGrid.indexOf(normalizedTranslate) - 1];
 
   if (typeof prevSnap === 'undefined' && params.cssMode) {
@@ -5913,7 +5979,7 @@ function slideReset(speed, runCallbacks, internal) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return slideTo; });
-function slideTo(index, speed, runCallbacks, internal) {
+function slideTo(index, speed, runCallbacks, internal, initial) {
   if (index === void 0) {
     index = 0;
   }
@@ -5926,6 +5992,33 @@ function slideTo(index, speed, runCallbacks, internal) {
     runCallbacks = true;
   }
 
+  if (typeof index !== 'number' && typeof index !== 'string') {
+    throw new Error("The 'index' argument cannot have type other than 'number' or 'string'. [" + typeof index + "] given.");
+  }
+
+  if (typeof index === 'string') {
+    /**
+     * The `index` argument converted from `string` to `number`.
+     * @type {number}
+     */
+    var indexAsNumber = parseInt(index, 10);
+    /**
+     * Determines whether the `index` argument is a valid `number`
+     * after being converted from the `string` type.
+     * @type {boolean}
+     */
+
+    var isValidNumber = isFinite(indexAsNumber);
+
+    if (!isValidNumber) {
+      throw new Error("The passed-in 'index' (string) couldn't be converted to 'number'. [" + index + "] given.");
+    } // Knowing that the converted `index` is a valid number,
+    // we can update the original argument's value.
+
+
+    index = indexAsNumber;
+  }
+
   var swiper = this;
   var slideIndex = index;
   if (slideIndex < 0) slideIndex = 0;
@@ -5935,9 +6028,10 @@ function slideTo(index, speed, runCallbacks, internal) {
       previousIndex = swiper.previousIndex,
       activeIndex = swiper.activeIndex,
       rtl = swiper.rtlTranslate,
-      wrapperEl = swiper.wrapperEl;
+      wrapperEl = swiper.wrapperEl,
+      enabled = swiper.enabled;
 
-  if (swiper.animating && params.preventInteractionOnTransition) {
+  if (swiper.animating && params.preventInteractionOnTransition || !enabled && !internal && !initial) {
     return false;
   }
 
@@ -5955,7 +6049,17 @@ function slideTo(index, speed, runCallbacks, internal) {
 
   if (params.normalizeSlideIndex) {
     for (var i = 0; i < slidesGrid.length; i += 1) {
-      if (-Math.floor(translate * 100) >= Math.floor(slidesGrid[i] * 100)) {
+      var normalizedTranslate = -Math.floor(translate * 100);
+      var normalizedGird = Math.floor(slidesGrid[i] * 100);
+      var normalizedGridNext = Math.floor(slidesGrid[i + 1] * 100);
+
+      if (typeof slidesGrid[i + 1] !== 'undefined') {
+        if (normalizedTranslate >= normalizedGird && normalizedTranslate < normalizedGridNext - (normalizedGridNext - normalizedGird) / 2) {
+          slideIndex = i;
+        } else if (normalizedTranslate >= normalizedGird && normalizedTranslate < normalizedGridNext) {
+          slideIndex = i + 1;
+        }
+      } else if (normalizedTranslate >= normalizedGird) {
         slideIndex = i;
       }
     }
@@ -6750,6 +6854,7 @@ __webpack_require__.r(__webpack_exports__);
 function updateAutoHeight(speed) {
   var swiper = this;
   var activeSlides = [];
+  var isVirtual = swiper.virtual && swiper.params.virtual.enabled;
   var newHeight = 0;
   var i;
 
@@ -6757,7 +6862,17 @@ function updateAutoHeight(speed) {
     swiper.setTransition(speed);
   } else if (speed === true) {
     swiper.setTransition(swiper.params.speed);
-  } // Find slides currently in view
+  }
+
+  var getSlideByIndex = function getSlideByIndex(index) {
+    if (isVirtual) {
+      return swiper.slides.filter(function (el) {
+        return parseInt(el.getAttribute('data-swiper-slide-index'), 10) === index;
+      })[0];
+    }
+
+    return swiper.slides.eq(index)[0];
+  }; // Find slides currently in view
 
 
   if (swiper.params.slidesPerView !== 'auto' && swiper.params.slidesPerView > 1) {
@@ -6768,12 +6883,12 @@ function updateAutoHeight(speed) {
     } else {
       for (i = 0; i < Math.ceil(swiper.params.slidesPerView); i += 1) {
         var index = swiper.activeIndex + i;
-        if (index > swiper.slides.length) break;
-        activeSlides.push(swiper.slides.eq(index)[0]);
+        if (index > swiper.slides.length && !isVirtual) break;
+        activeSlides.push(getSlideByIndex(index));
       }
     }
   } else {
-    activeSlides.push(swiper.slides.eq(swiper.activeIndex)[0]);
+    activeSlides.push(getSlideByIndex(swiper.activeIndex));
   } // Find new height from highest slide in view
 
 
@@ -6807,10 +6922,15 @@ function updateClickedSlide(e) {
   var params = swiper.params;
   var slide = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(e.target).closest("." + params.slideClass)[0];
   var slideFound = false;
+  var slideIndex;
 
   if (slide) {
     for (var i = 0; i < swiper.slides.length; i += 1) {
-      if (swiper.slides[i] === slide) slideFound = true;
+      if (swiper.slides[i] === slide) {
+        slideFound = true;
+        slideIndex = i;
+        break;
+      }
     }
   }
 
@@ -6820,7 +6940,7 @@ function updateClickedSlide(e) {
     if (swiper.virtual && swiper.params.virtual.enabled) {
       swiper.clickedIndex = parseInt(Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slide).attr('data-swiper-slide-index'), 10);
     } else {
-      swiper.clickedIndex = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slide).index();
+      swiper.clickedIndex = slideIndex;
     }
   } else {
     swiper.clickedSlide = undefined;
@@ -6922,7 +7042,7 @@ function updateSize() {
     width = $el[0].clientWidth;
   }
 
-  if (typeof swiper.params.height !== 'undefined' && swiper.params.width !== null) {
+  if (typeof swiper.params.height !== 'undefined' && swiper.params.height !== null) {
     height = swiper.params.height;
   } else {
     height = $el[0].clientHeight;
@@ -6956,13 +7076,33 @@ function updateSize() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return updateSlides; });
-/* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
-
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
 
 function updateSlides() {
   var swiper = this;
-  var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+
+  function getDirectionLabel(property) {
+    if (swiper.isHorizontal()) {
+      return property;
+    } // prettier-ignore
+
+
+    return {
+      'width': 'height',
+      'margin-top': 'margin-left',
+      'margin-bottom ': 'margin-right',
+      'margin-left': 'margin-top',
+      'margin-right': 'margin-bottom',
+      'padding-left': 'padding-top',
+      'padding-right': 'padding-bottom',
+      'marginRight': 'marginBottom'
+    }[property];
+  }
+
+  function getDirectionPropertyValue(node, label) {
+    return parseFloat(node.getPropertyValue(getDirectionLabel(label)) || 0);
+  }
+
   var params = swiper.params;
   var $wrapperEl = swiper.$wrapperEl,
       swiperSize = swiper.size,
@@ -6975,17 +7115,6 @@ function updateSlides() {
   var snapGrid = [];
   var slidesGrid = [];
   var slidesSizesGrid = [];
-
-  function slidesForMargin(slideEl, slideIndex) {
-    if (!params.cssMode) return true;
-
-    if (slideIndex === slides.length - 1) {
-      return false;
-    }
-
-    return true;
-  }
-
   var offsetBefore = params.slidesOffsetBefore;
 
   if (typeof offsetBefore === 'function') {
@@ -6999,7 +7128,7 @@ function updateSlides() {
   }
 
   var previousSnapGridLength = swiper.snapGrid.length;
-  var previousSlidesGridLength = swiper.snapGrid.length;
+  var previousSlidesGridLength = swiper.slidesGrid.length;
   var spaceBetween = params.spaceBetween;
   var slidePosition = -offsetBefore;
   var prevSlideSize = 0;
@@ -7083,13 +7212,13 @@ function updateSlides() {
         column = i - row * slidesPerRow;
       }
 
-      slide.css("margin-" + (swiper.isHorizontal() ? 'top' : 'left'), row !== 0 && params.spaceBetween && params.spaceBetween + "px");
+      slide.css(getDirectionLabel('margin-top'), row !== 0 ? params.spaceBetween && params.spaceBetween + "px" : '');
     }
 
     if (slide.css('display') === 'none') continue; // eslint-disable-line
 
     if (params.slidesPerView === 'auto') {
-      var slideStyles = window.getComputedStyle(slide[0], null);
+      var slideStyles = getComputedStyle(slide[0]);
       var currentTransform = slide[0].style.transform;
       var currentWebKitTransform = slide[0].style.webkitTransform;
 
@@ -7105,33 +7234,20 @@ function updateSlides() {
         slideSize = swiper.isHorizontal() ? slide.outerWidth(true) : slide.outerHeight(true);
       } else {
         // eslint-disable-next-line
-        if (swiper.isHorizontal()) {
-          var width = parseFloat(slideStyles.getPropertyValue('width') || 0);
-          var paddingLeft = parseFloat(slideStyles.getPropertyValue('padding-left') || 0);
-          var paddingRight = parseFloat(slideStyles.getPropertyValue('padding-right') || 0);
-          var marginLeft = parseFloat(slideStyles.getPropertyValue('margin-left') || 0);
-          var marginRight = parseFloat(slideStyles.getPropertyValue('margin-right') || 0);
-          var boxSizing = slideStyles.getPropertyValue('box-sizing');
+        var width = getDirectionPropertyValue(slideStyles, 'width');
+        var paddingLeft = getDirectionPropertyValue(slideStyles, 'padding-left');
+        var paddingRight = getDirectionPropertyValue(slideStyles, 'padding-right');
+        var marginLeft = getDirectionPropertyValue(slideStyles, 'margin-left');
+        var marginRight = getDirectionPropertyValue(slideStyles, 'margin-right');
+        var boxSizing = slideStyles.getPropertyValue('box-sizing');
 
-          if (boxSizing && boxSizing === 'border-box') {
-            slideSize = width + marginLeft + marginRight;
-          } else {
-            slideSize = width + paddingLeft + paddingRight + marginLeft + marginRight;
-          }
+        if (boxSizing && boxSizing === 'border-box') {
+          slideSize = width + marginLeft + marginRight;
         } else {
-          var height = parseFloat(slideStyles.getPropertyValue('height') || 0);
-          var paddingTop = parseFloat(slideStyles.getPropertyValue('padding-top') || 0);
-          var paddingBottom = parseFloat(slideStyles.getPropertyValue('padding-bottom') || 0);
-          var marginTop = parseFloat(slideStyles.getPropertyValue('margin-top') || 0);
-          var marginBottom = parseFloat(slideStyles.getPropertyValue('margin-bottom') || 0);
-
-          var _boxSizing = slideStyles.getPropertyValue('box-sizing');
-
-          if (_boxSizing && _boxSizing === 'border-box') {
-            slideSize = height + marginTop + marginBottom;
-          } else {
-            slideSize = height + paddingTop + paddingBottom + marginTop + marginBottom;
-          }
+          var _slide$ = slide[0],
+              clientWidth = _slide$.clientWidth,
+              offsetWidth = _slide$.offsetWidth;
+          slideSize = width + paddingLeft + paddingRight + marginLeft + marginRight + (offsetWidth - clientWidth);
         }
       }
 
@@ -7149,11 +7265,7 @@ function updateSlides() {
       if (params.roundLengths) slideSize = Math.floor(slideSize);
 
       if (slides[i]) {
-        if (swiper.isHorizontal()) {
-          slides[i].style.width = slideSize + "px";
-        } else {
-          slides[i].style.height = slideSize + "px";
-        }
+        slides[i].style[getDirectionLabel('width')] = slideSize + "px";
       }
     }
 
@@ -7193,21 +7305,17 @@ function updateSlides() {
   }
 
   if (params.setWrapperSize) {
-    if (swiper.isHorizontal()) $wrapperEl.css({
-      width: swiper.virtualSize + params.spaceBetween + "px"
-    });else $wrapperEl.css({
-      height: swiper.virtualSize + params.spaceBetween + "px"
-    });
+    var _$wrapperEl$css;
+
+    $wrapperEl.css((_$wrapperEl$css = {}, _$wrapperEl$css[getDirectionLabel('width')] = swiper.virtualSize + params.spaceBetween + "px", _$wrapperEl$css));
   }
 
   if (params.slidesPerColumn > 1) {
+    var _$wrapperEl$css2;
+
     swiper.virtualSize = (slideSize + params.spaceBetween) * slidesNumberEvenToRows;
     swiper.virtualSize = Math.ceil(swiper.virtualSize / params.slidesPerColumn) - params.spaceBetween;
-    if (swiper.isHorizontal()) $wrapperEl.css({
-      width: swiper.virtualSize + params.spaceBetween + "px"
-    });else $wrapperEl.css({
-      height: swiper.virtualSize + params.spaceBetween + "px"
-    });
+    $wrapperEl.css((_$wrapperEl$css2 = {}, _$wrapperEl$css2[getDirectionLabel('width')] = swiper.virtualSize + params.spaceBetween + "px", _$wrapperEl$css2));
 
     if (params.centeredSlides) {
       newSlidesGrid = [];
@@ -7245,15 +7353,18 @@ function updateSlides() {
   if (snapGrid.length === 0) snapGrid = [0];
 
   if (params.spaceBetween !== 0) {
-    if (swiper.isHorizontal()) {
-      if (rtl) slides.filter(slidesForMargin).css({
-        marginLeft: spaceBetween + "px"
-      });else slides.filter(slidesForMargin).css({
-        marginRight: spaceBetween + "px"
-      });
-    } else slides.filter(slidesForMargin).css({
-      marginBottom: spaceBetween + "px"
-    });
+    var _slides$filter$css;
+
+    var key = swiper.isHorizontal() && rtl ? 'marginLeft' : getDirectionLabel('marginRight');
+    slides.filter(function (_, slideIndex) {
+      if (!params.cssMode) return true;
+
+      if (slideIndex === slides.length - 1) {
+        return false;
+      }
+
+      return true;
+    }).css((_slides$filter$css = {}, _slides$filter$css[key] = spaceBetween + "px", _slides$filter$css));
   }
 
   if (params.centeredSlides && params.centeredSlidesBounds) {
@@ -7288,7 +7399,7 @@ function updateSlides() {
     }
   }
 
-  Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])(swiper, {
+  Object(_utils_utils__WEBPACK_IMPORTED_MODULE_0__["extend"])(swiper, {
     slides: slides,
     snapGrid: snapGrid,
     slidesGrid: slidesGrid,
@@ -8141,7 +8252,7 @@ var HashNavigation = {
         swiper.hashNavigation.destroy();
       }
     },
-    transitionEnd: function transitionEnd(swiper) {
+    'transitionEnd _freeModeNoMomentumRelease': function transitionEnd_freeModeNoMomentumRelease(swiper) {
       if (swiper.hashNavigation.initialized) {
         swiper.hashNavigation.setHash();
       }
@@ -8242,7 +8353,11 @@ var History = {
     var slide = swiper.slides.eq(index);
     var value = History.slugify(slide.attr('data-history'));
 
-    if (!location.pathname.includes(key)) {
+    if (swiper.params.history.root.length > 0) {
+      var root = swiper.params.history.root;
+      if (root[root.length - 1] === '/') root = root.slice(0, root.length - 1);
+      value = root + "/" + key + "/" + value;
+    } else if (!location.pathname.includes(key)) {
       value = key + "/" + value;
     }
 
@@ -8288,6 +8403,7 @@ var History = {
   params: {
     history: {
       enabled: false,
+      root: '',
       replaceState: false,
       key: 'slides'
     }
@@ -8309,7 +8425,7 @@ var History = {
         swiper.history.destroy();
       }
     },
-    transitionEnd: function transitionEnd(swiper) {
+    'transitionEnd _freeModeNoMomentumRelease': function transitionEnd_freeModeNoMomentumRelease(swiper) {
       if (swiper.history.initialized) {
         swiper.history.setHistory(swiper.params.history.key, swiper.activeIndex);
       }
@@ -8338,12 +8454,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+/* eslint-disable consistent-return */
 
 
 
 var Keyboard = {
   handle: function handle(event) {
     var swiper = this;
+    if (!swiper.enabled) return;
     var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
     var document = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getDocument"])();
     var rtl = swiper.rtlTranslate;
@@ -8382,16 +8500,21 @@ var Keyboard = {
         return undefined;
       }
 
+      var $el = swiper.$el;
+      var swiperWidth = $el[0].clientWidth;
+      var swiperHeight = $el[0].clientHeight;
       var windowWidth = window.innerWidth;
       var windowHeight = window.innerHeight;
       var swiperOffset = swiper.$el.offset();
       if (rtl) swiperOffset.left -= swiper.$el[0].scrollLeft;
-      var swiperCoord = [[swiperOffset.left, swiperOffset.top], [swiperOffset.left + swiper.width, swiperOffset.top], [swiperOffset.left, swiperOffset.top + swiper.height], [swiperOffset.left + swiper.width, swiperOffset.top + swiper.height]];
+      var swiperCoord = [[swiperOffset.left, swiperOffset.top], [swiperOffset.left + swiperWidth, swiperOffset.top], [swiperOffset.left, swiperOffset.top + swiperHeight], [swiperOffset.left + swiperWidth, swiperOffset.top + swiperHeight]];
 
       for (var i = 0; i < swiperCoord.length; i += 1) {
         var point = swiperCoord[i];
 
         if (point[0] >= 0 && point[0] <= windowWidth && point[1] >= 0 && point[1] <= windowHeight) {
+          if (point[0] === 0 && point[1] === 0) continue; // eslint-disable-line
+
           inView = true;
         }
       }
@@ -8475,9 +8598,11 @@ var Keyboard = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
+/* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
+/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 
 
 
@@ -8501,7 +8626,7 @@ var Lazy = {
 
     if ($images.length === 0) return;
     $images.each(function (imageEl) {
-      var $imageEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(imageEl);
+      var $imageEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(imageEl);
       $imageEl.addClass(params.loadingClass);
       var background = $imageEl.attr('data-background');
       var src = $imageEl.attr('data-src');
@@ -8527,7 +8652,7 @@ var Lazy = {
 
           if ($pictureEl.length) {
             $pictureEl.children('source').each(function (sourceEl) {
-              var $source = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(sourceEl);
+              var $source = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(sourceEl);
 
               if ($source.attr('data-srcset')) {
                 $source.attr('srcset', $source.attr('data-srcset'));
@@ -8592,17 +8717,17 @@ var Lazy = {
 
     function slideIndex(slideEl) {
       if (isVirtual) {
-        return Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slideEl).attr('data-swiper-slide-index');
+        return Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(slideEl).attr('data-swiper-slide-index');
       }
 
-      return Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slideEl).index();
+      return Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(slideEl).index();
     }
 
     if (!swiper.lazy.initialImageLoaded) swiper.lazy.initialImageLoaded = true;
 
     if (swiper.params.watchSlidesVisibility) {
       $wrapperEl.children("." + swiperParams.slideVisibleClass).each(function (slideEl) {
-        var index = isVirtual ? Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slideEl).attr('data-swiper-slide-index') : Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(slideEl).index();
+        var index = isVirtual ? Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(slideEl).attr('data-swiper-slide-index') : Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(slideEl).index();
         swiper.lazy.loadInSlide(index);
       });
     } else if (slidesPerView > 1) {
@@ -8635,16 +8760,55 @@ var Lazy = {
         if (prevSlide.length > 0) swiper.lazy.loadInSlide(slideIndex(prevSlide));
       }
     }
+  },
+  checkInViewOnLoad: function checkInViewOnLoad() {
+    var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+    var swiper = this;
+    if (!swiper || swiper.destroyed) return;
+    var $scrollElement = swiper.params.lazy.scrollingElement ? Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(swiper.params.lazy.scrollingElement) : Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(window);
+    var isWindow = $scrollElement[0] === window;
+    var scrollElementWidth = isWindow ? window.innerWidth : $scrollElement[0].offsetWidth;
+    var scrollElementHeight = isWindow ? window.innerHeight : $scrollElement[0].offsetHeight;
+    var swiperOffset = swiper.$el.offset();
+    var rtl = swiper.rtlTranslate;
+    var inView = false;
+    if (rtl) swiperOffset.left -= swiper.$el[0].scrollLeft;
+    var swiperCoord = [[swiperOffset.left, swiperOffset.top], [swiperOffset.left + swiper.width, swiperOffset.top], [swiperOffset.left, swiperOffset.top + swiper.height], [swiperOffset.left + swiper.width, swiperOffset.top + swiper.height]];
+
+    for (var i = 0; i < swiperCoord.length; i += 1) {
+      var point = swiperCoord[i];
+
+      if (point[0] >= 0 && point[0] <= scrollElementWidth && point[1] >= 0 && point[1] <= scrollElementHeight) {
+        if (point[0] === 0 && point[1] === 0) continue; // eslint-disable-line
+
+        inView = true;
+      }
+    }
+
+    var passiveListener = swiper.touchEvents.start === 'touchstart' && swiper.support.passiveListener && swiper.params.passiveListeners ? {
+      passive: true,
+      capture: false
+    } : false;
+
+    if (inView) {
+      swiper.lazy.load();
+      $scrollElement.off('scroll', swiper.lazy.checkInViewOnLoad, passiveListener);
+    } else if (!swiper.lazy.scrollHandlerAttached) {
+      swiper.lazy.scrollHandlerAttached = true;
+      $scrollElement.on('scroll', swiper.lazy.checkInViewOnLoad, passiveListener);
+    }
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'lazy',
   params: {
     lazy: {
+      checkInView: false,
       enabled: false,
       loadPrevNext: false,
       loadPrevNextAmount: 1,
       loadOnTransitionStart: false,
+      scrollingElement: '',
       elementClass: 'swiper-lazy',
       loadingClass: 'swiper-lazy-loading',
       loadedClass: 'swiper-lazy-loaded',
@@ -8653,7 +8817,7 @@ var Lazy = {
   },
   create: function create() {
     var swiper = this;
-    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["bindModuleMethods"])(swiper, {
+    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["bindModuleMethods"])(swiper, {
       lazy: _extends({
         initialImageLoaded: false
       }, Lazy)
@@ -8667,7 +8831,11 @@ var Lazy = {
     },
     init: function init(swiper) {
       if (swiper.params.lazy.enabled && !swiper.params.loop && swiper.params.initialSlide === 0) {
-        swiper.lazy.load();
+        if (swiper.params.lazy.checkInView) {
+          swiper.lazy.checkInViewOnLoad();
+        } else {
+          swiper.lazy.load();
+        }
       }
     },
     scroll: function scroll(swiper) {
@@ -8675,12 +8843,7 @@ var Lazy = {
         swiper.lazy.load();
       }
     },
-    resize: function resize(swiper) {
-      if (swiper.params.lazy.enabled) {
-        swiper.lazy.load();
-      }
-    },
-    scrollbarDragMove: function scrollbarDragMove(swiper) {
+    'scrollbarDragMove resize _freeModeNoMomentumRelease': function lazyLoad(swiper) {
       if (swiper.params.lazy.enabled) {
         swiper.lazy.load();
       }
@@ -8719,6 +8882,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
 /* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
 /* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
+/* eslint-disable consistent-return */
 
 
 
@@ -8834,15 +8998,19 @@ var Mousewheel = {
   },
   handleMouseEnter: function handleMouseEnter() {
     var swiper = this;
+    if (!swiper.enabled) return;
     swiper.mouseEntered = true;
   },
   handleMouseLeave: function handleMouseLeave() {
     var swiper = this;
+    if (!swiper.enabled) return;
     swiper.mouseEntered = false;
   },
   handle: function handle(event) {
     var e = event;
+    var disableParentSwiper = true;
     var swiper = this;
+    if (!swiper.enabled) return;
     var params = swiper.params.mousewheel;
 
     if (swiper.params.cssMode) {
@@ -8871,7 +9039,20 @@ var Mousewheel = {
     }
 
     if (delta === 0) return true;
-    if (params.invert) delta = -delta;
+    if (params.invert) delta = -delta; // Get the scroll positions
+
+    var positions = swiper.getTranslate() + delta * params.sensitivity;
+    if (positions >= swiper.minTranslate()) positions = swiper.minTranslate();
+    if (positions <= swiper.maxTranslate()) positions = swiper.maxTranslate(); // When loop is true:
+    //     the disableParentSwiper will be true.
+    // When loop is false:
+    //     if the scroll positions is not on edge,
+    //     then the disableParentSwiper will be true.
+    //     if the scroll on edge positions,
+    //     then the disableParentSwiper will be false.
+
+    disableParentSwiper = swiper.params.loop ? true : !(positions === swiper.minTranslate() || positions === swiper.maxTranslate());
+    if (disableParentSwiper && swiper.params.nested) e.stopPropagation();
 
     if (!swiper.params.freeMode) {
       // Register the new event in a variable which stores the relevant data
@@ -8953,7 +9134,7 @@ var Mousewheel = {
           // 3. does the earliest event have an (absolute value) delta that's
           //    at least P (P=1?) larger than the most recent event's delta?
           // 4. does the latest event have a delta that's smaller than Q (Q=6?) pixels?
-          // If 1-4 are "yes" then we're near the end of a momuntum scroll deceleration.
+          // If 1-4 are "yes" then we're near the end of a momentum scroll deceleration.
           // Snap immediately and ignore remaining wheel events in this scroll.
           // See comment above for "remaining wheel events in this scroll" determination.
           // If 1-4 aren't satisfied, then wait to snap until 500ms after the last event.
@@ -9197,10 +9378,15 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 var Navigation = {
+  toggleEl: function toggleEl($el, disabled) {
+    $el[disabled ? 'addClass' : 'removeClass'](this.params.navigation.disabledClass);
+    if ($el[0] && $el[0].tagName === 'BUTTON') $el[0].disabled = disabled;
+  },
   update: function update() {
     // Update Navigation Buttons
     var swiper = this;
     var params = swiper.params.navigation;
+    var toggleEl = swiper.navigation.toggleEl;
     if (swiper.params.loop) return;
     var _swiper$navigation = swiper.navigation,
         $nextEl = _swiper$navigation.$nextEl,
@@ -9208,22 +9394,26 @@ var Navigation = {
 
     if ($prevEl && $prevEl.length > 0) {
       if (swiper.isBeginning) {
-        $prevEl.addClass(params.disabledClass);
+        toggleEl($prevEl, true);
       } else {
-        $prevEl.removeClass(params.disabledClass);
+        toggleEl($prevEl, false);
       }
 
-      $prevEl[swiper.params.watchOverflow && swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
+      if (swiper.params.watchOverflow && swiper.enabled) {
+        $prevEl[swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
+      }
     }
 
     if ($nextEl && $nextEl.length > 0) {
       if (swiper.isEnd) {
-        $nextEl.addClass(params.disabledClass);
+        toggleEl($nextEl, true);
       } else {
-        $nextEl.removeClass(params.disabledClass);
+        toggleEl($nextEl, false);
       }
 
-      $nextEl[swiper.params.watchOverflow && swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
+      if (swiper.params.watchOverflow && swiper.enabled) {
+        $nextEl[swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
+      }
     }
   },
   onPrevClick: function onPrevClick(e) {
@@ -9241,6 +9431,10 @@ var Navigation = {
   init: function init() {
     var swiper = this;
     var params = swiper.params.navigation;
+    swiper.params.navigation = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["createElementIfNotDefined"])(swiper.$el, swiper.params.navigation, swiper.params.createElements, {
+      nextEl: 'swiper-button-next',
+      prevEl: 'swiper-button-prev'
+    });
     if (!(params.nextEl || params.prevEl)) return;
     var $nextEl;
     var $prevEl;
@@ -9275,6 +9469,11 @@ var Navigation = {
       $prevEl: $prevEl,
       prevEl: $prevEl && $prevEl[0]
     });
+
+    if (!swiper.enabled) {
+      if ($nextEl) $nextEl.addClass(params.lockClass);
+      if ($prevEl) $prevEl.addClass(params.lockClass);
+    }
   },
   destroy: function destroy() {
     var swiper = this;
@@ -9325,12 +9524,27 @@ var Navigation = {
     destroy: function destroy(swiper) {
       swiper.navigation.destroy();
     },
-    click: function click(swiper, e) {
+    'enable disable': function enableDisable(swiper) {
       var _swiper$navigation3 = swiper.navigation,
           $nextEl = _swiper$navigation3.$nextEl,
           $prevEl = _swiper$navigation3.$prevEl;
 
-      if (swiper.params.navigation.hideOnClick && !Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(e.target).is($prevEl) && !Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(e.target).is($nextEl)) {
+      if ($nextEl) {
+        $nextEl[swiper.enabled ? 'removeClass' : 'addClass'](swiper.params.navigation.lockClass);
+      }
+
+      if ($prevEl) {
+        $prevEl[swiper.enabled ? 'removeClass' : 'addClass'](swiper.params.navigation.lockClass);
+      }
+    },
+    click: function click(swiper, e) {
+      var _swiper$navigation4 = swiper.navigation,
+          $nextEl = _swiper$navigation4.$nextEl,
+          $prevEl = _swiper$navigation4.$prevEl;
+      var targetEl = e.target;
+
+      if (swiper.params.navigation.hideOnClick && !Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(targetEl).is($prevEl) && !Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(targetEl).is($nextEl)) {
+        if (swiper.pagination && swiper.params.pagination && swiper.params.pagination.clickable && (swiper.pagination.el === targetEl || swiper.pagination.el.contains(targetEl))) return;
         var isHidden;
 
         if ($nextEl) {
@@ -9493,8 +9707,8 @@ var Pagination = {
     }
 
     if (params.type === 'fraction') {
-      $el.find("." + params.currentClass).text(params.formatFractionCurrent(current + 1));
-      $el.find("." + params.totalClass).text(params.formatFractionTotal(total));
+      $el.find(Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(params.currentClass)).text(params.formatFractionCurrent(current + 1));
+      $el.find(Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(params.totalClass)).text(params.formatFractionTotal(total));
     }
 
     if (params.type === 'progressbar') {
@@ -9516,7 +9730,7 @@ var Pagination = {
         scaleY = scale;
       }
 
-      $el.find("." + params.progressbarFillClass).transform("translate3d(0,0,0) scaleX(" + scaleX + ") scaleY(" + scaleY + ")").transition(swiper.params.speed);
+      $el.find(Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(params.progressbarFillClass)).transform("translate3d(0,0,0) scaleX(" + scaleX + ") scaleY(" + scaleY + ")").transition(swiper.params.speed);
     }
 
     if (params.type === 'custom' && params.renderCustom) {
@@ -9526,7 +9740,9 @@ var Pagination = {
       swiper.emit('paginationUpdate', $el[0]);
     }
 
-    $el[swiper.params.watchOverflow && swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
+    if (swiper.params.watchOverflow && swiper.enabled) {
+      $el[swiper.isLocked ? 'addClass' : 'removeClass'](params.lockClass);
+    }
   },
   render: function render() {
     // Render Container
@@ -9540,6 +9756,10 @@ var Pagination = {
     if (params.type === 'bullets') {
       var numberOfBullets = swiper.params.loop ? Math.ceil((slidesLength - swiper.loopedSlides * 2) / swiper.params.slidesPerGroup) : swiper.snapGrid.length;
 
+      if (swiper.params.freeMode && !swiper.params.loop && numberOfBullets > slidesLength) {
+        numberOfBullets = slidesLength;
+      }
+
       for (var i = 0; i < numberOfBullets; i += 1) {
         if (params.renderBullet) {
           paginationHTML += params.renderBullet.call(swiper, i, params.bulletClass);
@@ -9549,7 +9769,7 @@ var Pagination = {
       }
 
       $el.html(paginationHTML);
-      swiper.pagination.bullets = $el.find("." + params.bulletClass);
+      swiper.pagination.bullets = $el.find(Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(params.bulletClass));
     }
 
     if (params.type === 'fraction') {
@@ -9578,6 +9798,9 @@ var Pagination = {
   },
   init: function init() {
     var swiper = this;
+    swiper.params.pagination = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["createElementIfNotDefined"])(swiper.$el, swiper.params.pagination, swiper.params.createElements, {
+      el: 'swiper-pagination'
+    });
     var params = swiper.params.pagination;
     if (!params.el) return;
     var $el = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(params.el);
@@ -9607,7 +9830,7 @@ var Pagination = {
     }
 
     if (params.clickable) {
-      $el.on('click', "." + params.bulletClass, function onClick(e) {
+      $el.on('click', Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(params.bulletClass), function onClick(e) {
         e.preventDefault();
         var index = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(this).index() * swiper.params.slidesPerGroup;
         if (swiper.params.loop) index += swiper.loopedSlides;
@@ -9619,6 +9842,10 @@ var Pagination = {
       $el: $el,
       el: $el[0]
     });
+
+    if (!swiper.enabled) {
+      $el.addClass(params.lockClass);
+    }
   },
   destroy: function destroy() {
     var swiper = this;
@@ -9630,7 +9857,7 @@ var Pagination = {
     if (swiper.pagination.bullets) swiper.pagination.bullets.removeClass(params.bulletActiveClass);
 
     if (params.clickable) {
-      $el.off('click', "." + params.bulletClass);
+      $el.off('click', Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["classesToSelector"])(params.bulletClass));
     }
   }
 };
@@ -9712,8 +9939,18 @@ var Pagination = {
     destroy: function destroy(swiper) {
       swiper.pagination.destroy();
     },
+    'enable disable': function enableDisable(swiper) {
+      var $el = swiper.pagination.$el;
+
+      if ($el) {
+        $el[swiper.enabled ? 'removeClass' : 'addClass'](swiper.params.pagination.lockClass);
+      }
+    },
     click: function click(swiper, e) {
-      if (swiper.params.pagination.el && swiper.params.pagination.hideOnClick && swiper.pagination.$el.length > 0 && !Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(e.target).hasClass(swiper.params.pagination.bulletClass)) {
+      var targetEl = e.target;
+
+      if (swiper.params.pagination.el && swiper.params.pagination.hideOnClick && swiper.pagination.$el.length > 0 && !Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(targetEl).hasClass(swiper.params.pagination.bulletClass)) {
+        if (swiper.navigation && (swiper.navigation.nextEl && targetEl === swiper.navigation.nextEl || swiper.navigation.prevEl && targetEl === swiper.navigation.prevEl)) return;
         var isHidden = swiper.pagination.$el.hasClass(swiper.params.pagination.hiddenClass);
 
         if (isHidden === true) {
@@ -9976,7 +10213,10 @@ var Scrollbar = {
       moveDivider: moveDivider,
       dragSize: dragSize
     });
-    scrollbar.$el[swiper.params.watchOverflow && swiper.isLocked ? 'addClass' : 'removeClass'](swiper.params.scrollbar.lockClass);
+
+    if (swiper.params.watchOverflow && swiper.enabled) {
+      scrollbar.$el[swiper.isLocked ? 'addClass' : 'removeClass'](swiper.params.scrollbar.lockClass);
+    }
   },
   getPointerPosition: function getPointerPosition(e) {
     var swiper = this;
@@ -10097,6 +10337,7 @@ var Scrollbar = {
       passive: true,
       capture: false
     } : false;
+    if (!target) return;
 
     if (!support.touch) {
       target.addEventListener(touchEventsDesktop.start, swiper.scrollbar.onDragStart, activeListener);
@@ -10127,6 +10368,7 @@ var Scrollbar = {
       passive: true,
       capture: false
     } : false;
+    if (!target) return;
 
     if (!support.touch) {
       target.removeEventListener(touchEventsDesktop.start, swiper.scrollbar.onDragStart, activeListener);
@@ -10140,10 +10382,13 @@ var Scrollbar = {
   },
   init: function init() {
     var swiper = this;
-    if (!swiper.params.scrollbar.el) return;
     var scrollbar = swiper.scrollbar,
         $swiperEl = swiper.$el;
+    swiper.params.scrollbar = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["createElementIfNotDefined"])($swiperEl, swiper.params.scrollbar, swiper.params.createElements, {
+      el: 'swiper-scrollbar'
+    });
     var params = swiper.params.scrollbar;
+    if (!params.el) return;
     var $el = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(params.el);
 
     if (swiper.params.uniqueNavElements && typeof params.el === 'string' && $el.length > 1 && $swiperEl.find(params.el).length === 1) {
@@ -10166,6 +10411,10 @@ var Scrollbar = {
 
     if (params.draggable) {
       scrollbar.enableDraggable();
+    }
+
+    if ($el) {
+      $el[swiper.enabled ? 'removeClass' : 'addClass'](swiper.params.scrollbar.lockClass);
     }
   },
   destroy: function destroy() {
@@ -10216,6 +10465,13 @@ var Scrollbar = {
     },
     setTransition: function setTransition(swiper, duration) {
       swiper.scrollbar.setTransition(duration);
+    },
+    'enable disable': function enableDisable(swiper) {
+      var $el = swiper.scrollbar.$el;
+
+      if ($el) {
+        $el[swiper.enabled ? 'removeClass' : 'addClass'](swiper.params.scrollbar.lockClass);
+      }
     },
     destroy: function destroy(swiper) {
       swiper.scrollbar.destroy();
@@ -10328,7 +10584,19 @@ var Thumbs = {
 
         var prevThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).prevAll("[data-swiper-slide-index=\"" + swiper.realIndex + "\"]").eq(0).index();
         var nextThumbsIndex = thumbsSwiper.slides.eq(currentThumbsIndex).nextAll("[data-swiper-slide-index=\"" + swiper.realIndex + "\"]").eq(0).index();
-        if (typeof prevThumbsIndex === 'undefined') newThumbsIndex = nextThumbsIndex;else if (typeof nextThumbsIndex === 'undefined') newThumbsIndex = prevThumbsIndex;else if (nextThumbsIndex - currentThumbsIndex === currentThumbsIndex - prevThumbsIndex) newThumbsIndex = currentThumbsIndex;else if (nextThumbsIndex - currentThumbsIndex < currentThumbsIndex - prevThumbsIndex) newThumbsIndex = nextThumbsIndex;else newThumbsIndex = prevThumbsIndex;
+
+        if (typeof prevThumbsIndex === 'undefined') {
+          newThumbsIndex = nextThumbsIndex;
+        } else if (typeof nextThumbsIndex === 'undefined') {
+          newThumbsIndex = prevThumbsIndex;
+        } else if (nextThumbsIndex - currentThumbsIndex === currentThumbsIndex - prevThumbsIndex) {
+          newThumbsIndex = thumbsSwiper.params.slidesPerGroup > 1 ? nextThumbsIndex : currentThumbsIndex;
+        } else if (nextThumbsIndex - currentThumbsIndex < currentThumbsIndex - prevThumbsIndex) {
+          newThumbsIndex = nextThumbsIndex;
+        } else {
+          newThumbsIndex = prevThumbsIndex;
+        }
+
         direction = swiper.activeIndex > swiper.previousIndex ? 'next' : 'prev';
       } else {
         newThumbsIndex = swiper.realIndex;
@@ -10346,8 +10614,7 @@ var Thumbs = {
           } else {
             newThumbsIndex = newThumbsIndex + Math.floor(slidesPerView / 2) - 1;
           }
-        } else if (newThumbsIndex > currentThumbsIndex) {
-          newThumbsIndex = newThumbsIndex - slidesPerView + 1;
+        } else if (newThumbsIndex > currentThumbsIndex && thumbsSwiper.params.slidesPerGroup === 1) {// newThumbsIndex = newThumbsIndex - slidesPerView + 1;
         }
 
         thumbsSwiper.slideTo(newThumbsIndex, initial ? 0 : undefined);
@@ -10696,7 +10963,7 @@ var Virtual = {
   create: function create() {
     var swiper = this;
     Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["bindModuleMethods"])(swiper, {
-      virtual: _extends(_extends({}, Virtual), {}, {
+      virtual: _extends({}, Virtual, {
         slides: swiper.params.virtual.slides,
         cache: {}
       })
@@ -10734,9 +11001,11 @@ var Virtual = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
+/* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
+/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/dom */ "./node_modules/swiper/esm/utils/dom.js");
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 
 
 
@@ -10771,7 +11040,7 @@ var Zoom = {
     }
 
     if (!gesture.$slideEl || !gesture.$slideEl.length) {
-      gesture.$slideEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_0__["default"])(e.target).closest("." + swiper.params.slideClass);
+      gesture.$slideEl = Object(_utils_dom__WEBPACK_IMPORTED_MODULE_1__["default"])(e.target).closest("." + swiper.params.slideClass);
       if (gesture.$slideEl.length === 0) gesture.$slideEl = swiper.slides.eq(swiper.activeIndex);
       gesture.$imageEl = gesture.$slideEl.find('img, svg, canvas, picture, .swiper-zoom-target');
       gesture.$imageWrapEl = gesture.$imageEl.parent("." + params.containerClass);
@@ -10880,8 +11149,8 @@ var Zoom = {
     if (!image.isMoved) {
       image.width = gesture.$imageEl[0].offsetWidth;
       image.height = gesture.$imageEl[0].offsetHeight;
-      image.startX = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["getTranslate"])(gesture.$imageWrapEl[0], 'x') || 0;
-      image.startY = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["getTranslate"])(gesture.$imageWrapEl[0], 'y') || 0;
+      image.startX = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["getTranslate"])(gesture.$imageWrapEl[0], 'x') || 0;
+      image.startY = Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["getTranslate"])(gesture.$imageWrapEl[0], 'y') || 0;
       gesture.slideWidth = gesture.$slideEl[0].offsetWidth;
       gesture.slideHeight = gesture.$slideEl[0].offsetHeight;
       gesture.$imageWrapEl.transition(0);
@@ -11028,6 +11297,7 @@ var Zoom = {
   },
   in: function _in(e) {
     var swiper = this;
+    var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
     var zoom = swiper.zoom;
     var params = swiper.params.zoom;
     var gesture = zoom.gesture,
@@ -11044,7 +11314,7 @@ var Zoom = {
       gesture.$imageWrapEl = gesture.$imageEl.parent("." + params.containerClass);
     }
 
-    if (!gesture.$imageEl || gesture.$imageEl.length === 0) return;
+    if (!gesture.$imageEl || gesture.$imageEl.length === 0 || !gesture.$imageWrapEl || gesture.$imageWrapEl.length === 0) return;
     gesture.$slideEl.addClass("" + params.zoomedSlideClass);
     var touchX;
     var touchY;
@@ -11079,8 +11349,8 @@ var Zoom = {
     if (e) {
       slideWidth = gesture.$slideEl[0].offsetWidth;
       slideHeight = gesture.$slideEl[0].offsetHeight;
-      offsetX = gesture.$slideEl.offset().left;
-      offsetY = gesture.$slideEl.offset().top;
+      offsetX = gesture.$slideEl.offset().left + window.scrollX;
+      offsetY = gesture.$slideEl.offset().top + window.scrollY;
       diffX = offsetX + slideWidth / 2 - touchX;
       diffY = offsetY + slideHeight / 2 - touchY;
       imageWidth = gesture.$imageEl[0].offsetWidth;
@@ -11134,7 +11404,7 @@ var Zoom = {
       gesture.$imageWrapEl = gesture.$imageEl.parent("." + params.containerClass);
     }
 
-    if (!gesture.$imageEl || gesture.$imageEl.length === 0) return;
+    if (!gesture.$imageEl || gesture.$imageEl.length === 0 || !gesture.$imageWrapEl || gesture.$imageWrapEl.length === 0) return;
     zoom.scale = 1;
     zoom.currentScale = 1;
     gesture.$imageWrapEl.transition(300).transform('translate3d(0,0,0)');
@@ -11243,7 +11513,7 @@ var Zoom = {
   },
   create: function create() {
     var swiper = this;
-    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["bindModuleMethods"])(swiper, {
+    Object(_utils_utils__WEBPACK_IMPORTED_MODULE_2__["bindModuleMethods"])(swiper, {
       zoom: _extends({
         enabled: false,
         scale: 1,
@@ -11316,7 +11586,7 @@ var Zoom = {
       swiper.zoom.onTouchEnd(e);
     },
     doubleTap: function doubleTap(swiper, e) {
-      if (swiper.params.zoom.enabled && swiper.zoom.enabled && swiper.params.zoom.toggle) {
+      if (!swiper.animating && swiper.params.zoom.enabled && swiper.zoom.enabled && swiper.params.zoom.toggle) {
         swiper.zoom.toggle(e);
       }
     },
@@ -11424,7 +11694,7 @@ var Observer = {
   create: function create() {
     var swiper = this;
     Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["bindModuleMethods"])(swiper, {
-      observer: _extends(_extends({}, Observer), {}, {
+      observer: _extends({}, Observer, {
         observers: []
       })
     });
@@ -11454,12 +11724,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/utils */ "./node_modules/swiper/esm/utils/utils.js");
 
 
+
+var supportsResizeObserver = function supportsResizeObserver() {
+  var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+  return typeof window.ResizeObserver !== 'undefined';
+};
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'resize',
   create: function create() {
     var swiper = this;
     Object(_utils_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])(swiper, {
       resize: {
+        observer: null,
+        createObserver: function createObserver() {
+          if (!swiper || swiper.destroyed || !swiper.initialized) return;
+          swiper.resize.observer = new ResizeObserver(function (entries) {
+            var width = swiper.width,
+                height = swiper.height;
+            var newWidth = width;
+            var newHeight = height;
+            entries.forEach(function (_ref) {
+              var contentBoxSize = _ref.contentBoxSize,
+                  contentRect = _ref.contentRect,
+                  target = _ref.target;
+              if (target && target !== swiper.el) return;
+              newWidth = contentRect ? contentRect.width : (contentBoxSize[0] || contentBoxSize).inlineSize;
+              newHeight = contentRect ? contentRect.height : (contentBoxSize[0] || contentBoxSize).blockSize;
+            });
+
+            if (newWidth !== width || newHeight !== height) {
+              swiper.resize.resizeHandler();
+            }
+          });
+          swiper.resize.observer.observe(swiper.el);
+        },
+        removeObserver: function removeObserver() {
+          if (swiper.resize.observer && swiper.resize.observer.unobserve && swiper.el) {
+            swiper.resize.observer.unobserve(swiper.el);
+            swiper.resize.observer = null;
+          }
+        },
         resizeHandler: function resizeHandler() {
           if (!swiper || swiper.destroyed || !swiper.initialized) return;
           swiper.emit('beforeResize');
@@ -11474,7 +11779,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   on: {
     init: function init(swiper) {
-      var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])(); // Emit resize
+      var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+
+      if (swiper.params.resizeObserver && supportsResizeObserver()) {
+        swiper.resize.createObserver();
+        return;
+      } // Emit resize
+
 
       window.addEventListener('resize', swiper.resize.resizeHandler); // Emit orientationchange
 
@@ -11482,6 +11793,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     destroy: function destroy(swiper) {
       var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+      swiper.resize.removeObserver();
       window.removeEventListener('resize', swiper.resize.resizeHandler);
       window.removeEventListener('orientationchange', swiper.resize.orientationChangeHandler);
     }
@@ -11501,27 +11813,52 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getChangedParams", function() { return getChangedParams; });
 /* harmony import */ var _params_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./params-list */ "./node_modules/swiper/esm/react/params-list.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./node_modules/swiper/esm/react/utils.js");
+
 
 
 function getChangedParams(swiperParams, oldParams, children, oldChildren) {
   var keys = [];
   if (!oldParams) return keys;
+
+  var addKey = function addKey(key) {
+    if (keys.indexOf(key) < 0) keys.push(key);
+  };
+
   var oldChildrenKeys = oldChildren.map(function (child) {
     return child.key;
   });
   var childrenKeys = children.map(function (child) {
     return child.key;
   });
-  if (oldChildrenKeys.join('') !== childrenKeys.join('')) keys.push('children');
-  if (oldChildren.length !== children.length) keys.push('children');
+  if (oldChildrenKeys.join('') !== childrenKeys.join('')) addKey('children');
+  if (oldChildren.length !== children.length) addKey('children');
   var watchParams = _params_list__WEBPACK_IMPORTED_MODULE_0__["paramsList"].filter(function (key) {
     return key[0] === '_';
   }).map(function (key) {
     return key.replace(/_/, '');
   });
   watchParams.forEach(function (key) {
-    if (key in swiperParams && key in oldParams && swiperParams[key] !== oldParams[key]) {
-      keys.push(key);
+    if (key in swiperParams && key in oldParams) {
+      if (Object(_utils__WEBPACK_IMPORTED_MODULE_1__["isObject"])(swiperParams[key]) && Object(_utils__WEBPACK_IMPORTED_MODULE_1__["isObject"])(oldParams[key])) {
+        var newKeys = Object.keys(swiperParams[key]);
+        var oldKeys = Object.keys(oldParams[key]);
+
+        if (newKeys.length !== oldKeys.length) {
+          addKey(key);
+        } else {
+          newKeys.forEach(function (newKey) {
+            if (swiperParams[key][newKey] !== oldParams[key][newKey]) {
+              addKey(key);
+            }
+          });
+          oldKeys.forEach(function (oldKey) {
+            if (swiperParams[key][oldKey] !== oldParams[key][oldKey]) addKey(key);
+          });
+        }
+      } else if (swiperParams[key] !== oldParams[key]) {
+        addKey(key);
+      }
     }
   });
   return keys;
@@ -11545,7 +11882,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 
-function getChildren(children) {
+function processChildren(c) {
+  var slides = [];
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.toArray(c).forEach(function (child) {
+    if (child.type && child.type.displayName === 'SwiperSlide') {
+      slides.push(child);
+    } else if (child.props && child.props.children) {
+      processChildren(child.props.children).forEach(function (slide) {
+        return slides.push(slide);
+      });
+    }
+  });
+  return slides;
+}
+
+function getChildren(c) {
   var slides = [];
   var slots = {
     'container-start': [],
@@ -11553,25 +11904,25 @@ function getChildren(children) {
     'wrapper-start': [],
     'wrapper-end': []
   };
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.toArray(c).forEach(function (child) {
+    if (child.type && child.type.displayName === 'SwiperSlide') {
+      slides.push(child);
+    } else if (child.props && child.props.slot && slots[child.props.slot]) {
+      slots[child.props.slot].push(child);
+    } else if (child.props && child.props.children) {
+      var foundSlides = processChildren(child.props.children);
 
-  function processChildren(c) {
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.Children.toArray(c).forEach(function (child) {
-      if (child.type === react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment && child.props.children) {
-        processChildren(child.props.children);
-        return;
-      }
-
-      if (child.type && child.type.displayName === 'SwiperSlide') {
-        slides.push(child);
-      } else if (child.props && child.props.slot && slots[child.props.slot]) {
-        slots[child.props.slot].push(child);
+      if (foundSlides.length > 0) {
+        foundSlides.forEach(function (slide) {
+          return slides.push(slide);
+        });
       } else {
         slots['container-end'].push(child);
       }
-    });
-  }
-
-  processChildren(children);
+    } else {
+      slots['container-end'].push(child);
+    }
+  });
   return {
     slides: slides,
     slots: slots
@@ -11608,10 +11959,12 @@ function getParams(obj) {
   var params = {
     on: {}
   };
+  var events = {};
   var passedParams = {};
   Object(_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])(params, _core__WEBPACK_IMPORTED_MODULE_0__["default"].defaults);
   Object(_utils__WEBPACK_IMPORTED_MODULE_1__["extend"])(params, _core__WEBPACK_IMPORTED_MODULE_0__["default"].extendedDefaults);
   params._emitClasses = true;
+  params.init = false;
   var rest = {};
   var allowedParams = _params_list__WEBPACK_IMPORTED_MODULE_2__["paramsList"].map(function (key) {
     return key.replace(/_/, '');
@@ -11628,15 +11981,20 @@ function getParams(obj) {
         passedParams[key] = obj[key];
       }
     } else if (key.search(/on[A-Z]/) === 0 && typeof obj[key] === 'function') {
-      params.on["" + key[2].toLowerCase() + key.substr(3)] = obj[key];
+      events["" + key[2].toLowerCase() + key.substr(3)] = obj[key];
     } else {
       rest[key] = obj[key];
     }
   });
+  ['navigation', 'pagination', 'scrollbar'].forEach(function (key) {
+    if (params[key] === true) params[key] = {};
+    if (params[key] === false) delete params[key];
+  });
   return {
     params: params,
     passedParams: passedParams,
-    rest: rest
+    rest: rest,
+    events: events
   };
 }
 
@@ -11648,51 +12006,49 @@ function getParams(obj) {
 /*!******************************************************!*\
   !*** ./node_modules/swiper/esm/react/init-swiper.js ***!
   \******************************************************/
-/*! exports provided: initSwiper */
+/*! exports provided: initSwiper, mountSwiper */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initSwiper", function() { return initSwiper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mountSwiper", function() { return mountSwiper; });
 /* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core */ "./node_modules/swiper/swiper.esm.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./node_modules/swiper/esm/react/utils.js");
 // eslint-disable-next-line
 
 
 
-function initSwiper(_ref, swiperParams) {
+function initSwiper(swiperParams) {
+  return new _core__WEBPACK_IMPORTED_MODULE_0__["default"](swiperParams);
+}
+
+function mountSwiper(_ref, swiperParams) {
   var el = _ref.el,
       nextEl = _ref.nextEl,
       prevEl = _ref.prevEl,
       paginationEl = _ref.paginationEl,
-      scrollbarEl = _ref.scrollbarEl;
+      scrollbarEl = _ref.scrollbarEl,
+      swiper = _ref.swiper;
 
   if (Object(_utils__WEBPACK_IMPORTED_MODULE_1__["needsNavigation"])(swiperParams) && nextEl && prevEl) {
-    if (swiperParams.navigation === true) {
-      swiperParams.navigation = {};
-    }
-
-    swiperParams.navigation.nextEl = nextEl;
-    swiperParams.navigation.prevEl = prevEl;
+    swiper.params.navigation.nextEl = nextEl;
+    swiper.originalParams.navigation.nextEl = nextEl;
+    swiper.params.navigation.prevEl = prevEl;
+    swiper.originalParams.navigation.prevEl = prevEl;
   }
 
   if (Object(_utils__WEBPACK_IMPORTED_MODULE_1__["needsPagination"])(swiperParams) && paginationEl) {
-    if (swiperParams.pagination === true) {
-      swiperParams.pagination = {};
-    }
-
-    swiperParams.pagination.el = paginationEl;
+    swiper.params.pagination.el = paginationEl;
+    swiper.originalParams.pagination.el = paginationEl;
   }
 
   if (Object(_utils__WEBPACK_IMPORTED_MODULE_1__["needsScrollbar"])(swiperParams) && scrollbarEl) {
-    if (swiperParams.scrollbar === true) {
-      swiperParams.scrollbar = {};
-    }
-
-    swiperParams.scrollbar.el = scrollbarEl;
+    swiper.params.scrollbar.el = scrollbarEl;
+    swiper.originalParams.scrollbar.el = scrollbarEl;
   }
 
-  return new _core__WEBPACK_IMPORTED_MODULE_0__["default"](el, swiperParams);
+  swiper.init(el);
 }
 
 
@@ -11712,10 +12068,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderLoop", function() { return renderLoop; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core */ "./node_modules/swiper/swiper.esm.js");
+ // eslint-disable-next-line
+
 
 
 function calcLoopedSlides(slides, swiperParams) {
-  var loopedSlides = Math.ceil(parseFloat(swiperParams.loopedSlides || swiperParams.slidesPerView, 10));
+  var slidesPerViewParams = swiperParams.slidesPerView;
+
+  if (swiperParams.breakpoints) {
+    var breakpoint = _core__WEBPACK_IMPORTED_MODULE_1__["default"].prototype.getBreakpoint(swiperParams.breakpoints);
+    var breakpointOnlyParams = breakpoint in swiperParams.breakpoints ? swiperParams.breakpoints[breakpoint] : undefined;
+
+    if (breakpointOnlyParams && breakpointOnlyParams.slidesPerView) {
+      slidesPerViewParams = breakpointOnlyParams.slidesPerView;
+    }
+  }
+
+  var loopedSlides = Math.ceil(parseFloat(swiperParams.loopedSlides || slidesPerViewParams, 10));
   loopedSlides += swiperParams.loopAdditionalSlides;
 
   if (loopedSlides > slides.length) {
@@ -11727,14 +12097,14 @@ function calcLoopedSlides(slides, swiperParams) {
 
 function renderLoop(swiper, slides, swiperParams) {
   var modifiedSlides = slides.map(function (child, index) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
       swiper: swiper,
       'data-swiper-slide-index': index
     });
   });
 
   function duplicateSlide(child, index, position) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
       key: child.key + "-duplicate-" + index + "-" + position,
       className: (child.props.className || '') + " " + swiperParams.slideDuplicateClass
     });
@@ -11792,7 +12162,7 @@ function renderLoop(swiper, slides, swiperParams) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paramsList", function() { return paramsList; });
 /* underscore in name -> watch for changes */
-var paramsList = ['init', '_direction', 'touchEventsTarget', 'initialSlide', '_speed', 'cssMode', 'updateOnWindowResize', '_width', '_height', 'preventInteractionOnTransition', 'userAgent', 'url', '_edgeSwipeDetection', '_edgeSwipeThreshold', '_freeMode', '_freeModeMomentum', '_freeModeMomentumRatio', '_freeModeMomentumBounce', '_freeModeMomentumBounceRatio', '_freeModeMomentumVelocityRatio', '_freeModeSticky', '_freeModeMinimumVelocity', '_autoHeight', 'setWrapperSize', 'virtualTranslate', '_effect', 'breakpoints', '_spaceBetween', '_slidesPerView', '_slidesPerColumn', '_slidesPerColumnFill', '_slidesPerGroup', '_slidesPerGroupSkip', '_centeredSlides', '_centeredSlidesBounds', '_slidesOffsetBefore', '_slidesOffsetAfter', 'normalizeSlideIndex', '_centerInsufficientSlides', '_watchOverflow', 'roundLengths', 'touchRatio', 'touchAngle', 'simulateTouch', '_shortSwipes', '_longSwipes', 'longSwipesRatio', 'longSwipesMs', '_followFinger', 'allowTouchMove', '_threshold', 'touchMoveStopPropagation', 'touchStartPreventDefault', 'touchStartForcePreventDefault', 'touchReleaseOnEdges', 'uniqueNavElements', '_resistance', '_resistanceRatio', '_watchSlidesProgress', '_watchSlidesVisibility', '_grabCursor', 'preventClicks', 'preventClicksPropagation', '_slideToClickedSlide', '_preloadImages', 'updateOnImagesReady', '_loop', '_loopAdditionalSlides', '_loopedSlides', '_loopFillGroupWithBlank', 'loopPreventsSlide', '_allowSlidePrev', '_allowSlideNext', '_swipeHandler', '_noSwiping', 'noSwipingClass', 'noSwipingSelector', 'passiveListeners', 'containerModifierClass', 'slideClass', 'slideBlankClass', 'slideActiveClass', 'slideDuplicateActiveClass', 'slideVisibleClass', 'slideDuplicateClass', 'slideNextClass', 'slideDuplicateNextClass', 'slidePrevClass', 'slideDuplicatePrevClass', 'wrapperClass', 'runCallbacksOnInit', // modules
+var paramsList = ['init', '_direction', 'touchEventsTarget', 'initialSlide', '_speed', 'cssMode', 'updateOnWindowResize', 'resizeObserver', 'nested', 'focusableElements', '_enabled', '_width', '_height', 'preventInteractionOnTransition', 'userAgent', 'url', '_edgeSwipeDetection', '_edgeSwipeThreshold', '_freeMode', '_freeModeMomentum', '_freeModeMomentumRatio', '_freeModeMomentumBounce', '_freeModeMomentumBounceRatio', '_freeModeMomentumVelocityRatio', '_freeModeSticky', '_freeModeMinimumVelocity', '_autoHeight', 'setWrapperSize', 'virtualTranslate', '_effect', 'breakpoints', '_spaceBetween', '_slidesPerView', '_slidesPerColumn', '_slidesPerColumnFill', '_slidesPerGroup', '_slidesPerGroupSkip', '_centeredSlides', '_centeredSlidesBounds', '_slidesOffsetBefore', '_slidesOffsetAfter', 'normalizeSlideIndex', '_centerInsufficientSlides', '_watchOverflow', 'roundLengths', 'touchRatio', 'touchAngle', 'simulateTouch', '_shortSwipes', '_longSwipes', 'longSwipesRatio', 'longSwipesMs', '_followFinger', 'allowTouchMove', '_threshold', 'touchMoveStopPropagation', 'touchStartPreventDefault', 'touchStartForcePreventDefault', 'touchReleaseOnEdges', 'uniqueNavElements', '_resistance', '_resistanceRatio', '_watchSlidesProgress', '_watchSlidesVisibility', '_grabCursor', 'preventClicks', 'preventClicksPropagation', '_slideToClickedSlide', '_preloadImages', 'updateOnImagesReady', '_loop', '_loopAdditionalSlides', '_loopedSlides', '_loopFillGroupWithBlank', 'loopPreventsSlide', '_allowSlidePrev', '_allowSlideNext', '_swipeHandler', '_noSwiping', 'noSwipingClass', 'noSwipingSelector', 'passiveListeners', 'containerModifierClass', 'slideClass', 'slideBlankClass', 'slideActiveClass', 'slideDuplicateActiveClass', 'slideVisibleClass', 'slideDuplicateClass', 'slideNextClass', 'slideDuplicateNextClass', 'slidePrevClass', 'slideDuplicatePrevClass', 'wrapperClass', 'runCallbacksOnInit', 'observer', 'observeParents', 'observeSlideChildren', // modules
 'a11y', 'autoplay', '_controller', 'coverflowEffect', 'cubeEffect', 'fadeEffect', 'flipEffect', 'hashNavigation', 'history', 'keyboard', 'lazy', 'mousewheel', '_navigation', '_pagination', 'parallax', '_scrollbar', '_thumbs', 'virtual', 'zoom'];
 
 
@@ -11811,13 +12181,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils */ "./node_modules/swiper/esm/react/utils.js");
+/* harmony import */ var _use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./use-isomorphic-layout-effect */ "./node_modules/swiper/esm/react/use-isomorphic-layout-effect.js");
+var _excluded = ["tag", "children", "className", "swiper", "zoom", "virtualIndex"];
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 
 
-var SwiperSlide = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (_temp, externalRef) {
+
+var SwiperSlide = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (_temp, externalRef) {
   var _ref = _temp === void 0 ? {} : _temp,
       _ref$tag = _ref.tag,
       Tag = _ref$tag === void 0 ? 'div' : _ref$tag,
@@ -11826,7 +12200,8 @@ var SwiperSlide = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(funct
       className = _ref$className === void 0 ? '' : _ref$className,
       swiper = _ref.swiper,
       zoom = _ref.zoom,
-      rest = _objectWithoutPropertiesLoose(_ref, ["tag", "children", "className", "swiper", "zoom"]);
+      virtualIndex = _ref.virtualIndex,
+      rest = _objectWithoutPropertiesLoose(_ref, _excluded);
 
   var slideElRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
 
@@ -11840,12 +12215,14 @@ var SwiperSlide = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(funct
     }
   }
 
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useLayoutEffect"])(function () {
+  Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_2__["useIsomorphicLayoutEffect"])(function () {
     if (externalRef) {
       externalRef.current = slideElRef.current;
     }
 
-    if (!slideElRef.current || !swiper) return;
+    if (!slideElRef.current || !swiper) {
+      return;
+    }
 
     if (swiper.destroyed) {
       if (slideClasses !== 'swiper-slide') {
@@ -11862,6 +12239,11 @@ var SwiperSlide = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(funct
       swiper.off('_slideClass', updateClasses);
     };
   });
+  Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_2__["useIsomorphicLayoutEffect"])(function () {
+    if (swiper && slideElRef.current) {
+      setSlideClasses(swiper.getSlideClasses(slideElRef.current));
+    }
+  }, [swiper]);
   var slideData;
 
   if (typeof children === 'function') {
@@ -11870,7 +12252,7 @@ var SwiperSlide = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(funct
       isVisible: slideClasses.indexOf('swiper-slide-visible') >= 0,
       isDuplicate: slideClasses.indexOf('swiper-slide-duplicate') >= 0,
       isPrev: slideClasses.indexOf('swiper-slide-prev') >= 0 || slideClasses.indexOf('swiper-slide-duplicate-prev') >= 0,
-      isNext: slideClasses.indexOf('swiper-slide-next') >= 0 || slideClasses.indexOf('swiper-slide-duplicate next') >= 0
+      isNext: slideClasses.indexOf('swiper-slide-next') >= 0 || slideClasses.indexOf('swiper-slide-duplicate-next') >= 0
     };
   }
 
@@ -11880,7 +12262,8 @@ var SwiperSlide = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(funct
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Tag, _extends({
     ref: slideElRef,
-    className: Object(_utils__WEBPACK_IMPORTED_MODULE_1__["uniqueClasses"])("" + slideClasses + (className ? " " + className : ''))
+    className: Object(_utils__WEBPACK_IMPORTED_MODULE_1__["uniqueClasses"])("" + slideClasses + (className ? " " + className : '')),
+    "data-swiper-slide-index": virtualIndex
   }, rest), zoom ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "swiper-zoom-container",
     "data-swiper-zoom": typeof zoom === 'number' ? zoom : undefined
@@ -11912,6 +12295,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _update_swiper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./update-swiper */ "./node_modules/swiper/esm/react/update-swiper.js");
 /* harmony import */ var _virtual__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./virtual */ "./node_modules/swiper/esm/react/virtual.js");
 /* harmony import */ var _use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./use-isomorphic-layout-effect */ "./node_modules/swiper/esm/react/use-isomorphic-layout-effect.js");
+var _excluded = ["className", "tag", "wrapperTag", "children", "onSwiper"];
+
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
@@ -11926,7 +12311,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
-var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (_temp, externalElRef) {
+var Swiper = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (_temp, externalElRef) {
   var _ref = _temp === void 0 ? {} : _temp,
       className = _ref.className,
       _ref$tag = _ref.tag,
@@ -11935,7 +12320,9 @@ var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (
       WrapperTag = _ref$wrapperTag === void 0 ? 'div' : _ref$wrapperTag,
       children = _ref.children,
       onSwiper = _ref.onSwiper,
-      rest = _objectWithoutPropertiesLoose(_ref, ["className", "tag", "wrapperTag", "children", "onSwiper"]);
+      rest = _objectWithoutPropertiesLoose(_ref, _excluded);
+
+  var eventsAssigned = false;
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('swiper-container'),
       containerClasses = _useState[0],
@@ -11944,6 +12331,10 @@ var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (
   var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
       virtualData = _useState2[0],
       setVirtualData = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      breakpointChanged = _useState3[0],
+      setBreakpointChanged = _useState3[1];
 
   var initializedRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(false);
   var swiperElRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
@@ -11958,37 +12349,72 @@ var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (
   var _getParams = Object(_get_params__WEBPACK_IMPORTED_MODULE_1__["getParams"])(rest),
       swiperParams = _getParams.params,
       passedParams = _getParams.passedParams,
-      restProps = _getParams.rest;
+      restProps = _getParams.rest,
+      events = _getParams.events;
 
   var _getChildren = Object(_get_children__WEBPACK_IMPORTED_MODULE_6__["getChildren"])(children),
       slides = _getChildren.slides,
       slots = _getChildren.slots;
 
-  var changedParams = Object(_get_changed_params__WEBPACK_IMPORTED_MODULE_5__["getChangedParams"])(passedParams, oldPassedParamsRef.current, slides, oldSlides.current);
-  oldPassedParamsRef.current = passedParams;
-  oldSlides.current = slides;
+  var onBeforeBreakpoint = function onBeforeBreakpoint() {
+    setBreakpointChanged(!breakpointChanged);
+  };
+
   Object.assign(swiperParams.on, {
     _containerClasses: function _containerClasses(swiper, classes) {
       setContainerClasses(classes);
-    },
-    _swiper: function _swiper(swiper) {
-      swiper.loopCreate = function () {};
-
-      swiper.loopDestroy = function () {};
-
-      if (swiperParams.loop) {
-        swiper.loopedSlides = Object(_loop__WEBPACK_IMPORTED_MODULE_4__["calcLoopedSlides"])(slides, swiperParams);
-      }
-
-      swiperRef.current = swiper;
-
-      if (swiper.virtual && swiper.params.virtual.enabled) {
-        swiper.virtual.slides = slides;
-        swiper.params.virtual.cache = false;
-        swiper.params.virtual.renderExternal = setVirtualData;
-        swiper.params.virtual.renderExternalUpdate = false;
-      }
     }
+  });
+
+  if (!swiperElRef.current) {
+    // init swiper
+    Object.assign(swiperParams.on, events);
+    eventsAssigned = true;
+    swiperRef.current = Object(_init_swiper__WEBPACK_IMPORTED_MODULE_2__["initSwiper"])(swiperParams);
+
+    swiperRef.current.loopCreate = function () {};
+
+    swiperRef.current.loopDestroy = function () {};
+
+    if (swiperParams.loop) {
+      swiperRef.current.loopedSlides = Object(_loop__WEBPACK_IMPORTED_MODULE_4__["calcLoopedSlides"])(slides, swiperParams);
+    }
+
+    if (swiperRef.current.virtual && swiperRef.current.params.virtual.enabled) {
+      swiperRef.current.virtual.slides = slides;
+      var extendWith = {
+        cache: false,
+        renderExternal: setVirtualData,
+        renderExternalUpdate: false
+      };
+      Object(_utils__WEBPACK_IMPORTED_MODULE_3__["extend"])(swiperRef.current.params.virtual, extendWith);
+      Object(_utils__WEBPACK_IMPORTED_MODULE_3__["extend"])(swiperRef.current.originalParams.virtual, extendWith);
+    }
+  } // Listen for breakpoints change
+
+
+  if (swiperRef.current) {
+    swiperRef.current.on('_beforeBreakpoint', onBeforeBreakpoint);
+  }
+
+  var attachEvents = function attachEvents() {
+    if (eventsAssigned || !events || !swiperRef.current) return;
+    Object.keys(events).forEach(function (eventName) {
+      swiperRef.current.on(eventName, events[eventName]);
+    });
+  };
+
+  var detachEvents = function detachEvents() {
+    if (!events || !swiperRef.current) return;
+    Object.keys(events).forEach(function (eventName) {
+      swiperRef.current.off(eventName, events[eventName]);
+    });
+  };
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    return function () {
+      if (swiperRef.current) swiperRef.current.off('_beforeBreakpoint', onBeforeBreakpoint);
+    };
   }); // set initialized flag
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
@@ -11996,17 +12422,7 @@ var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (
       swiperRef.current.emitSlidesClasses();
       initializedRef.current = true;
     }
-  }); // watch for params change
-
-  Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_9__["useIsomorphicLayoutEffect"])(function () {
-    if (changedParams.length && swiperRef.current && !swiperRef.current.destroyed) {
-      Object(_update_swiper__WEBPACK_IMPORTED_MODULE_7__["updateSwiper"])(swiperRef.current, slides, passedParams, changedParams);
-    }
-  }); // update on virtual update
-
-  Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_9__["useIsomorphicLayoutEffect"])(function () {
-    Object(_virtual__WEBPACK_IMPORTED_MODULE_8__["updateOnVirtualData"])(swiperRef.current);
-  }, [virtualData]); // init swiper
+  }); // mount swiper
 
   Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_9__["useIsomorphicLayoutEffect"])(function () {
     if (externalElRef) {
@@ -12014,21 +12430,50 @@ var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (
     }
 
     if (!swiperElRef.current) return;
-    Object(_init_swiper__WEBPACK_IMPORTED_MODULE_2__["initSwiper"])({
+    Object(_init_swiper__WEBPACK_IMPORTED_MODULE_2__["mountSwiper"])({
       el: swiperElRef.current,
       nextEl: nextElRef.current,
       prevEl: prevElRef.current,
       paginationEl: paginationElRef.current,
-      scrollbarEl: scrollbarElRef.current
+      scrollbarEl: scrollbarElRef.current,
+      swiper: swiperRef.current
     }, swiperParams);
     if (onSwiper) onSwiper(swiperRef.current); // eslint-disable-next-line
 
     return function () {
       if (swiperRef.current && !swiperRef.current.destroyed) {
-        swiperRef.current.destroy();
+        swiperRef.current.destroy(true, false);
       }
     };
-  }, []); // bypass swiper instance to slides
+  }, []); // watch for params change
+
+  Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_9__["useIsomorphicLayoutEffect"])(function () {
+    attachEvents();
+    var changedParams = Object(_get_changed_params__WEBPACK_IMPORTED_MODULE_5__["getChangedParams"])(passedParams, oldPassedParamsRef.current, slides, oldSlides.current);
+    oldPassedParamsRef.current = passedParams;
+    oldSlides.current = slides;
+
+    if (changedParams.length && swiperRef.current && !swiperRef.current.destroyed) {
+      Object(_update_swiper__WEBPACK_IMPORTED_MODULE_7__["updateSwiper"])({
+        swiper: swiperRef.current,
+        slides: slides,
+        passedParams: passedParams,
+        changedParams: changedParams,
+        nextEl: nextElRef.current,
+        prevEl: prevElRef.current,
+        scrollbarEl: scrollbarElRef.current,
+        paginationEl: paginationElRef.current
+      });
+    }
+
+    return function () {
+      detachEvents();
+    };
+  }); // update on virtual update
+
+  Object(_use_isomorphic_layout_effect__WEBPACK_IMPORTED_MODULE_9__["useIsomorphicLayoutEffect"])(function () {
+    Object(_virtual__WEBPACK_IMPORTED_MODULE_8__["updateOnVirtualData"])(swiperRef.current);
+  }, [virtualData]); // bypass swiper instance to slides
 
   function renderSlides() {
     if (swiperParams.virtual) {
@@ -12037,7 +12482,7 @@ var Swiper = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(function (
 
     if (!swiperParams.loop || swiperRef.current && swiperRef.current.destroyed) {
       return slides.map(function (child) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
           swiper: swiperRef.current
         });
       });
@@ -12083,7 +12528,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./node_modules/swiper/esm/react/utils.js");
 
 
-function updateSwiper(swiper, slides, passedParams, changedParams) {
+function updateSwiper(_ref) {
+  var swiper = _ref.swiper,
+      slides = _ref.slides,
+      passedParams = _ref.passedParams,
+      changedParams = _ref.changedParams,
+      nextEl = _ref.nextEl,
+      prevEl = _ref.prevEl,
+      scrollbarEl = _ref.scrollbarEl,
+      paginationEl = _ref.paginationEl;
   var updateParams = changedParams.filter(function (key) {
     return key !== 'children' && key !== 'direction';
   });
@@ -12107,29 +12560,54 @@ function updateSwiper(swiper, slides, passedParams, changedParams) {
     needControllerInit = true;
   }
 
-  if (changedParams.includes('pagination') && passedParams.pagination && passedParams.pagination.el && currentParams.pagination && pagination && !pagination.el) {
+  if (changedParams.includes('pagination') && passedParams.pagination && (passedParams.pagination.el || paginationEl) && (currentParams.pagination || currentParams.pagination === false) && pagination && !pagination.el) {
     needPaginationInit = true;
   }
 
-  if (changedParams.includes('scrollbar') && passedParams.scrollbar && passedParams.scrollbar.el && currentParams.scrollbar && scrollbar && !scrollbar.el) {
+  if (changedParams.includes('scrollbar') && passedParams.scrollbar && (passedParams.scrollbar.el || scrollbarEl) && (currentParams.scrollbar || currentParams.scrollbar === false) && scrollbar && !scrollbar.el) {
     needScrollbarInit = true;
   }
 
-  if (changedParams.includes('navigation') && passedParams.navigation && passedParams.navigation.prevEl && passedParams.navigation.nextEl && currentParams.navigation && navigation && !navigation.prevEl && !navigation.nextEl) {
+  if (changedParams.includes('navigation') && passedParams.navigation && (passedParams.navigation.prevEl || prevEl) && (passedParams.navigation.nextEl || nextEl) && (currentParams.navigation || currentParams.navigation === false) && navigation && !navigation.prevEl && !navigation.nextEl) {
     needNavigationInit = true;
   }
+
+  var destroyModule = function destroyModule(mod) {
+    if (!swiper[mod]) return;
+    swiper[mod].destroy();
+
+    if (mod === 'navigation') {
+      currentParams[mod].prevEl = undefined;
+      currentParams[mod].nextEl = undefined;
+      swiper[mod].prevEl = undefined;
+      swiper[mod].nextEl = undefined;
+    } else {
+      currentParams[mod].el = undefined;
+      swiper[mod].el = undefined;
+    }
+  };
 
   updateParams.forEach(function (key) {
     if (Object(_utils__WEBPACK_IMPORTED_MODULE_0__["isObject"])(currentParams[key]) && Object(_utils__WEBPACK_IMPORTED_MODULE_0__["isObject"])(passedParams[key])) {
       Object(_utils__WEBPACK_IMPORTED_MODULE_0__["extend"])(currentParams[key], passedParams[key]);
     } else {
-      currentParams[key] = passedParams[key];
+      var newValue = passedParams[key];
+
+      if ((newValue === true || newValue === false) && (key === 'navigation' || key === 'pagination' || key === 'scrollbar')) {
+        if (newValue === false) {
+          destroyModule(key);
+        }
+      } else {
+        currentParams[key] = passedParams[key];
+      }
     }
   });
 
   if (changedParams.includes('children') && virtual && currentParams.virtual.enabled) {
     virtual.slides = slides;
     virtual.update(true);
+  } else if (changedParams.includes('children') && swiper.lazy && swiper.params.lazy.enabled) {
+    swiper.lazy.load();
   }
 
   if (needThumbsInit) {
@@ -12142,18 +12620,22 @@ function updateSwiper(swiper, slides, passedParams, changedParams) {
   }
 
   if (needPaginationInit) {
+    if (paginationEl) currentParams.pagination.el = paginationEl;
     pagination.init();
     pagination.render();
     pagination.update();
   }
 
   if (needScrollbarInit) {
+    if (scrollbarEl) currentParams.scrollbar.el = scrollbarEl;
     scrollbar.init();
     scrollbar.updateSize();
     scrollbar.setTranslate();
   }
 
   if (needNavigationInit) {
+    if (nextEl) currentParams.navigation.nextEl = nextEl;
+    if (prevEl) currentParams.navigation.prevEl = prevEl;
     navigation.init();
     navigation.update();
   }
@@ -12217,13 +12699,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "needsScrollbar", function() { return needsScrollbar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uniqueClasses", function() { return uniqueClasses; });
 function isObject(o) {
-  return typeof o === 'object' && o !== null && o.constructor && o.constructor === Object;
+  return typeof o === 'object' && o !== null && o.constructor && Object.prototype.toString.call(o).slice(8, -1) === 'Object';
 }
 
 function extend(target, src) {
-  Object.keys(src).forEach(function (key) {
+  var noExtend = ['__proto__', 'constructor', 'prototype'];
+  Object.keys(src).filter(function (key) {
+    return noExtend.indexOf(key) < 0;
+  }).forEach(function (key) {
     if (typeof target[key] === 'undefined') target[key] = src[key];else if (isObject(src[key]) && isObject(target[key]) && Object.keys(src[key]).length > 0) {
-      extend(target[key], src[key]);
+      if (src[key].__swiper__) target[key] = src[key];else extend(target[key], src[key]);
     } else {
       target[key] = src[key];
     }
@@ -12291,7 +12776,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function updateOnVirtualData(swiper) {
-  if (!swiper || swiper.destroyed) return;
+  if (!swiper || swiper.destroyed || !swiper.params.virtual || swiper.params.virtual && !swiper.params.virtual.enabled) return;
   swiper.updateSlides();
   swiper.updateProgress();
   swiper.updateSlidesClasses();
@@ -12299,19 +12784,23 @@ function updateOnVirtualData(swiper) {
   if (swiper.lazy && swiper.params.lazy.enabled) {
     swiper.lazy.load();
   }
+
+  if (swiper.parallax && swiper.params.parallax && swiper.params.parallax.enabled) {
+    swiper.parallax.setTranslate();
+  }
 }
 
 function renderVirtual(swiper, slides, virtualData) {
+  var _ref;
+
   if (!virtualData) return null;
-  var style = swiper.isHorizontal() ? {
-    left: virtualData.offset + "px"
-  } : {
+  var style = swiper.isHorizontal() ? (_ref = {}, _ref[swiper.rtlTranslate ? 'right' : 'left'] = virtualData.offset + "px", _ref) : {
     top: virtualData.offset + "px"
   };
   return slides.filter(function (child, index) {
     return index >= virtualData.from && index <= virtualData.to;
   }).map(function (child) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(child, {
       swiper: swiper,
       style: style
     });
@@ -12372,7 +12861,10 @@ var Methods = {
   remove: dom7__WEBPACK_IMPORTED_MODULE_0__["remove"]
 };
 Object.keys(Methods).forEach(function (methodName) {
-  dom7__WEBPACK_IMPORTED_MODULE_0__["$"].fn[methodName] = Methods[methodName];
+  Object.defineProperty(dom7__WEBPACK_IMPORTED_MODULE_0__["$"].fn, methodName, {
+    value: Methods[methodName],
+    writable: true
+  });
 });
 /* harmony default export */ __webpack_exports__["default"] = (dom7__WEBPACK_IMPORTED_MODULE_0__["$"]);
 
@@ -12457,7 +12949,7 @@ function calcDevice(_temp) {
   var windows = platform === 'Win32';
   var macos = platform === 'MacIntel'; // iPadOs 13 fix
 
-  var iPadScreens = ['1024x1366', '1366x1024', '834x1194', '1194x834', '834x1112', '1112x834', '768x1024', '1024x768'];
+  var iPadScreens = ['1024x1366', '1366x1024', '834x1194', '1194x834', '834x1112', '1112x834', '768x1024', '1024x768', '820x1180', '1180x820', '810x1080', '1080x810'];
 
   if (!ipad && macos && support.touch && iPadScreens.indexOf(screenWidth + "x" + screenHeight) >= 0) {
     ipad = ua.match(/(Version)\/([\d.]+)/);
@@ -12557,7 +13049,7 @@ function getSupport() {
 /*!************************************************!*\
   !*** ./node_modules/swiper/esm/utils/utils.js ***!
   \************************************************/
-/*! exports provided: deleteProps, nextTick, now, getTranslate, isObject, extend, bindModuleMethods */
+/*! exports provided: deleteProps, nextTick, now, getTranslate, isObject, extend, bindModuleMethods, getComputedStyle, classesToSelector, createElementIfNotDefined */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12569,6 +13061,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return isObject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "extend", function() { return extend; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bindModuleMethods", function() { return bindModuleMethods; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getComputedStyle", function() { return getComputedStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "classesToSelector", function() { return classesToSelector; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createElementIfNotDefined", function() { return createElementIfNotDefined; });
 /* harmony import */ var ssr_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ssr-window */ "./node_modules/ssr-window/ssr-window.esm.js");
 
 
@@ -12599,6 +13094,25 @@ function now() {
   return Date.now();
 }
 
+function getComputedStyle(el) {
+  var window = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getWindow"])();
+  var style;
+
+  if (window.getComputedStyle) {
+    style = window.getComputedStyle(el, null);
+  }
+
+  if (!style && el.currentStyle) {
+    style = el.currentStyle;
+  }
+
+  if (!style) {
+    style = el.style;
+  }
+
+  return style;
+}
+
 function getTranslate(el, axis) {
   if (axis === void 0) {
     axis = 'x';
@@ -12608,7 +13122,7 @@ function getTranslate(el, axis) {
   var matrix;
   var curTransform;
   var transformMatrix;
-  var curStyle = window.getComputedStyle(el, null);
+  var curStyle = getComputedStyle(el, null);
 
   if (window.WebKitCSSMatrix) {
     curTransform = curStyle.transform || curStyle.webkitTransform;
@@ -12645,17 +13159,22 @@ function getTranslate(el, axis) {
 }
 
 function isObject(o) {
-  return typeof o === 'object' && o !== null && o.constructor && o.constructor === Object;
+  return typeof o === 'object' && o !== null && o.constructor && Object.prototype.toString.call(o).slice(8, -1) === 'Object';
 }
 
 function extend() {
   var to = Object(arguments.length <= 0 ? undefined : arguments[0]);
+  var noExtend = ['__proto__', 'constructor', 'prototype']; // eslint-disable-next-line
+
+  var HTMLElement = typeof window !== 'undefined' ? window.HTMLElement : undefined;
 
   for (var i = 1; i < arguments.length; i += 1) {
     var nextSource = i < 0 || arguments.length <= i ? undefined : arguments[i];
 
-    if (nextSource !== undefined && nextSource !== null) {
-      var keysArray = Object.keys(Object(nextSource));
+    if (nextSource !== undefined && nextSource !== null && !(HTMLElement && nextSource instanceof HTMLElement)) {
+      var keysArray = Object.keys(Object(nextSource)).filter(function (key) {
+        return noExtend.indexOf(key) < 0;
+      });
 
       for (var nextIndex = 0, len = keysArray.length; nextIndex < len; nextIndex += 1) {
         var nextKey = keysArray[nextIndex];
@@ -12663,10 +13182,19 @@ function extend() {
 
         if (desc !== undefined && desc.enumerable) {
           if (isObject(to[nextKey]) && isObject(nextSource[nextKey])) {
-            extend(to[nextKey], nextSource[nextKey]);
+            if (nextSource[nextKey].__swiper__) {
+              to[nextKey] = nextSource[nextKey];
+            } else {
+              extend(to[nextKey], nextSource[nextKey]);
+            }
           } else if (!isObject(to[nextKey]) && isObject(nextSource[nextKey])) {
             to[nextKey] = {};
-            extend(to[nextKey], nextSource[nextKey]);
+
+            if (nextSource[nextKey].__swiper__) {
+              to[nextKey] = nextSource[nextKey];
+            } else {
+              extend(to[nextKey], nextSource[nextKey]);
+            }
           } else {
             to[nextKey] = nextSource[nextKey];
           }
@@ -12692,6 +13220,32 @@ function bindModuleMethods(instance, obj) {
   });
 }
 
+function classesToSelector(classes) {
+  if (classes === void 0) {
+    classes = '';
+  }
+
+  return "." + classes.trim().replace(/([\.:\/])/g, '\\$1') // eslint-disable-line
+  .replace(/ /g, '.');
+}
+
+function createElementIfNotDefined($container, params, createElements, checkProps) {
+  var document = Object(ssr_window__WEBPACK_IMPORTED_MODULE_0__["getDocument"])();
+
+  if (createElements) {
+    Object.keys(checkProps).forEach(function (key) {
+      if (!params[key] && params.auto === true) {
+        var element = document.createElement('div');
+        element.className = checkProps[key];
+        $container.append(element);
+        params[key] = element;
+      }
+    });
+  }
+
+  return params;
+}
+
 
 
 /***/ }),
@@ -12712,15 +13266,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SwiperSlide", function() { return _esm_react_swiper_slide__WEBPACK_IMPORTED_MODULE_1__["SwiperSlide"]; });
 
 /**
- * Swiper React 6.1.1
+ * Swiper React 6.7.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://swiperjs.com
+ * https://swiperjs.com
  *
- * Copyright 2014-2020 Vladimir Kharlampidi
+ * Copyright 2014-2021 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: July 31, 2020
+ * Released on: June 23, 2021
  */
 
 
@@ -12802,15 +13356,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Thumbs", function() { return _esm_components_thumbs_thumbs__WEBPACK_IMPORTED_MODULE_19__["default"]; });
 
 /**
- * Swiper 6.1.1
+ * Swiper 6.7.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://swiperjs.com
+ * https://swiperjs.com
  *
- * Copyright 2014-2020 Vladimir Kharlampidi
+ * Copyright 2014-2021 Vladimir Kharlampidi
  *
  * Released under the MIT License
  *
- * Released on: July 31, 2020
+ * Released on: June 23, 2021
  */
 
 
@@ -12834,22 +13388,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-// Swiper Class
-var components = [];
-_esm_components_core_core_class__WEBPACK_IMPORTED_MODULE_0__["default"].use(components);
-
-
 /***/ }),
 
 /***/ "./node_modules/swiper/swiper.scss":
 /*!*****************************************!*\
   !*** ./node_modules/swiper/swiper.scss ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -12862,7 +13413,7 @@ _esm_components_core_core_class__WEBPACK_IMPORTED_MODULE_0__["default"].use(comp
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-var attributes = {
+const attributes = {
   autoHeight: {
     type: "boolean",
     default: false
@@ -12964,27 +13515,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Edit; });
 /* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js");
 /* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js");
-/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
-/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
-/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./inspector */ "./src/inspector.js");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_editor_scss__WEBPACK_IMPORTED_MODULE_11__);
-
-
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/* harmony import */ var swiper_react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! swiper/react */ "./node_modules/swiper/swiper-react.esm.js");
+/* harmony import */ var swiper_swiper_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! swiper/swiper.scss */ "./node_modules/swiper/swiper.scss");
+/* harmony import */ var _inspector__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./inspector */ "./src/inspector.js");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
 
 
 
@@ -13002,39 +13545,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-swiper__WEBPACK_IMPORTED_MODULE_7__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_7__["A11y"], swiper__WEBPACK_IMPORTED_MODULE_7__["Thumbs"]]);
+swiper__WEBPACK_IMPORTED_MODULE_5__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_5__["A11y"], swiper__WEBPACK_IMPORTED_MODULE_5__["Thumbs"]]);
 /*
  * Internal dependencies
  */
 
 
 
-function Edit(_ref) {
-  var isSelected = _ref.isSelected,
-      clientId = _ref.clientId,
-      attributes = _ref.attributes,
-      setAttributes = _ref.setAttributes;
-  var images = attributes.images,
-      autoHeight = attributes.autoHeight,
-      slidesPerView = attributes.slidesPerView,
-      spaceBetween = attributes.spaceBetween,
-      speed = attributes.speed,
-      vertical = attributes.vertical,
-      loop = attributes.loop,
-      autoplay = attributes.autoplay;
-
-  var _useState = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])(null),
-      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState, 2),
-      swiper = _useState2[0],
-      setSwiper = _useState2[1];
-
-  var _useState3 = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useState"])({}),
-      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_2___default()(_useState3, 2),
-      options = _useState4[0],
-      setOptions = _useState4[1];
-
-  Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    var options = {};
+function Edit({
+  isSelected,
+  clientId,
+  attributes,
+  setAttributes
+}) {
+  const {
+    images,
+    autoHeight,
+    slidesPerView,
+    spaceBetween,
+    speed,
+    vertical,
+    loop,
+    autoplay
+  } = attributes;
+  const [swiper, setSwiper] = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["useState"])(null);
+  const [options, setOptions] = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["useState"])({});
+  Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(() => {
+    let options = {};
     options.autoHeight = autoHeight;
     options.slidesPerView = slidesPerView;
     options.speed = speed;
@@ -13043,34 +13580,32 @@ function Edit(_ref) {
     setOptions(options);
   }, [autoHeight, slidesPerView, spaceBetween, speed, vertical, loop]);
 
-  var onImageSelect = function onImageSelect(images) {
-    var updatedImages = [];
-    images.map(function (image) {
-      updatedImages = [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_1___default()(updatedImages), [{
+  const onImageSelect = images => {
+    let updatedImages = [];
+    images.map(image => {
+      updatedImages = [...updatedImages, {
         url: image.url,
         alt: image.alt,
         id: image.id
-      }]);
+      }];
     });
     setAttributes({
       images: updatedImages
     });
   };
 
-  var onSwiperClick = function onSwiperClick() {
+  const onSwiperClick = () => {
     // Select block when swiper is clicked
     wp.data.dispatch("core/block-editor").selectBlock(clientId);
   };
 
   if (images.length === 0) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["MediaPlaceholder"], {
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["MediaPlaceholder"], {
       labels: {
-        title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])("Images"),
-        instructions: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])("Drag images, upload new ones or select files from your library.")
+        title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Images"),
+        instructions: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Drag images, upload new ones or select files from your library.")
       },
-      onSelect: function onSelect(images) {
-        return onImageSelect(images);
-      },
+      onSelect: images => onImageSelect(images),
       accept: "image/*",
       allowedTypes: ["image"],
       multiple: true,
@@ -13078,42 +13613,31 @@ function Edit(_ref) {
     });
   }
 
-  return [isSelected && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_inspector__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  return [isSelected && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_inspector__WEBPACK_IMPORTED_MODULE_8__["default"], {
     attributes: attributes,
     setAttributes: setAttributes
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["BlockControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__["Toolbar"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["MediaUpload"], {
-    onSelect: function onSelect(images) {
-      return onImageSelect(images);
-    },
+  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["BlockControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Toolbar"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["MediaUpload"], {
+    onSelect: images => onImageSelect(images),
     allowedTypes: ["image"],
     multiple: true,
     gallery: true,
-    value: images.map(function (img) {
-      return img.id;
-    }),
-    render: function render(_ref2) {
-      var open = _ref2.open;
-      return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_6__["Button"], {
-        className: "components-toolbar__control",
-        label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])("Edit gallery"),
-        icon: "edit",
-        onClick: open
-      });
-    }
-  }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_8__["Swiper"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, options, {
+    value: images.map(img => img.id),
+    render: ({
+      open
+    }) => Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+      className: "components-toolbar__control",
+      label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Edit gallery"),
+      icon: "edit",
+      onClick: open
+    })
+  }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("div", null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_6__["Swiper"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, options, {
     onSwiper: setSwiper,
-    onClick: function onClick() {
-      return onSwiperClick();
-    },
-    onSlideChange: function onSlideChange() {
-      return console.log("slide change");
-    }
-  }), images.map(function (image) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_8__["SwiperSlide"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_3__["createElement"])("img", {
-      src: image.url,
-      alt: image.alt
-    }));
-  })))];
+    onClick: () => onSwiperClick(),
+    onSlideChange: () => console.log("slide change")
+  }), images.map(image => Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(swiper_react__WEBPACK_IMPORTED_MODULE_6__["SwiperSlide"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])("img", {
+    src: image.url,
+    alt: image.alt
+  })))))];
 }
 
 /***/ }),
@@ -13122,10 +13646,13 @@ function Edit(_ref) {
 /*!*************************!*\
   !*** ./src/editor.scss ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -13143,7 +13670,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./src/edit.js");
 /* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./src/save.js");
 /* harmony import */ var _attributes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./attributes */ "./src/attributes.js");
@@ -13187,25 +13713,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Inspector(_ref) {
-  var attributes = _ref.attributes,
-      setAttributes = _ref.setAttributes;
-  var slidesPerView = attributes.slidesPerView,
-      spaceBetween = attributes.spaceBetween,
-      speed = attributes.speed,
-      vertical = attributes.vertical,
-      effect = attributes.effect,
-      freeMode = attributes.freeMode,
-      loop = attributes.loop,
-      navigation = attributes.navigation,
-      pagination = attributes.pagination,
-      bulletClickable = attributes.bulletClickable,
-      scrollbar = attributes.scrollbar,
-      scrollbarHide = attributes.scrollbarHide,
-      scrollbarDraggable = attributes.scrollbarDraggable,
-      autoplay = attributes.autoplay,
-      autoplayDelay = attributes.autoplayDelay,
-      parallax = attributes.parallax;
+function Inspector({
+  attributes,
+  setAttributes
+}) {
+  const {
+    slidesPerView,
+    spaceBetween,
+    speed,
+    vertical,
+    effect,
+    freeMode,
+    loop,
+    navigation,
+    pagination,
+    bulletClickable,
+    scrollbar,
+    scrollbarHide,
+    scrollbarDraggable,
+    autoplay,
+    autoplayDelay,
+    parallax
+  } = attributes;
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__["InspectorControls"], {
     key: "controls"
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["PanelBody"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
@@ -13215,125 +13744,97 @@ function Inspector(_ref) {
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("em", null, "*"), " Visible only on frontend"), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Autoplay *"),
     checked: autoplay,
-    onChange: function onChange() {
-      return setAttributes({
-        autoplay: !autoplay
-      });
-    }
+    onChange: () => setAttributes({
+      autoplay: !autoplay
+    })
   }), autoplay && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Autoplay Delay"),
     value: autoplayDelay,
     min: 1,
     max: 5000,
-    onChange: function onChange(autoplayDelay) {
-      return setAttributes({
-        autoplayDelay: autoplayDelay
-      });
-    }
+    onChange: autoplayDelay => setAttributes({
+      autoplayDelay
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Loop"),
     checked: loop,
-    onChange: function onChange() {
-      return setAttributes({
-        loop: !loop
-      });
-    }
+    onChange: () => setAttributes({
+      loop: !loop
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Free Mode *"),
     checked: freeMode,
-    onChange: function onChange() {
-      return setAttributes({
-        freeMode: !freeMode
-      });
-    }
+    onChange: () => setAttributes({
+      freeMode: !freeMode
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Vertical Slide *"),
     checked: vertical,
-    onChange: function onChange() {
-      return setAttributes({
-        vertical: !vertical
-      });
-    }
+    onChange: () => setAttributes({
+      vertical: !vertical
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Navigation *"),
     checked: navigation,
-    onChange: function onChange() {
-      return setAttributes({
-        navigation: !navigation
-      });
-    }
+    onChange: () => setAttributes({
+      navigation: !navigation
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Pagination *"),
     checked: pagination,
-    onChange: function onChange() {
-      return setAttributes({
-        pagination: !pagination
-      });
-    }
+    onChange: () => setAttributes({
+      pagination: !pagination
+    })
   }), pagination && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Bullet Clickable"),
     checked: bulletClickable,
-    onChange: function onChange() {
-      return setAttributes({
-        bulletClickable: !bulletClickable
-      });
-    }
+    onChange: () => setAttributes({
+      bulletClickable: !bulletClickable
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Scrollbar *"),
     checked: scrollbar,
-    onChange: function onChange() {
-      return setAttributes({
-        scrollbar: !scrollbar
-      });
-    }
+    onChange: () => setAttributes({
+      scrollbar: !scrollbar
+    })
   }), scrollbar && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Scrollbar Hide"),
     help: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Hide scrollbar automatically after user interaction"),
     checked: scrollbarHide,
-    onChange: function onChange() {
-      return setAttributes({
-        scrollbarHide: !scrollbarHide
-      });
-    }
+    onChange: () => setAttributes({
+      scrollbarHide: !scrollbarHide
+    })
   }), scrollbar && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Scrollbar Draggable"),
     help: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Make scrollbar draggable that allows you to control slider position"),
     checked: scrollbarDraggable,
-    onChange: function onChange() {
-      return setAttributes({
-        scrollbarDraggable: !scrollbarDraggable
-      });
-    }
+    onChange: () => setAttributes({
+      scrollbarDraggable: !scrollbarDraggable
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Slider Per View"),
     value: slidesPerView,
     min: 1,
     max: 10,
-    onChange: function onChange(slidesPerView) {
-      return setAttributes({
-        slidesPerView: slidesPerView
-      });
-    }
+    onChange: slidesPerView => setAttributes({
+      slidesPerView
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Space Between Images"),
     value: spaceBetween,
     min: 1,
     max: 100,
-    onChange: function onChange(spaceBetween) {
-      return setAttributes({
-        spaceBetween: spaceBetween
-      });
-    }
+    onChange: spaceBetween => setAttributes({
+      spaceBetween
+    })
   }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["RangeControl"], {
     label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__["__"])("Speed"),
     value: speed,
     min: 1,
     max: 1000,
-    onChange: function onChange(speed) {
-      return setAttributes({
-        speed: speed
-      });
-    }
+    onChange: speed => setAttributes({
+      speed
+    })
   })));
 }
 
@@ -13352,29 +13853,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 
-function save(_ref) {
-  var attributes = _ref.attributes;
-  var images = attributes.images,
-      autoHeight = attributes.autoHeight,
-      slidesPerView = attributes.slidesPerView,
-      spaceBetween = attributes.spaceBetween,
-      speed = attributes.speed,
-      vertical = attributes.vertical,
-      effect = attributes.effect,
-      grabCursor = attributes.grabCursor,
-      freeMode = attributes.freeMode,
-      loop = attributes.loop,
-      navigation = attributes.navigation,
-      pagination = attributes.pagination,
-      bulletClickable = attributes.bulletClickable,
-      scrollbar = attributes.scrollbar,
-      scrollbarHide = attributes.scrollbarHide,
-      scrollbarDraggable = attributes.scrollbarDraggable,
-      autoplay = attributes.autoplay,
-      autoplayDelay = attributes.autoplayDelay,
-      thumbs = attributes.thumbs,
-      thumbsPerView = attributes.thumbsPerView,
-      thumbSpaceBetween = attributes.thumbSpaceBetween;
+function save({
+  attributes
+}) {
+  const {
+    images,
+    autoHeight,
+    slidesPerView,
+    spaceBetween,
+    speed,
+    vertical,
+    effect,
+    grabCursor,
+    freeMode,
+    loop,
+    navigation,
+    pagination,
+    bulletClickable,
+    scrollbar,
+    scrollbarHide,
+    scrollbarDraggable,
+    autoplay,
+    autoplayDelay,
+    thumbs,
+    thumbsPerView,
+    thumbSpaceBetween
+  } = attributes;
 
   if (!images.length) {
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", null);
@@ -13404,14 +13908,12 @@ function save(_ref) {
     "data-scrollbar-draggable": scrollbarDraggable
   }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-wrapper"
-  }, images.map(function (image) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
-      class: "swiper-slide"
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("img", {
-      src: image.url,
-      alt: image.alt
-    }));
-  })), pagination && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+  }, images.map(image => Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
+    class: "swiper-slide"
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("img", {
+    src: image.url,
+    alt: image.alt
+  })))), pagination && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-pagination"
   }), navigation && Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", {
     class: "swiper-button-prev"
@@ -13425,68 +13927,68 @@ function save(_ref) {
 /***/ }),
 
 /***/ "@wordpress/block-editor":
-/*!**********************************************!*\
-  !*** external {"this":["wp","blockEditor"]} ***!
-  \**********************************************/
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-(function() { module.exports = this["wp"]["blockEditor"]; }());
+(function() { module.exports = window["wp"]["blockEditor"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/blocks":
-/*!*****************************************!*\
-  !*** external {"this":["wp","blocks"]} ***!
-  \*****************************************/
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-(function() { module.exports = this["wp"]["blocks"]; }());
+(function() { module.exports = window["wp"]["blocks"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/components":
-/*!*********************************************!*\
-  !*** external {"this":["wp","components"]} ***!
-  \*********************************************/
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-(function() { module.exports = this["wp"]["components"]; }());
+(function() { module.exports = window["wp"]["components"]; }());
 
 /***/ }),
 
 /***/ "@wordpress/element":
-/*!******************************************!*\
-  !*** external {"this":["wp","element"]} ***!
-  \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function() { module.exports = this["wp"]["element"]; }());
-
-/***/ }),
-
-/***/ "@wordpress/i18n":
-/*!***************************************!*\
-  !*** external {"this":["wp","i18n"]} ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function() { module.exports = this["wp"]["i18n"]; }());
-
-/***/ }),
-
-/***/ "react":
 /*!*********************************!*\
-  !*** external {"this":"React"} ***!
+  !*** external ["wp","element"] ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-(function() { module.exports = this["React"]; }());
+(function() { module.exports = window["wp"]["element"]; }());
+
+/***/ }),
+
+/***/ "@wordpress/i18n":
+/*!******************************!*\
+  !*** external ["wp","i18n"] ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = window["wp"]["i18n"]; }());
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = window["React"]; }());
 
 /***/ })
 

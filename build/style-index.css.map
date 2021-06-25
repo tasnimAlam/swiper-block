@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///style.scss"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,aAAa,EAAE","file":"style-index.css","sourcesContent":[".swiper-container {\n  width: 100%;\n  height: 300px; }\n"],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./src/style.scss"],"names":[],"mappings":"AAAA;EACC;EACA;AACD,C","file":"style-index.css","sourcesContent":[".swiper-container {\n\twidth: 100%;\n\theight: 300px; // Fix vertical height\n\t// height: auto;\n}\n"],"sourceRoot":""}
